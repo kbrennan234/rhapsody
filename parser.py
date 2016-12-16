@@ -148,7 +148,14 @@ def parseFile(filename):
         content = f.read()
         if (0 == len(content)):
             raise Exception("Cannot parse empty file")
+        
+        # remove first line with version info
+        version_info, content = content.split("\n")
         root, num_read = parse(content, "root")
+        
+        # set version attribute
+        root.set('version', version_info)
+        
         return root
         
     return None
