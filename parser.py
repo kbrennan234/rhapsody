@@ -159,12 +159,3 @@ def parseFile(filename):
         return root
         
     return None
-    
-filename = "C:/Users/abc/Desktop/Trace/test1.sbs"    
-
-import time
-starttime = time.time()
-root = parseFile(filename)
-endtime = time.time()
-elapsed = endtime - starttime
-print elapsed
