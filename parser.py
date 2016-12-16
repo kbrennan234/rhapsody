@@ -146,11 +146,12 @@ def parse(content, name):
 def parseFile(filename):
     with open(filename, 'r') as f:
         content = f.read()
+        
         if (0 == len(content)):
             raise Exception("Cannot parse empty file")
         
         # remove first line with version info
-        version_info, content = content.split("\n")
+        version_info, content = content.split("\n", 1)
         root, num_read = parse(content, "root")
         
         # set version attribute
