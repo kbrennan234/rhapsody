@@ -1,0 +1,1514 @@
+I-Logix-RPY-Archive version 8.5.2 C++ 1159120
+{ ISubsystem 
+	- _ownerHandle = { IHandle 
+		- _m2Class = "ISubsystem";
+		- _filename = "Application.sbs";
+		- _subsystem = "";
+		- _class = "";
+		- _name = "Application";
+		- _id = GUID ae1cb529-d6a5-4a57-85d0-e4e16822ed75;
+	}
+	- _id = GUID 30c64cb8-f037-4c93-8e36-c33109fd525f;
+	- _myState = 8192;
+	- _name = "GUI";
+	- Dependencies = { IRPYRawContainer 
+		- size = 1;
+		- value = 
+		{ IDependency 
+			- _id = GUID 014390b6-d194-4d4b-9c1f-9640d8289187;
+			- _myState = 2048;
+			- _name = "Discrete";
+			- _dependsOn = { INObjectHandle 
+				- _m2Class = "ISubsystem";
+				- _filename = "Discrete.sbs";
+				- _subsystem = "Application";
+				- _class = "";
+				- _name = "Discrete";
+				- _id = GUID b99cf7b4-c288-4b92-9148-aa7b0a3c8a1c;
+			}
+		}
+	}
+	- _theMainDiagram = { IHandle 
+		- _m2Class = "IDiagram";
+		- _filename = "";
+		- _subsystem = "";
+		- _class = "";
+		- _name = "PackageView";
+		- _id = GUID 69ee0633-361f-4b1f-8dc4-8d7c1f351e73;
+	}
+	- _lastID = 1;
+	- weakCGTime = 5.31.2010::18:33:42;
+	- strongCGTime = 4.26.2010::8:32:55;
+	- _defaultComposite = GUID 603b73f9-1502-4e89-b98f-f2a9bce97aff;
+	- _eventsBaseID = -1;
+	- Classes = { IRPYRawContainer 
+		- size = 3;
+		- value = 
+		{ IClass 
+			- _id = GUID 603b73f9-1502-4e89-b98f-f2a9bce97aff;
+			- _myState = 40960;
+			- _name = "TopLevel";
+			- weakCGTime = 5.6.2010::21:46:15;
+			- strongCGTime = 4.26.2010::8:32:55;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID be2cf2b8-f14f-442c-af94-fd744d11f4dd;
+			- _myState = 8192;
+			- _name = "LCDScreen";
+			- Stereotypes = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IHandle 
+					- _m2Class = "IStereotype";
+					- _filename = "Application.sbs";
+					- _subsystem = "Application";
+					- _class = "";
+					- _name = "boundary";
+					- _id = GUID ce47bc33-d126-482e-8370-945bf813dfbf;
+				}
+			}
+			- _theMainDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "Application.sbs";
+				- _subsystem = "Application";
+				- _class = "";
+				- _name = "DomainModel";
+				- _id = GUID 78404da0-6753-4b4a-948c-874f8a7b46f6;
+			}
+			- weakCGTime = 5.6.2010::21:46:33;
+			- strongCGTime = 4.26.2010::8:40:22;
+			- Operations = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IPrimitiveOperation 
+					- _id = GUID dbde64d9-d3d5-4651-8526-79d1b7eed80d;
+					- _myState = 8192;
+					- _properties = { IPropertyContainer 
+						- Subjects = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertySubject 
+								- _Name = "CPP_CG";
+								- Metaclasses = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IPropertyMetaclass 
+										- _Name = "Operation";
+										- Properties = { IRPYRawContainer 
+											- size = 1;
+											- value = 
+											{ IProperty 
+												- _Name = "Kind";
+												- _Value = "common";
+												- _Type = Enum;
+												- _ExtraTypeInfo = "common,abstract";
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+					- _name = "Update";
+					- _lastID = 1;
+					- _virtual = 1;
+					- Args = { IRPYRawContainer 
+						- size = 1;
+						- value = 
+						{ IArgument 
+							- _id = GUID 07970142-5b97-417f-951e-b1ab186bee76;
+							- _name = "fp";
+							- myTypeOf = { IType 
+								- _id = GUID a671d9df-f691-4283-8213-6f706955e0c2;
+								- _myState = 8192;
+								- _declaration = "FrameBuffer*";
+								- _kind = Language;
+							}
+							- _isOrdered = 0;
+							- _argumentDirection = InOut;
+						}
+					}
+					- _returnType = { IHandle 
+						- _m2Class = "IType";
+						- _filename = "PredefinedTypesC++.sbs";
+						- _subsystem = "PredefinedTypesCpp";
+						- _class = "";
+						- _name = "void";
+						- _id = GUID c6b70728-b655-45a0-abb7-8ea5d3da94be;
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iPublic;
+					- _static = 0;
+					- _constant = 0;
+					- _itsBody = { IBody 
+						- _bodyData = "std::cout << \"FrameBuffer Update\" << std::endl;";
+					}
+				}
+			}
+			- Inheritances = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IGeneralization 
+					- _id = GUID 286e8737-13fc-4654-8be1-aaf1b10f6462;
+					- _dependsOn = { INObjectHandle 
+						- _m2Class = "IClass";
+						- _filename = "Discrete.sbs";
+						- _subsystem = "Application::Discrete";
+						- _class = "";
+						- _name = "Observer";
+						- _id = GUID ae0d6a21-86a2-4339-b658-3c660434d74c;
+					}
+					- _inheritanceType = iPublic;
+					- _isVirtual = 0;
+				}
+			}
+			- ComponentFiles = { IRPYRawContainer 
+				- size = 2;
+				- value = 
+				{ IFile 
+					- _id = GUID ed1ea755-776c-491d-94ab-44fcd55b59bc;
+					- _myState = 139264;
+					- _name = "LCDScreen";
+					- m_path = "";
+					- m_type = implFile;
+					- Fragments = { IRPYRawContainer 
+						- size = 5;
+						- value = 
+						{ IFileFragment 
+							- _id = GUID cc821ae6-c57c-4da9-a8cb-e1932f3a1a99;
+							- _name = "LCDScreen:spec";
+							- m_type = textFragment;
+							- m_text = "//## auto:dependency LCDScreen:spec";
+							- m_startRow = 12;
+							- m_startCol_Short = 1;
+							- m_endRow = 12;
+							- m_endCol_Short = 416;
+							- m_subject = { INObjectHandle 
+								- _m2Class = "";
+							}
+						}
+						{ IFileFragment 
+							- _id = GUID 1d220b3f-b45b-4bb0-9a3b-7e97e609f8b0;
+							- _name = "Controller:spec";
+							- m_type = textFragment;
+							- m_text = "//## auto:dependency Controller:spec";
+							- m_startRow = 14;
+							- m_startCol_Short = 1;
+							- m_endRow = 14;
+							- m_endCol_Short = 466;
+							- m_subject = { INObjectHandle 
+								- _m2Class = "";
+							}
+						}
+						{ IFileFragment 
+							- _id = GUID dd34467d-c918-49bc-b66b-d006e8d4a884;
+							- _name = "DistributerThread:spec";
+							- m_type = textFragment;
+							- m_text = "//## auto:dependency DistributerThread:spec";
+							- m_startRow = 16;
+							- m_startCol_Short = 1;
+							- m_endRow = 16;
+							- m_endCol_Short = 530;
+							- m_subject = { INObjectHandle 
+								- _m2Class = "";
+							}
+						}
+						{ IFileFragment 
+							- _id = GUID 20533e24-887e-49d5-be80-69b6bc75d288;
+							- _name = "FrameBuffer:spec";
+							- m_type = textFragment;
+							- m_text = "//## auto:dependency FrameBuffer:spec";
+							- m_startRow = 18;
+							- m_startCol_Short = 1;
+							- m_endRow = 18;
+							- m_endCol_Short = 593;
+							- m_subject = { INObjectHandle 
+								- _m2Class = "";
+							}
+						}
+						{ IFileFragment 
+							- _id = GUID 44f09fe9-298e-4cf6-8bcd-2fa5804129ee;
+							- _name = "LCDScreen";
+							- m_type = implFragment;
+							- m_text = "";
+							- m_startRow = 22;
+							- m_startCol_Short = 12;
+							- m_endRow = 22;
+							- m_endCol_Short = 12;
+							- m_subject = { INObjectHandle 
+								- _m2Class = "IClass";
+								- _id = GUID be2cf2b8-f14f-442c-af94-fd744d11f4dd;
+							}
+							- Fragments = { IRPYRawContainer 
+								- size = 11;
+								- value = 
+								{ IFileFragment 
+									- _id = GUID d9ec90d8-4a55-4597-aac3-9f46b60df180;
+									- _name = "LCDScreen:impl";
+									- Tags = { IRPYRawContainer 
+										- size = 2;
+										- value = 
+										{ ITag 
+											- _id = GUID fdd270e5-521e-40a1-b86e-59869091b8c8;
+											- _name = "BodyStartLine";
+											- ValueSpecifications = { IRPYRawContainer 
+												- size = 1;
+												- value = 
+												{ ILiteralSpecification 
+													- _id = GUID f79b2627-bf6e-4be3-baea-3f1f74328372;
+													- _value = "22";
+												}
+											}
+											- _typeOf = { IHandle 
+												- _m2Class = "IType";
+												- _filename = "PredefinedTypes.sbs";
+												- _subsystem = "PredefinedTypes";
+												- _class = "";
+												- _name = "RhpString";
+												- _id = GUID ae5e3720-4e3e-40f1-9346-9a8b4e501f35;
+											}
+											- _isOrdered = 0;
+										}
+										{ ITag 
+											- _id = GUID 4e3a1767-1a50-4756-9d0d-aa9f0c79e41a;
+											- _name = "BodyStartCol";
+											- ValueSpecifications = { IRPYRawContainer 
+												- size = 1;
+												- value = 
+												{ ILiteralSpecification 
+													- _id = GUID a81ae30b-718d-4ba3-8e3f-6c2f61f02b13;
+													- _value = "24";
+												}
+											}
+											- _typeOf = { IHandle 
+												- _m2Class = "IType";
+												- _filename = "PredefinedTypes.sbs";
+												- _subsystem = "PredefinedTypes";
+												- _class = "";
+												- _name = "RhpString";
+												- _id = GUID ae5e3720-4e3e-40f1-9346-9a8b4e501f35;
+											}
+											- _isOrdered = 0;
+										}
+									}
+									- m_type = textFragment;
+									- m_text = "//## auto:operation LCDScreen():impl";
+									- m_startRow = 22;
+									- m_startCol_Short = 12;
+									- m_endRow = 25;
+									- m_endCol_Short = 1;
+									- m_subject = { INObjectHandle 
+										- _m2Class = "";
+									}
+								}
+								{ IFileFragment 
+									- _id = GUID 7a078055-9949-4358-a4d5-1835634e1684;
+									- _name = "~LCDScreen:impl";
+									- Tags = { IRPYRawContainer 
+										- size = 2;
+										- value = 
+										{ ITag 
+											- _id = GUID 20073d55-2e70-4090-a2af-ee9e2a513447;
+											- _name = "BodyStartLine";
+											- ValueSpecifications = { IRPYRawContainer 
+												- size = 1;
+												- value = 
+												{ ILiteralSpecification 
+													- _id = GUID 34f28b25-a903-4966-8006-7d56714f7ed9;
+													- _value = "27";
+												}
+											}
+											- _typeOf = { IHandle 
+												- _m2Class = "IType";
+												- _filename = "PredefinedTypes.sbs";
+												- _subsystem = "PredefinedTypes";
+												- _class = "";
+												- _name = "RhpString";
+												- _id = GUID ae5e3720-4e3e-40f1-9346-9a8b4e501f35;
+											}
+											- _isOrdered = 0;
+										}
+										{ ITag 
+											- _id = GUID 4eb25573-bf78-4d61-8e6d-dca9a21166e1;
+											- _name = "BodyStartCol";
+											- ValueSpecifications = { IRPYRawContainer 
+												- size = 1;
+												- value = 
+												{ ILiteralSpecification 
+													- _id = GUID fde1be9c-d580-490c-9015-3352e4384aac;
+													- _value = "25";
+												}
+											}
+											- _typeOf = { IHandle 
+												- _m2Class = "IType";
+												- _filename = "PredefinedTypes.sbs";
+												- _subsystem = "PredefinedTypes";
+												- _class = "";
+												- _name = "RhpString";
+												- _id = GUID ae5e3720-4e3e-40f1-9346-9a8b4e501f35;
+											}
+											- _isOrdered = 0;
+										}
+									}
+									- m_type = textFragment;
+									- m_text = "//## auto:operation ~LCDScreen():impl";
+									- m_startRow = 27;
+									- m_startCol_Short = 13;
+									- m_endRow = 29;
+									- m_endCol_Short = 1;
+									- m_subject = { INObjectHandle 
+										- _m2Class = "";
+									}
+								}
+								{ IFileFragment 
+									- _id = GUID 94c40de9-8dd2-4bd5-b76a-667e966bfb3c;
+									- _name = "Update";
+									- Tags = { IRPYRawContainer 
+										- size = 2;
+										- value = 
+										{ ITag 
+											- _id = GUID 030162ff-fd24-4f63-a8a1-89746068e020;
+											- _name = "BodyStartLine";
+											- ValueSpecifications = { IRPYRawContainer 
+												- size = 1;
+												- value = 
+												{ ILiteralSpecification 
+													- _id = GUID cad3fbaf-f287-46d9-a2ea-8b5c737bd861;
+													- _value = "31";
+												}
+											}
+											- _typeOf = { IHandle 
+												- _m2Class = "IType";
+												- _filename = "PredefinedTypes.sbs";
+												- _subsystem = "PredefinedTypes";
+												- _class = "";
+												- _name = "RhpString";
+												- _id = GUID ae5e3720-4e3e-40f1-9346-9a8b4e501f35;
+											}
+											- _isOrdered = 0;
+										}
+										{ ITag 
+											- _id = GUID d7787cc1-82a7-4c2b-8c25-dd5c3855851e;
+											- _name = "BodyStartCol";
+											- ValueSpecifications = { IRPYRawContainer 
+												- size = 1;
+												- value = 
+												{ ILiteralSpecification 
+													- _id = GUID aee3f9cb-f532-48af-be98-26cbeafbaf36;
+													- _value = "41";
+												}
+											}
+											- _typeOf = { IHandle 
+												- _m2Class = "IType";
+												- _filename = "PredefinedTypes.sbs";
+												- _subsystem = "PredefinedTypes";
+												- _class = "";
+												- _name = "RhpString";
+												- _id = GUID ae5e3720-4e3e-40f1-9346-9a8b4e501f35;
+											}
+											- _isOrdered = 0;
+										}
+									}
+									- m_type = implFragment;
+									- m_text = "";
+									- m_startRow = 31;
+									- m_startCol_Short = 41;
+									- m_endRow = 35;
+									- m_endCol_Short = 1;
+									- m_subject = { INObjectHandle 
+										- _m2Class = "IPrimitiveOperation";
+										- _id = GUID dbde64d9-d3d5-4651-8526-79d1b7eed80d;
+									}
+								}
+								{ IFileFragment 
+									- _id = GUID 6af50b67-4424-489a-ab5c-796a5046a214;
+									- _name = "getItsController:impl";
+									- Tags = { IRPYRawContainer 
+										- size = 2;
+										- value = 
+										{ ITag 
+											- _id = GUID c91c3c9b-c9bc-4795-a505-d67583ab0989;
+											- _name = "BodyStartLine";
+											- ValueSpecifications = { IRPYRawContainer 
+												- size = 1;
+												- value = 
+												{ ILiteralSpecification 
+													- _id = GUID 2c6b3994-70ba-466f-b468-a2b620b29efe;
+													- _value = "37";
+												}
+											}
+											- _typeOf = { IHandle 
+												- _m2Class = "IType";
+												- _filename = "PredefinedTypes.sbs";
+												- _subsystem = "PredefinedTypes";
+												- _class = "";
+												- _name = "RhpString";
+												- _id = GUID ae5e3720-4e3e-40f1-9346-9a8b4e501f35;
+											}
+											- _isOrdered = 0;
+										}
+										{ ITag 
+											- _id = GUID 721edf34-34c9-4525-8dea-728d1e0c9bf7;
+											- _name = "BodyStartCol";
+											- ValueSpecifications = { IRPYRawContainer 
+												- size = 1;
+												- value = 
+												{ ILiteralSpecification 
+													- _id = GUID f6115037-581c-4261-94a6-8f34dd7745a9;
+													- _value = "49";
+												}
+											}
+											- _typeOf = { IHandle 
+												- _m2Class = "IType";
+												- _filename = "PredefinedTypes.sbs";
+												- _subsystem = "PredefinedTypes";
+												- _class = "";
+												- _name = "RhpString";
+												- _id = GUID ae5e3720-4e3e-40f1-9346-9a8b4e501f35;
+											}
+											- _isOrdered = 0;
+										}
+									}
+									- m_type = textFragment;
+									- m_text = "//## auto:operation getItsController() const:impl";
+									- m_startRow = 37;
+									- m_startCol_Short = 49;
+									- m_endRow = 39;
+									- m_endCol_Short = 1;
+									- m_subject = { INObjectHandle 
+										- _m2Class = "";
+									}
+								}
+								{ IFileFragment 
+									- _id = GUID 414de487-073a-48a5-9276-86d7f30ae5e4;
+									- _name = "setItsController:impl";
+									- Tags = { IRPYRawContainer 
+										- size = 2;
+										- value = 
+										{ ITag 
+											- _id = GUID 6f42908a-e61e-480d-8125-a9886c0df171;
+											- _name = "BodyStartLine";
+											- ValueSpecifications = { IRPYRawContainer 
+												- size = 1;
+												- value = 
+												{ ILiteralSpecification 
+													- _id = GUID 0af4aca9-fd28-4337-bb63-7a5650c86bd8;
+													- _value = "41";
+												}
+											}
+											- _typeOf = { IHandle 
+												- _m2Class = "IType";
+												- _filename = "PredefinedTypes.sbs";
+												- _subsystem = "PredefinedTypes";
+												- _class = "";
+												- _name = "RhpString";
+												- _id = GUID ae5e3720-4e3e-40f1-9346-9a8b4e501f35;
+											}
+											- _isOrdered = 0;
+										}
+										{ ITag 
+											- _id = GUID 2e51bc5a-75dd-47d8-ad4c-a574041c91d7;
+											- _name = "BodyStartCol";
+											- ValueSpecifications = { IRPYRawContainer 
+												- size = 1;
+												- value = 
+												{ ILiteralSpecification 
+													- _id = GUID 258723a3-aaae-4f73-979f-eaf562c3c98d;
+													- _value = "60";
+												}
+											}
+											- _typeOf = { IHandle 
+												- _m2Class = "IType";
+												- _filename = "PredefinedTypes.sbs";
+												- _subsystem = "PredefinedTypes";
+												- _class = "";
+												- _name = "RhpString";
+												- _id = GUID ae5e3720-4e3e-40f1-9346-9a8b4e501f35;
+											}
+											- _isOrdered = 0;
+										}
+									}
+									- m_type = textFragment;
+									- m_text = "//## auto:operation setItsController(Controller *):impl";
+									- m_startRow = 41;
+									- m_startCol_Short = 60;
+									- m_endRow = 47;
+									- m_endCol_Short = 1;
+									- m_subject = { INObjectHandle 
+										- _m2Class = "";
+									}
+								}
+								{ IFileFragment 
+									- _id = GUID 9b52f39e-cb82-4ea6-b00b-6fe6bd82d238;
+									- _name = "getItsDistributerThread:impl";
+									- Tags = { IRPYRawContainer 
+										- size = 2;
+										- value = 
+										{ ITag 
+											- _id = GUID f99cd27d-9401-495b-9a78-4193382029e4;
+											- _name = "BodyStartLine";
+											- ValueSpecifications = { IRPYRawContainer 
+												- size = 1;
+												- value = 
+												{ ILiteralSpecification 
+													- _id = GUID 09d0a991-b3c5-4bf3-9339-32f17abb93c7;
+													- _value = "49";
+												}
+											}
+											- _typeOf = { IHandle 
+												- _m2Class = "IType";
+												- _filename = "PredefinedTypes.sbs";
+												- _subsystem = "PredefinedTypes";
+												- _class = "";
+												- _name = "RhpString";
+												- _id = GUID ae5e3720-4e3e-40f1-9346-9a8b4e501f35;
+											}
+											- _isOrdered = 0;
+										}
+										{ ITag 
+											- _id = GUID 16ec4417-af42-4980-bed7-aa7b3b26893c;
+											- _name = "BodyStartCol";
+											- ValueSpecifications = { IRPYRawContainer 
+												- size = 1;
+												- value = 
+												{ ILiteralSpecification 
+													- _id = GUID 699b8c7f-e68b-44df-99a3-57329c61bbed;
+													- _value = "63";
+												}
+											}
+											- _typeOf = { IHandle 
+												- _m2Class = "IType";
+												- _filename = "PredefinedTypes.sbs";
+												- _subsystem = "PredefinedTypes";
+												- _class = "";
+												- _name = "RhpString";
+												- _id = GUID ae5e3720-4e3e-40f1-9346-9a8b4e501f35;
+											}
+											- _isOrdered = 0;
+										}
+									}
+									- m_type = textFragment;
+									- m_text = "//## auto:operation getItsDistributerThread() const:impl";
+									- m_startRow = 49;
+									- m_startCol_Short = 63;
+									- m_endRow = 51;
+									- m_endCol_Short = 1;
+									- m_subject = { INObjectHandle 
+										- _m2Class = "";
+									}
+								}
+								{ IFileFragment 
+									- _id = GUID 674ec5cb-a9c5-488a-b226-aa66e9a0b236;
+									- _name = "setItsDistributerThread:impl";
+									- Tags = { IRPYRawContainer 
+										- size = 2;
+										- value = 
+										{ ITag 
+											- _id = GUID 779a09c6-52e4-46ea-a9a9-d35bf8a1b08a;
+											- _name = "BodyStartLine";
+											- ValueSpecifications = { IRPYRawContainer 
+												- size = 1;
+												- value = 
+												{ ILiteralSpecification 
+													- _id = GUID 3221b5d8-e64d-4b4b-bee8-118851a4b366;
+													- _value = "53";
+												}
+											}
+											- _typeOf = { IHandle 
+												- _m2Class = "IType";
+												- _filename = "PredefinedTypes.sbs";
+												- _subsystem = "PredefinedTypes";
+												- _class = "";
+												- _name = "RhpString";
+												- _id = GUID ae5e3720-4e3e-40f1-9346-9a8b4e501f35;
+											}
+											- _isOrdered = 0;
+										}
+										{ ITag 
+											- _id = GUID 03418756-65fc-47df-b482-b1d23302b585;
+											- _name = "BodyStartCol";
+											- ValueSpecifications = { IRPYRawContainer 
+												- size = 1;
+												- value = 
+												{ ILiteralSpecification 
+													- _id = GUID 78ba95c4-d91a-44d9-9dcf-f07aa0e4bde3;
+													- _value = "81";
+												}
+											}
+											- _typeOf = { IHandle 
+												- _m2Class = "IType";
+												- _filename = "PredefinedTypes.sbs";
+												- _subsystem = "PredefinedTypes";
+												- _class = "";
+												- _name = "RhpString";
+												- _id = GUID ae5e3720-4e3e-40f1-9346-9a8b4e501f35;
+											}
+											- _isOrdered = 0;
+										}
+									}
+									- m_type = textFragment;
+									- m_text = "//## auto:operation setItsDistributerThread(DistributerThread *):impl";
+									- m_startRow = 53;
+									- m_startCol_Short = 81;
+									- m_endRow = 55;
+									- m_endCol_Short = 1;
+									- m_subject = { INObjectHandle 
+										- _m2Class = "";
+									}
+								}
+								{ IFileFragment 
+									- _id = GUID c20ced89-ec6b-49b2-b538-db2afb113fc5;
+									- _name = "cleanUpRelations:impl";
+									- Tags = { IRPYRawContainer 
+										- size = 2;
+										- value = 
+										{ ITag 
+											- _id = GUID f41c3013-cf95-4b69-868d-37d830435eff;
+											- _name = "BodyStartLine";
+											- ValueSpecifications = { IRPYRawContainer 
+												- size = 1;
+												- value = 
+												{ ILiteralSpecification 
+													- _id = GUID e1195c31-3ef6-4398-bb28-363f08016dd0;
+													- _value = "57";
+												}
+											}
+											- _typeOf = { IHandle 
+												- _m2Class = "IType";
+												- _filename = "PredefinedTypes.sbs";
+												- _subsystem = "PredefinedTypes";
+												- _class = "";
+												- _name = "RhpString";
+												- _id = GUID ae5e3720-4e3e-40f1-9346-9a8b4e501f35;
+											}
+											- _isOrdered = 0;
+										}
+										{ ITag 
+											- _id = GUID c5494105-36ae-42e0-a137-bf28617e8e6d;
+											- _name = "BodyStartCol";
+											- ValueSpecifications = { IRPYRawContainer 
+												- size = 1;
+												- value = 
+												{ ILiteralSpecification 
+													- _id = GUID 8a4ef01f-df2b-4c06-a596-df1c266146ef;
+													- _value = "36";
+												}
+											}
+											- _typeOf = { IHandle 
+												- _m2Class = "IType";
+												- _filename = "PredefinedTypes.sbs";
+												- _subsystem = "PredefinedTypes";
+												- _class = "";
+												- _name = "RhpString";
+												- _id = GUID ae5e3720-4e3e-40f1-9346-9a8b4e501f35;
+											}
+											- _isOrdered = 0;
+										}
+									}
+									- m_type = textFragment;
+									- m_text = "//## auto:operation cleanUpRelations():impl";
+									- m_startRow = 57;
+									- m_startCol_Short = 36;
+									- m_endRow = 71;
+									- m_endCol_Short = 1;
+									- m_subject = { INObjectHandle 
+										- _m2Class = "";
+									}
+								}
+								{ IFileFragment 
+									- _id = GUID 30bcbff3-02a6-435e-98bf-447694d65dd8;
+									- _name = "__setItsController:impl";
+									- Tags = { IRPYRawContainer 
+										- size = 2;
+										- value = 
+										{ ITag 
+											- _id = GUID 88aa64e7-b296-4ed7-b307-4ee089d730cd;
+											- _name = "BodyStartLine";
+											- ValueSpecifications = { IRPYRawContainer 
+												- size = 1;
+												- value = 
+												{ ILiteralSpecification 
+													- _id = GUID dd9989d7-e6ef-41dd-a446-69750094ef3d;
+													- _value = "73";
+												}
+											}
+											- _typeOf = { IHandle 
+												- _m2Class = "IType";
+												- _filename = "PredefinedTypes.sbs";
+												- _subsystem = "PredefinedTypes";
+												- _class = "";
+												- _name = "RhpString";
+												- _id = GUID ae5e3720-4e3e-40f1-9346-9a8b4e501f35;
+											}
+											- _isOrdered = 0;
+										}
+										{ ITag 
+											- _id = GUID 0b0c0e51-4046-406a-a66f-a016954203fb;
+											- _name = "BodyStartCol";
+											- ValueSpecifications = { IRPYRawContainer 
+												- size = 1;
+												- value = 
+												{ ILiteralSpecification 
+													- _id = GUID 2a2d3d6c-1636-439f-ac49-a58bbc99acdc;
+													- _value = "62";
+												}
+											}
+											- _typeOf = { IHandle 
+												- _m2Class = "IType";
+												- _filename = "PredefinedTypes.sbs";
+												- _subsystem = "PredefinedTypes";
+												- _class = "";
+												- _name = "RhpString";
+												- _id = GUID ae5e3720-4e3e-40f1-9346-9a8b4e501f35;
+											}
+											- _isOrdered = 0;
+										}
+									}
+									- m_type = textFragment;
+									- m_text = "//## auto:operation __setItsController(Controller *):impl";
+									- m_startRow = 73;
+									- m_startCol_Short = 62;
+									- m_endRow = 75;
+									- m_endCol_Short = 1;
+									- m_subject = { INObjectHandle 
+										- _m2Class = "";
+									}
+								}
+								{ IFileFragment 
+									- _id = GUID 8fe0d9fe-9afe-4a3c-96cb-1abf73db9ccb;
+									- _name = "_setItsController:impl";
+									- Tags = { IRPYRawContainer 
+										- size = 2;
+										- value = 
+										{ ITag 
+											- _id = GUID f7067d7f-b917-4751-9390-ee3624c8f2d8;
+											- _name = "BodyStartLine";
+											- ValueSpecifications = { IRPYRawContainer 
+												- size = 1;
+												- value = 
+												{ ILiteralSpecification 
+													- _id = GUID b8d9ea3b-b4f2-4a43-8695-2b004fd32415;
+													- _value = "77";
+												}
+											}
+											- _typeOf = { IHandle 
+												- _m2Class = "IType";
+												- _filename = "PredefinedTypes.sbs";
+												- _subsystem = "PredefinedTypes";
+												- _class = "";
+												- _name = "RhpString";
+												- _id = GUID ae5e3720-4e3e-40f1-9346-9a8b4e501f35;
+											}
+											- _isOrdered = 0;
+										}
+										{ ITag 
+											- _id = GUID 011859fa-5eee-4d37-bd4f-ff8b749cb25f;
+											- _name = "BodyStartCol";
+											- ValueSpecifications = { IRPYRawContainer 
+												- size = 1;
+												- value = 
+												{ ILiteralSpecification 
+													- _id = GUID b67a0648-2424-4e04-867f-e830ee6781ed;
+													- _value = "61";
+												}
+											}
+											- _typeOf = { IHandle 
+												- _m2Class = "IType";
+												- _filename = "PredefinedTypes.sbs";
+												- _subsystem = "PredefinedTypes";
+												- _class = "";
+												- _name = "RhpString";
+												- _id = GUID ae5e3720-4e3e-40f1-9346-9a8b4e501f35;
+											}
+											- _isOrdered = 0;
+										}
+									}
+									- m_type = textFragment;
+									- m_text = "//## auto:operation _setItsController(Controller *):impl";
+									- m_startRow = 77;
+									- m_startCol_Short = 61;
+									- m_endRow = 83;
+									- m_endCol_Short = 1;
+									- m_subject = { INObjectHandle 
+										- _m2Class = "";
+									}
+								}
+								{ IFileFragment 
+									- _id = GUID 55123f64-b98a-4913-bba7-4515d57d96a2;
+									- _name = "_clearItsController:impl";
+									- Tags = { IRPYRawContainer 
+										- size = 2;
+										- value = 
+										{ ITag 
+											- _id = GUID f2c92471-c2ca-4e0d-b292-4e7b6c3eaaf2;
+											- _name = "BodyStartLine";
+											- ValueSpecifications = { IRPYRawContainer 
+												- size = 1;
+												- value = 
+												{ ILiteralSpecification 
+													- _id = GUID 376b8452-119f-4bbb-bb1e-ddd22145ec39;
+													- _value = "85";
+												}
+											}
+											- _typeOf = { IHandle 
+												- _m2Class = "IType";
+												- _filename = "PredefinedTypes.sbs";
+												- _subsystem = "PredefinedTypes";
+												- _class = "";
+												- _name = "RhpString";
+												- _id = GUID ae5e3720-4e3e-40f1-9346-9a8b4e501f35;
+											}
+											- _isOrdered = 0;
+										}
+										{ ITag 
+											- _id = GUID fc411ee8-d11e-4d42-acca-ddc063f94434;
+											- _name = "BodyStartCol";
+											- ValueSpecifications = { IRPYRawContainer 
+												- size = 1;
+												- value = 
+												{ ILiteralSpecification 
+													- _id = GUID aebe4836-8cfb-4dd5-9af1-f54fb065f6c7;
+													- _value = "39";
+												}
+											}
+											- _typeOf = { IHandle 
+												- _m2Class = "IType";
+												- _filename = "PredefinedTypes.sbs";
+												- _subsystem = "PredefinedTypes";
+												- _class = "";
+												- _name = "RhpString";
+												- _id = GUID ae5e3720-4e3e-40f1-9346-9a8b4e501f35;
+											}
+											- _isOrdered = 0;
+										}
+									}
+									- m_type = textFragment;
+									- m_text = "//## auto:operation _clearItsController():impl";
+									- m_startRow = 85;
+									- m_startCol_Short = 39;
+									- m_endRow = 87;
+									- m_endCol_Short = 1;
+									- m_subject = { INObjectHandle 
+										- _m2Class = "";
+									}
+								}
+							}
+						}
+					}
+				}
+				{ IFile 
+					- _id = GUID b38f8c80-d3e0-4400-ad10-23b92897e1a5;
+					- _myState = 139264;
+					- _name = "LCDScreen";
+					- m_path = "";
+					- m_type = specFile;
+					- Fragments = { IRPYRawContainer 
+						- size = 11;
+						- value = 
+						{ IFileFragment 
+							- _id = GUID 44d2bc3f-107c-4c93-b6da-185d71c37755;
+							- _name = "oxf:spec";
+							- m_type = textFragment;
+							- m_text = "//## auto:dependency oxf:spec";
+							- m_startRow = 22;
+							- m_startCol_Short = 1;
+							- m_endRow = 22;
+							- m_endCol_Short = 604;
+							- m_subject = { INObjectHandle 
+								- _m2Class = "";
+							}
+						}
+						{ IFileFragment 
+							- _id = GUID 62cb3d45-699f-4742-bde5-bbe36e17e028;
+							- _name = "string:spec";
+							- m_type = textFragment;
+							- m_text = "//## auto:dependency string:spec";
+							- m_startRow = 24;
+							- m_startCol_Short = 1;
+							- m_endRow = 24;
+							- m_endCol_Short = 644;
+							- m_subject = { INObjectHandle 
+								- _m2Class = "";
+							}
+						}
+						{ IFileFragment 
+							- _id = GUID 0dd185c7-c162-49cc-a66c-e4a8dd8dc187;
+							- _name = "algorithm:spec";
+							- m_type = textFragment;
+							- m_text = "//## auto:dependency algorithm:spec";
+							- m_startRow = 26;
+							- m_startCol_Short = 1;
+							- m_endRow = 26;
+							- m_endCol_Short = 687;
+							- m_subject = { INObjectHandle 
+								- _m2Class = "";
+							}
+						}
+						{ IFileFragment 
+							- _id = GUID 9ed1fc3b-df42-49d3-a7ca-a60ab612dbdc;
+							- _name = "wfdb:spec";
+							- m_type = textFragment;
+							- m_text = "//## auto:dependency wfdb:spec";
+							- m_startRow = 28;
+							- m_startCol_Short = 1;
+							- m_endRow = 28;
+							- m_endCol_Short = 732;
+							- m_subject = { INObjectHandle 
+								- _m2Class = "";
+							}
+						}
+						{ IFileFragment 
+							- _id = GUID a8d392ac-256f-43ee-8299-f3ce7da2a2c7;
+							- _name = "math:spec";
+							- m_type = textFragment;
+							- m_text = "//## auto:dependency math:spec";
+							- m_startRow = 30;
+							- m_startCol_Short = 1;
+							- m_endRow = 30;
+							- m_endCol_Short = 772;
+							- m_subject = { INObjectHandle 
+								- _m2Class = "";
+							}
+						}
+						{ IFileFragment 
+							- _id = GUID 4fe627a6-250f-48b8-8ea2-51d9592aa00d;
+							- _name = "ecgcodes:spec";
+							- m_type = textFragment;
+							- m_text = "//## auto:dependency ecgcodes:spec";
+							- m_startRow = 32;
+							- m_startCol_Short = 1;
+							- m_endRow = 32;
+							- m_endCol_Short = 821;
+							- m_subject = { INObjectHandle 
+								- _m2Class = "";
+							}
+						}
+						{ IFileFragment 
+							- _id = GUID bef5b69b-d6c6-47fd-ba0a-abb6f18f887e;
+							- _name = "Observer:spec";
+							- m_type = textFragment;
+							- m_text = "//## auto:dependency Observer:spec";
+							- m_startRow = 34;
+							- m_startCol_Short = 1;
+							- m_endRow = 34;
+							- m_endCol_Short = 866;
+							- m_subject = { INObjectHandle 
+								- _m2Class = "";
+							}
+						}
+						{ IFileFragment 
+							- _id = GUID e8b80af5-ddd3-4833-b624-84dfdca09763;
+							- _name = "Controller:spec";
+							- m_type = textFragment;
+							- m_text = "//## auto:dependency Controller:spec";
+							- m_startRow = 36;
+							- m_startCol_Short = 1;
+							- m_endRow = 36;
+							- m_endCol_Short = 17;
+							- m_subject = { INObjectHandle 
+								- _m2Class = "";
+							}
+						}
+						{ IFileFragment 
+							- _id = GUID 1f3c4ecc-3322-44f7-9991-26f049157770;
+							- _name = "DistributerThread:spec";
+							- m_type = textFragment;
+							- m_text = "//## auto:dependency DistributerThread:spec";
+							- m_startRow = 39;
+							- m_startCol_Short = 1;
+							- m_endRow = 39;
+							- m_endCol_Short = 24;
+							- m_subject = { INObjectHandle 
+								- _m2Class = "";
+							}
+						}
+						{ IFileFragment 
+							- _id = GUID 23da0d6b-956e-4a20-a364-9a5630d07857;
+							- _name = "FrameBuffer:spec";
+							- m_type = textFragment;
+							- m_text = "//## auto:dependency FrameBuffer:spec";
+							- m_startRow = 42;
+							- m_startCol_Short = 1;
+							- m_endRow = 42;
+							- m_endCol_Short = 18;
+							- m_subject = { INObjectHandle 
+								- _m2Class = "";
+							}
+						}
+						{ IFileFragment 
+							- _id = GUID 4d80cc7f-11cf-4b01-80a1-9dbe2c0fdb6e;
+							- _name = "LCDScreen";
+							- Tags = { IRPYRawContainer 
+								- size = 2;
+								- value = 
+								{ ITag 
+									- _id = GUID 1e7744e6-db05-4061-adc3-ed977eee820a;
+									- _name = "BodyStartLine";
+									- ValueSpecifications = { IRPYRawContainer 
+										- size = 1;
+										- value = 
+										{ ILiteralSpecification 
+											- _id = GUID 18d3034e-ac1f-4035-b9d5-acd37a60d19c;
+											- _value = "47";
+										}
+									}
+									- _typeOf = { IHandle 
+										- _m2Class = "IType";
+										- _filename = "PredefinedTypes.sbs";
+										- _subsystem = "PredefinedTypes";
+										- _class = "";
+										- _name = "RhpString";
+										- _id = GUID ae5e3720-4e3e-40f1-9346-9a8b4e501f35;
+									}
+									- _isOrdered = 0;
+								}
+								{ ITag 
+									- _id = GUID 009b758f-903c-42af-8058-5ef1cdae72a8;
+									- _name = "BodyStartCol";
+									- ValueSpecifications = { IRPYRawContainer 
+										- size = 1;
+										- value = 
+										{ ILiteralSpecification 
+											- _id = GUID 1d29d1ad-bde2-44b9-8111-d168b533c7c7;
+											- _value = "35";
+										}
+									}
+									- _typeOf = { IHandle 
+										- _m2Class = "IType";
+										- _filename = "PredefinedTypes.sbs";
+										- _subsystem = "PredefinedTypes";
+										- _class = "";
+										- _name = "RhpString";
+										- _id = GUID ae5e3720-4e3e-40f1-9346-9a8b4e501f35;
+									}
+									- _isOrdered = 0;
+								}
+							}
+							- m_type = specFragment;
+							- m_text = "";
+							- m_startRow = 47;
+							- m_startCol_Short = 1;
+							- m_endRow = 100;
+							- m_endCol_Short = 1;
+							- m_subject = { INObjectHandle 
+								- _m2Class = "IClass";
+								- _id = GUID be2cf2b8-f14f-442c-af94-fd744d11f4dd;
+							}
+							- Fragments = { IRPYRawContainer 
+								- size = 18;
+								- value = 
+								{ IFileFragment 
+									- _id = GUID a50aff8e-e6ee-4e18-961a-214de04372e6;
+									- _name = "////    Constructors and destructors    ////";
+									- m_type = textFragment;
+									- m_text = "////    Constructors and destructors    ////
+";
+									- m_startRow = 48;
+									- m_startCol_Short = 5;
+									- m_endRow = 48;
+									- m_endCol_Short = 49;
+									- m_subject = { INObjectHandle 
+										- _m2Class = "";
+									}
+								}
+								{ IFileFragment 
+									- _id = GUID 08669b3f-0ea1-435e-9300-271178a0ee83;
+									- _name = "LCDScreen:spec";
+									- m_type = textFragment;
+									- m_text = "//## auto:operation LCDScreen():spec";
+									- m_startRow = 53;
+									- m_startCol_Short = 5;
+									- m_endRow = 53;
+									- m_endCol_Short = 16;
+									- m_subject = { INObjectHandle 
+										- _m2Class = "";
+									}
+								}
+								{ IFileFragment 
+									- _id = GUID 355de406-08e0-4e91-8278-c50dfb60adf9;
+									- _name = "~LCDScreen:spec";
+									- m_type = textFragment;
+									- m_text = "//## auto:operation ~LCDScreen():spec";
+									- m_startRow = 56;
+									- m_startCol_Short = 14;
+									- m_endRow = 56;
+									- m_endCol_Short = 14;
+									- m_subject = { INObjectHandle 
+										- _m2Class = "";
+									}
+								}
+								{ IFileFragment 
+									- _id = GUID 0247a3d2-2a22-4d08-9c8b-75522d0a2cd3;
+									- _name = "////    Operations    ////";
+									- m_type = textFragment;
+									- m_text = "////    Operations    ////
+";
+									- m_startRow = 58;
+									- m_startCol_Short = 5;
+									- m_endRow = 58;
+									- m_endCol_Short = 31;
+									- m_subject = { INObjectHandle 
+										- _m2Class = "";
+									}
+								}
+								{ IFileFragment 
+									- _id = GUID 12f029f4-05f5-4d92-8e0a-876101c18df8;
+									- _name = "Update";
+									- m_type = specFragment;
+									- m_text = "";
+									- m_startRow = 61;
+									- m_startCol_Short = 18;
+									- m_endRow = 61;
+									- m_endCol_Short = 41;
+									- m_subject = { INObjectHandle 
+										- _m2Class = "IPrimitiveOperation";
+										- _id = GUID dbde64d9-d3d5-4651-8526-79d1b7eed80d;
+									}
+								}
+								{ IFileFragment 
+									- _id = GUID 15cd0671-ad34-43de-b89c-6e37153a0eca;
+									- _name = "////    Additional operations    ////";
+									- m_type = textFragment;
+									- m_text = "////    Additional operations    ////
+";
+									- m_startRow = 63;
+									- m_startCol_Short = 5;
+									- m_endRow = 63;
+									- m_endCol_Short = 42;
+									- m_subject = { INObjectHandle 
+										- _m2Class = "";
+									}
+								}
+								{ IFileFragment 
+									- _id = GUID 2fec353b-5617-4706-bb8d-e5bf0da3428b;
+									- _name = "getItsController:spec";
+									- m_type = textFragment;
+									- m_text = "//## auto:operation getItsController() const:spec";
+									- m_startRow = 66;
+									- m_startCol_Short = 17;
+									- m_endRow = 66;
+									- m_endCol_Short = 41;
+									- m_subject = { INObjectHandle 
+										- _m2Class = "";
+									}
+								}
+								{ IFileFragment 
+									- _id = GUID 77d98222-76a6-460e-a938-354c65529922;
+									- _name = "setItsController:spec";
+									- m_type = textFragment;
+									- m_text = "//## auto:operation setItsController(Controller *):spec";
+									- m_startRow = 69;
+									- m_startCol_Short = 10;
+									- m_endRow = 69;
+									- m_endCol_Short = 52;
+									- m_subject = { INObjectHandle 
+										- _m2Class = "";
+									}
+								}
+								{ IFileFragment 
+									- _id = GUID b430fe48-12d1-4064-8a73-01facc5e1a15;
+									- _name = "getItsDistributerThread:spec";
+									- m_type = textFragment;
+									- m_text = "//## auto:operation getItsDistributerThread() const:spec";
+									- m_startRow = 72;
+									- m_startCol_Short = 24;
+									- m_endRow = 72;
+									- m_endCol_Short = 55;
+									- m_subject = { INObjectHandle 
+										- _m2Class = "";
+									}
+								}
+								{ IFileFragment 
+									- _id = GUID c254efb2-2431-4588-b67c-d8131f53bb8d;
+									- _name = "setItsDistributerThread:spec";
+									- m_type = textFragment;
+									- m_text = "//## auto:operation setItsDistributerThread(DistributerThread *):spec";
+									- m_startRow = 75;
+									- m_startCol_Short = 10;
+									- m_endRow = 75;
+									- m_endCol_Short = 73;
+									- m_subject = { INObjectHandle 
+										- _m2Class = "";
+									}
+								}
+								{ IFileFragment 
+									- _id = GUID c5c5c5ed-1a9a-4e9a-92d1-938837d0816d;
+									- _name = "cleanUpRelations:spec";
+									- m_type = textFragment;
+									- m_text = "//## auto:operation cleanUpRelations():spec";
+									- m_startRow = 80;
+									- m_startCol_Short = 10;
+									- m_endRow = 80;
+									- m_endCol_Short = 28;
+									- m_subject = { INObjectHandle 
+										- _m2Class = "";
+									}
+								}
+								{ IFileFragment 
+									- _id = GUID 0de07208-b6dc-4c0e-99ca-e38bfeb76230;
+									- _name = "////    Relations and components    ////";
+									- m_type = textFragment;
+									- m_text = "////    Relations and components    ////
+";
+									- m_startRow = 82;
+									- m_startCol_Short = 5;
+									- m_endRow = 82;
+									- m_endCol_Short = 45;
+									- m_subject = { INObjectHandle 
+										- _m2Class = "";
+									}
+								}
+								{ IFileFragment 
+									- _id = GUID b6f0d3a7-5dbb-4e18-8750-4f31182728c1;
+									- _name = "itsController";
+									- m_type = specFragment;
+									- m_text = "";
+									- m_startRow = 84;
+									- m_startCol_Short = 17;
+									- m_endRow = 84;
+									- m_endCol_Short = 30;
+									- m_subject = { INObjectHandle 
+										- _m2Class = "IAssociationEnd";
+										- _id = GUID 59ed3f0f-b148-4498-ad15-0fd9719ca46e;
+									}
+								}
+								{ IFileFragment 
+									- _id = GUID b27d880c-4276-47a0-be05-7ec1897c7be7;
+									- _name = "itsDistributerThread";
+									- m_type = specFragment;
+									- m_text = "";
+									- m_startRow = 86;
+									- m_startCol_Short = 24;
+									- m_endRow = 86;
+									- m_endCol_Short = 44;
+									- m_subject = { INObjectHandle 
+										- _m2Class = "IAssociationEnd";
+										- _id = GUID 07e9fb13-405f-417b-826b-d995e7417ece;
+									}
+								}
+								{ IFileFragment 
+									- _id = GUID 42af58bf-2dcd-4f10-843d-1a5e8e049990;
+									- _name = "////    Framework operations    ////";
+									- m_type = textFragment;
+									- m_text = "////    Framework operations    ////
+";
+									- m_startRow = 88;
+									- m_startCol_Short = 5;
+									- m_endRow = 88;
+									- m_endCol_Short = 41;
+									- m_subject = { INObjectHandle 
+										- _m2Class = "";
+									}
+								}
+								{ IFileFragment 
+									- _id = GUID fd57c17e-382c-4814-badc-b217512f8f2d;
+									- _name = "__setItsController:spec";
+									- m_type = textFragment;
+									- m_text = "//## auto:operation __setItsController(Controller *):spec";
+									- m_startRow = 93;
+									- m_startCol_Short = 10;
+									- m_endRow = 93;
+									- m_endCol_Short = 54;
+									- m_subject = { INObjectHandle 
+										- _m2Class = "";
+									}
+								}
+								{ IFileFragment 
+									- _id = GUID d8307c7c-b2f5-4f1f-864e-fd32f79bbfea;
+									- _name = "_setItsController:spec";
+									- m_type = textFragment;
+									- m_text = "//## auto:operation _setItsController(Controller *):spec";
+									- m_startRow = 96;
+									- m_startCol_Short = 10;
+									- m_endRow = 96;
+									- m_endCol_Short = 53;
+									- m_subject = { INObjectHandle 
+										- _m2Class = "";
+									}
+								}
+								{ IFileFragment 
+									- _id = GUID 0f65e5ce-e363-40bc-9b61-7536a452d541;
+									- _name = "_clearItsController:spec";
+									- m_type = textFragment;
+									- m_text = "//## auto:operation _clearItsController():spec";
+									- m_startRow = 99;
+									- m_startCol_Short = 10;
+									- m_endRow = 99;
+									- m_endCol_Short = 31;
+									- m_subject = { INObjectHandle 
+										- _m2Class = "";
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- Associations = { IRPYRawContainer 
+				- size = 3;
+				- value = 
+				{ IAssociationEnd 
+					- _id = GUID 07e9fb13-405f-417b-826b-d995e7417ece;
+					- _myState = 10240;
+					- _name = "itsDistributerThread";
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _filename = "Continuous.sbs";
+						- _subsystem = "Application::Continuous";
+						- _class = "";
+						- _name = "DistributerThread";
+						- _id = GUID af47700b-20bf-4d9a-b486-9b7e4dcf23cb;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "";
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID d4546dd7-701e-487a-8db9-adf7e66f8406;
+					- _myState = 10240;
+					- _name = "itsInstructor";
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IActor";
+						- _filename = "Application.sbs";
+						- _subsystem = "Application";
+						- _class = "";
+						- _name = "Instructor";
+						- _id = GUID 459b85e4-bc6d-485a-bc75-9b11fa3f6a25;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _filename = "Application.sbs";
+						- _subsystem = "Application";
+						- _class = "Instructor";
+						- _name = "itsLCDScreen";
+						- _id = GUID 9904692a-add4-417c-b8e3-d67858492e7d;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID 59ed3f0f-b148-4498-ad15-0fd9719ca46e;
+					- _myState = 10240;
+					- _name = "itsController";
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _filename = "Discrete.sbs";
+						- _subsystem = "Application::Discrete";
+						- _class = "";
+						- _name = "Controller";
+						- _id = GUID 2999035f-9177-4144-be61-dbc61038f4a6;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _filename = "Discrete.sbs";
+						- _subsystem = "Application::Discrete";
+						- _class = "Controller";
+						- _name = "itsLCDScreen";
+						- _id = GUID bce8e243-2eb4-4662-aabb-92514171a32a;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID de6015fc-2079-460d-a526-50d4a249e387;
+			- _myState = 8192;
+			- _name = "Graph";
+			- _theMainDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "Discrete_.sbs";
+				- _subsystem = "Discrete_";
+				- _class = "";
+				- _name = "DiscretePackage";
+				- _id = GUID 3d38243a-11f9-45dc-a21d-a89341087797;
+			}
+			- _lastID = 1;
+			- weakCGTime = 5.31.2010::18:33:42;
+			- strongCGTime = 5.31.2010::18:33:42;
+			- Operations = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IPrimitiveOperation 
+					- _id = GUID dbd970c6-c5f4-4641-a01b-f046da64889d;
+					- _myState = 8192;
+					- _name = "frameBufferUpdated";
+					- Stereotypes = { IRPYRawContainer 
+						- size = 1;
+						- value = 
+						{ IHandle 
+							- _m2Class = "IStereotype";
+							- _filename = "Discrete_.sbs";
+							- _subsystem = "Discrete_";
+							- _class = "";
+							- _name = "slots";
+							- _id = GUID add103ac-350c-48a1-bf15-6c3894b05e40;
+						}
+					}
+					- _virtual = 0;
+					- Args = { IRPYRawContainer 
+						- size = 0;
+					}
+					- _returnType = { IHandle 
+						- _m2Class = "IType";
+						- _filename = "PredefinedTypesC++.sbs";
+						- _subsystem = "PredefinedTypesCpp";
+						- _class = "";
+						- _name = "void";
+						- _id = GUID c6b70728-b655-45a0-abb7-8ea5d3da94be;
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iPublic;
+					- _static = 0;
+					- _constant = 0;
+				}
+			}
+			- Inheritances = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IGeneralization 
+					- _id = GUID 84d876ad-c846-46f2-a788-3d784055f775;
+					- _dependsOn = { INObjectHandle 
+						- _m2Class = "IClass";
+						- _filename = "GraphicalUserInterface.sbs";
+						- _subsystem = "GraphicalUserInterface";
+						- _class = "";
+						- _name = "QWidget";
+						- _id = GUID 35dcbe10-d3d2-4a9f-9302-bd2db352c0bc;
+					}
+					- _inheritanceType = iPublic;
+					- _isVirtual = 0;
+				}
+			}
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- _classModifier = Unspecified;
+		}
+	}
+	- _configurationRelatedTime = 5.3.2010::13:34:32;
+}
+

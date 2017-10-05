@@ -1,0 +1,67 @@
+I-Logix-RPY-Archive version 8.5.2 C++ 1159120
+{ ISubsystem 
+	- _id = GUID ad699984-b70d-45a2-ade8-5d423ff37318;
+	- _myState = 8192;
+	- _name = "Communication";
+	- Dependencies = { IRPYRawContainer 
+		- size = 2;
+		- value = 
+		{ IDependency 
+			- _id = GUID 59abd25a-5e21-471b-b757-b9e69bb0cd9d;
+			- _myState = 2048;
+			- _name = "AbstractOS";
+			- _dependsOn = { INObjectHandle 
+				- _m2Class = "ISubsystem";
+				- _filename = "AbstractOS.sbs";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "AbstractOS";
+				- _id = GUID dcfee0e4-02ba-4b0c-a96b-f604793a5971;
+			}
+		}
+		{ IDependency 
+			- _id = GUID 2d93cce3-f678-4c56-ae5e-56e463f0dbca;
+			- _myState = 2048;
+			- _name = "AbstractHW";
+			- _dependsOn = { INObjectHandle 
+				- _m2Class = "ISubsystem";
+				- _filename = "AbstractHW.sbs";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "AbstractHW";
+				- _id = GUID 6f603c1a-3403-40b6-aa9f-f570a38b251b;
+			}
+		}
+	}
+	- _theMainDiagram = { IHandle 
+		- _m2Class = "IDiagram";
+		- _filename = "";
+		- _subsystem = "";
+		- _class = "";
+		- _name = "SystemFiveLayeredArchitectureView";
+		- _id = GUID 57558d18-7041-4fd2-bb90-000561c3e719;
+	}
+	- _lastID = 2;
+	- weakCGTime = 4.25.2010::19:51:50;
+	- strongCGTime = 4.25.2010::19:51:50;
+	- _defaultComposite = GUID ea2e3070-cece-42e5-9af7-72872fe63a8a;
+	- _eventsBaseID = -1;
+	- Classes = { IRPYRawContainer 
+		- size = 1;
+		- value = 
+		{ IClass 
+			- _id = GUID ea2e3070-cece-42e5-9af7-72872fe63a8a;
+			- _myState = 40960;
+			- _name = "TopLevel";
+			- weakCGTime = 4.25.2010::19:51:50;
+			- strongCGTime = 4.25.2010::19:51:50;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- _classModifier = Unspecified;
+		}
+	}
+	- _configurationRelatedTime = 1.2.1990::0:0:0;
+}
+

@@ -1,0 +1,283 @@
+I-Logix-RPY-Archive version 8.5.2 C++ 1159120
+{ ISubsystem 
+	- _ownerHandle = { IHandle 
+		- _m2Class = "ISubsystem";
+		- _filename = "Application.sbs";
+		- _subsystem = "";
+		- _class = "";
+		- _name = "Application";
+		- _id = GUID ae1cb529-d6a5-4a57-85d0-e4e16822ed75;
+	}
+	- _id = GUID f7f39197-20e5-412e-afb2-c4aab6556b9e;
+	- _myState = 8192;
+	- _name = "Domain";
+	- weakCGTime = 5.3.2010::20:42:5;
+	- strongCGTime = 5.3.2010::20:38:32;
+	- _defaultComposite = GUID f18872fa-b8b8-4c8f-bb5e-be6ef1471585;
+	- _eventsBaseID = -1;
+	- Classes = { IRPYRawContainer 
+		- size = 5;
+		- value = 
+		{ IClass 
+			- _id = GUID f18872fa-b8b8-4c8f-bb5e-be6ef1471585;
+			- _myState = 40960;
+			- _name = "TopLevel";
+			- weakCGTime = 5.3.2010::20:42:5;
+			- strongCGTime = 5.3.2010::20:38:32;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID 7d81fa32-26e8-4c7f-875d-1ea9079344b8;
+			- _myState = 8192;
+			- _name = "ECG";
+			- _theMainDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "Application.sbs";
+				- _subsystem = "Application";
+				- _class = "";
+				- _name = "DomainModel";
+				- _id = GUID 78404da0-6753-4b4a-948c-874f8a7b46f6;
+			}
+			- weakCGTime = 5.3.2010::20:38:50;
+			- strongCGTime = 5.3.2010::20:38:50;
+			- Inheritances = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IGeneralization 
+					- _id = GUID 87b3bbef-62e0-42c8-827c-d0aac43e942b;
+					- _dependsOn = { INObjectHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 3b76f666-d215-44ca-b09e-caef903af79a;
+					}
+					- _inheritanceType = iPublic;
+					- _isVirtual = 0;
+				}
+			}
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- Associations = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IAssociationEnd 
+					- _id = GUID c45e8770-cb02-49f6-b2d7-464d474bf0c4;
+					- _myState = 10240;
+					- _name = "itsEDR";
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 3ad4c72b-1719-4259-8e68-2cf250dca3b7;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID 9755c9a9-adb8-4cb3-8d15-191074ffa4eb;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID 3ad4c72b-1719-4259-8e68-2cf250dca3b7;
+			- _myState = 8192;
+			- _name = "EDR";
+			- _theMainDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "Application.sbs";
+				- _subsystem = "Application";
+				- _class = "";
+				- _name = "DomainModel";
+				- _id = GUID 78404da0-6753-4b4a-948c-874f8a7b46f6;
+			}
+			- weakCGTime = 5.3.2010::20:38:54;
+			- strongCGTime = 5.3.2010::20:38:54;
+			- Inheritances = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IGeneralization 
+					- _id = GUID 38596092-61f1-4afa-a7a5-fe410fb31576;
+					- _dependsOn = { INObjectHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 3b76f666-d215-44ca-b09e-caef903af79a;
+					}
+					- _inheritanceType = iPublic;
+					- _isVirtual = 0;
+				}
+			}
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- Associations = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IAssociationEnd 
+					- _id = GUID 9755c9a9-adb8-4cb3-8d15-191074ffa4eb;
+					- _myState = 10240;
+					- _name = "itsECG";
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 7d81fa32-26e8-4c7f-875d-1ea9079344b8;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID c45e8770-cb02-49f6-b2d7-464d474bf0c4;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID 906b3af1-e79b-46b2-b013-18d6c93f96e3;
+			- _myState = 8192;
+			- _name = "Pulse";
+			- _theMainDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "Application.sbs";
+				- _subsystem = "Application";
+				- _class = "";
+				- _name = "DomainModel";
+				- _id = GUID 78404da0-6753-4b4a-948c-874f8a7b46f6;
+			}
+			- _lastID = 1;
+			- weakCGTime = 5.3.2010::20:39:10;
+			- strongCGTime = 5.3.2010::20:39:10;
+			- Attrs = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IAttribute 
+					- _id = GUID 03476533-e283-4e38-a662-45e5d75c3cb7;
+					- _name = "beats";
+					- _typeOf = { IHandle 
+						- _m2Class = "IType";
+						- _filename = "PredefinedTypesC++.sbs";
+						- _subsystem = "PredefinedTypesCpp";
+						- _class = "";
+						- _name = "int";
+						- _id = GUID 6024c6ab-fe9e-402e-954f-27aca6d3b5e4;
+					}
+					- _isOrdered = 0;
+					- _protection = iPrivate;
+					- _static = 0;
+					- _isReference = 0;
+					- _isConstant = 0;
+				}
+			}
+			- Inheritances = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IGeneralization 
+					- _id = GUID f3d77063-ba8a-4b68-aeba-35db55294012;
+					- _dependsOn = { INObjectHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 3b76f666-d215-44ca-b09e-caef903af79a;
+					}
+					- _inheritanceType = iPublic;
+					- _isVirtual = 0;
+				}
+			}
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID 3b76f666-d215-44ca-b09e-caef903af79a;
+			- _myState = 8192;
+			- _name = "Signal";
+			- _theMainDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "Application.sbs";
+				- _subsystem = "Application";
+				- _class = "";
+				- _name = "DomainModel";
+				- _id = GUID 78404da0-6753-4b4a-948c-874f8a7b46f6;
+			}
+			- weakCGTime = 5.3.2010::20:44:44;
+			- strongCGTime = 5.3.2010::20:39:32;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- Associations = { IRPYRawContainer 
+				- size = 3;
+				- value = 
+				{ IAssociationEnd 
+					- _id = GUID f682f269-5755-4090-924b-350a864f4cc7;
+					- _myState = 10240;
+					- _name = "itsExtOutAnalogue";
+					- _multiplicity = "0..2";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _filename = "AbstractHW.sbs";
+						- _subsystem = "AbstractHW";
+						- _class = "";
+						- _name = "ExtOutAnalogue";
+						- _id = GUID e7378ed2-b319-4592-a1ed-ca2e20ecb9df;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "";
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID 8c74ac30-2923-4b94-925f-ee3e1ee7f318;
+					- _myState = 10240;
+					- _name = "itsExtOutSerial";
+					- _multiplicity = "0..1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _filename = "AbstractHW.sbs";
+						- _subsystem = "AbstractHW";
+						- _class = "";
+						- _name = "ExtOutSerial";
+						- _id = GUID 9947fa55-9bb8-4efa-a5cb-3123a7bb9373;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "";
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID 3a84a0d0-8aad-4191-ab9e-320976cb867d;
+					- _myState = 10240;
+					- _name = "itsPatientModel";
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _filename = "Continuous.sbs";
+						- _subsystem = "Application::Continuous";
+						- _class = "";
+						- _name = "PatientModel";
+						- _id = GUID 469cf6c8-7d66-4abc-88e2-4d4576f248df;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "";
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+			}
+			- _classModifier = Unspecified;
+		}
+	}
+	- _configurationRelatedTime = 1.2.1990::0:0:0;
+}
+

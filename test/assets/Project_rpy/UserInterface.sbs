@@ -1,0 +1,313 @@
+I-Logix-RPY-Archive version 8.5.2 C++ 1159120
+{ ISubsystem 
+	- _id = GUID b087c986-b373-4750-8bfd-a0aa2f5a0d3f;
+	- _myState = 8192;
+	- _name = "UserInterface";
+	- Dependencies = { IRPYRawContainer 
+		- size = 2;
+		- value = 
+		{ IDependency 
+			- _id = GUID 37f18526-18d5-40bb-b29f-c7e950a0da40;
+			- _myState = 2048;
+			- _name = "AbstractOS";
+			- _dependsOn = { INObjectHandle 
+				- _m2Class = "ISubsystem";
+				- _filename = "AbstractOS.sbs";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "AbstractOS";
+				- _id = GUID dcfee0e4-02ba-4b0c-a96b-f604793a5971;
+			}
+		}
+		{ IDependency 
+			- _id = GUID 68c1fcd6-2356-4958-9069-79dc7aea6b44;
+			- _myState = 2048;
+			- _name = "Application";
+			- _dependsOn = { INObjectHandle 
+				- _m2Class = "ISubsystem";
+				- _filename = "Application.sbs";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "Application";
+				- _id = GUID ae1cb529-d6a5-4a57-85d0-e4e16822ed75;
+			}
+		}
+	}
+	- _theMainDiagram = { IHandle 
+		- _m2Class = "IDiagram";
+		- _filename = "";
+		- _subsystem = "";
+		- _class = "";
+		- _name = "SystemFiveLayeredArchitectureView";
+		- _id = GUID 57558d18-7041-4fd2-bb90-000561c3e719;
+	}
+	- _lastID = 2;
+	- weakCGTime = 4.25.2010::20:48:1;
+	- strongCGTime = 4.25.2010::19:54:8;
+	- _defaultComposite = GUID 8dfe3ca1-8235-4eb0-a0e1-20cf01668955;
+	- _eventsBaseID = -1;
+	- Classes = { IRPYRawContainer 
+		- size = 3;
+		- value = 
+		{ IClass 
+			- _id = GUID 8dfe3ca1-8235-4eb0-a0e1-20cf01668955;
+			- _myState = 40960;
+			- _name = "TopLevel";
+			- weakCGTime = 4.25.2010::19:48:23;
+			- strongCGTime = 4.25.2010::19:48:23;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID be2cf2b8-f14f-442c-af94-fd744d11f4dd;
+			- _myState = 8192;
+			- _name = "LCDScreen";
+			- Stereotypes = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IHandle 
+					- _m2Class = "IStereotype";
+					- _filename = "Application.sbs";
+					- _subsystem = "Application";
+					- _class = "";
+					- _name = "boundary";
+					- _id = GUID ce47bc33-d126-482e-8370-945bf813dfbf;
+				}
+			}
+			- _theMainDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "Application.sbs";
+				- _subsystem = "Application";
+				- _class = "";
+				- _name = "DomainModel";
+				- _id = GUID 78404da0-6753-4b4a-948c-874f8a7b46f6;
+			}
+			- weakCGTime = 4.25.2010::20:46:24;
+			- strongCGTime = 4.25.2010::20:46:24;
+			- Operations = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IPrimitiveOperation 
+					- _id = GUID dbde64d9-d3d5-4651-8526-79d1b7eed80d;
+					- _myState = 8192;
+					- _properties = { IPropertyContainer 
+						- Subjects = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertySubject 
+								- _Name = "CPP_CG";
+								- Metaclasses = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IPropertyMetaclass 
+										- _Name = "Operation";
+										- Properties = { IRPYRawContainer 
+											- size = 1;
+											- value = 
+											{ IProperty 
+												- _Name = "Kind";
+												- _Value = "common";
+												- _Type = Enum;
+												- _ExtraTypeInfo = "common,abstract";
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+					- _name = "Update";
+					- _virtual = 1;
+					- Args = { IRPYRawContainer 
+						- size = 0;
+					}
+					- _returnType = { IHandle 
+						- _m2Class = "IType";
+						- _filename = "PredefinedTypesC++.sbs";
+						- _subsystem = "PredefinedTypesCpp";
+						- _class = "";
+						- _name = "void";
+						- _id = GUID c6b70728-b655-45a0-abb7-8ea5d3da94be;
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iPublic;
+					- _static = 0;
+					- _constant = 0;
+				}
+			}
+			- Inheritances = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IGeneralization 
+					- _id = GUID 286e8737-13fc-4654-8be1-aaf1b10f6462;
+					- _dependsOn = { INObjectHandle 
+						- _m2Class = "IClass";
+						- _id = GUID ae0d6a21-86a2-4339-b658-3c660434d74c;
+					}
+					- _inheritanceType = iPublic;
+					- _isVirtual = 0;
+				}
+			}
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- Associations = { IRPYRawContainer 
+				- size = 3;
+				- value = 
+				{ IAssociationEnd 
+					- _id = GUID 07e9fb13-405f-417b-826b-d995e7417ece;
+					- _myState = 10240;
+					- _name = "itsWaveformGraph";
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _filename = "Application.sbs";
+						- _subsystem = "Application";
+						- _class = "";
+						- _name = "WaveformGraph";
+						- _id = GUID af47700b-20bf-4d9a-b486-9b7e4dcf23cb;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "";
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID d4546dd7-701e-487a-8db9-adf7e66f8406;
+					- _myState = 10240;
+					- _name = "itsInstructor";
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IActor";
+						- _filename = "Application.sbs";
+						- _subsystem = "Application";
+						- _class = "";
+						- _name = "Instructor";
+						- _id = GUID 459b85e4-bc6d-485a-bc75-9b11fa3f6a25;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _filename = "Application.sbs";
+						- _subsystem = "Application";
+						- _class = "Instructor";
+						- _name = "itsLCDScreen";
+						- _id = GUID 9904692a-add4-417c-b8e3-d67858492e7d;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID 59ed3f0f-b148-4498-ad15-0fd9719ca46e;
+					- _myState = 10240;
+					- _name = "itsOperation";
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _filename = "Application.sbs";
+						- _subsystem = "Application";
+						- _class = "";
+						- _name = "Operation";
+						- _id = GUID 2999035f-9177-4144-be61-dbc61038f4a6;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _filename = "Application.sbs";
+						- _subsystem = "Application";
+						- _class = "Operation";
+						- _name = "itsLCDScreen";
+						- _id = GUID bce8e243-2eb4-4662-aabb-92514171a32a;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID ae0d6a21-86a2-4339-b658-3c660434d74c;
+			- _myState = 8192;
+			- _name = "Observer";
+			- _theMainDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "Application.sbs";
+				- _subsystem = "Application";
+				- _class = "";
+				- _name = "ObserverPattern";
+				- _id = GUID f618e3cb-4956-4631-86ae-ddc4348f3cec;
+			}
+			- _lastID = 1;
+			- weakCGTime = 4.25.2010::20:48:1;
+			- strongCGTime = 4.25.2010::20:48:1;
+			- Operations = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IPrimitiveOperation 
+					- _id = GUID fd259f36-3970-4c62-b7a1-4fa76eaaf8ef;
+					- _myState = 8192;
+					- _properties = { IPropertyContainer 
+						- Subjects = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertySubject 
+								- _Name = "CPP_CG";
+								- Metaclasses = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IPropertyMetaclass 
+										- _Name = "Operation";
+										- Properties = { IRPYRawContainer 
+											- size = 1;
+											- value = 
+											{ IProperty 
+												- _Name = "Kind";
+												- _Value = "abstract";
+												- _Type = Enum;
+												- _ExtraTypeInfo = "common,abstract";
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+					- _name = "Update";
+					- _virtual = 1;
+					- Args = { IRPYRawContainer 
+						- size = 0;
+					}
+					- _returnType = { IHandle 
+						- _m2Class = "IType";
+						- _filename = "PredefinedTypesC++.sbs";
+						- _subsystem = "PredefinedTypesCpp";
+						- _class = "";
+						- _name = "void";
+						- _id = GUID c6b70728-b655-45a0-abb7-8ea5d3da94be;
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iPublic;
+					- _static = 0;
+					- _constant = 0;
+				}
+			}
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- _classModifier = Unspecified;
+		}
+	}
+	- _configurationRelatedTime = 3.22.2010::21:20:19;
+}
+

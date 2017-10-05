@@ -1,0 +1,74 @@
+I-Logix-RPY-Archive version 8.5.2 C++ 1159120
+{ ISubsystem 
+	- _id = GUID b087c986-b373-4750-8bfd-a0aa2f5a0d3f;
+	- _myState = 8192;
+	- _name = "GraphicalUserInterface";
+	- Dependencies = { IRPYRawContainer 
+		- size = 1;
+		- value = 
+		{ IDependency 
+			- _id = GUID 37f18526-18d5-40bb-b29f-c7e950a0da40;
+			- _myState = 2048;
+			- _name = "AbstractOS";
+			- _dependsOn = { INObjectHandle 
+				- _m2Class = "ISubsystem";
+				- _filename = "AbstractOS.sbs";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "AbstractOS";
+				- _id = GUID dcfee0e4-02ba-4b0c-a96b-f604793a5971;
+			}
+		}
+	}
+	- _theMainDiagram = { IHandle 
+		- _m2Class = "IDiagram";
+		- _filename = "Discrete_.sbs";
+		- _subsystem = "Discrete_";
+		- _class = "";
+		- _name = "AdjustScenarioParameters";
+		- _id = GUID fa5d0973-44d6-4dfb-a106-24d752091870;
+	}
+	- _lastID = 2;
+	- weakCGTime = 5.22.2010::18:18:40;
+	- strongCGTime = 4.26.2010::8:12:19;
+	- _defaultComposite = GUID 8dfe3ca1-8235-4eb0-a0e1-20cf01668955;
+	- _eventsBaseID = -1;
+	- Classes = { IRPYRawContainer 
+		- size = 2;
+		- value = 
+		{ IClass 
+			- _id = GUID 8dfe3ca1-8235-4eb0-a0e1-20cf01668955;
+			- _myState = 40960;
+			- _name = "TopLevel";
+			- weakCGTime = 5.22.2010::18:18:40;
+			- strongCGTime = 4.26.2010::8:12:19;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID 35dcbe10-d3d2-4a9f-9302-bd2db352c0bc;
+			- _myState = 8192;
+			- _name = "QWidget";
+			- _theMainDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "Discrete_.sbs";
+				- _subsystem = "Discrete_";
+				- _class = "";
+				- _name = "DiscretePackage";
+				- _id = GUID 3d38243a-11f9-45dc-a21d-a89341087797;
+			}
+			- weakCGTime = 5.22.2010::18:11:50;
+			- strongCGTime = 5.22.2010::18:11:50;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- _classModifier = Unspecified;
+		}
+	}
+	- _configurationRelatedTime = 4.26.2010::8:17:39;
+}
+

@@ -1,0 +1,85 @@
+I-Logix-RPY-Archive version 8.5.2 C++ 1159120
+{ ISubsystem 
+	- _ownerHandle = { IHandle 
+		- _m2Class = "ISubsystem";
+		- _filename = "LinuxOS.sbs";
+		- _subsystem = "";
+		- _class = "";
+		- _name = "LinuxOS";
+		- _id = GUID 3fdd97e6-2ec0-4ded-b705-0da485ee4ec1;
+	}
+	- _id = GUID f4dcf840-b0c4-4dee-9e11-35d9a61431d6;
+	- _myState = 8192;
+	- _properties = { IPropertyContainer 
+		- Subjects = { IRPYRawContainer 
+			- size = 2;
+			- value = 
+			{ IPropertySubject 
+				- _Name = "CG";
+				- Metaclasses = { IRPYRawContainer 
+					- size = 1;
+					- value = 
+					{ IPropertyMetaclass 
+						- _Name = "Package";
+						- Properties = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IProperty 
+								- _Name = "UseAsExternal";
+								- _Value = "True";
+								- _Type = Bool;
+							}
+						}
+					}
+				}
+			}
+			{ IPropertySubject 
+				- _Name = "CPP_CG";
+				- Metaclasses = { IRPYRawContainer 
+					- size = 1;
+					- value = 
+					{ IPropertyMetaclass 
+						- _Name = "Package";
+						- Properties = { IRPYRawContainer 
+							- size = 2;
+							- value = 
+							{ IProperty 
+								- _Name = "DefineNameSpace";
+								- _Value = "True";
+								- _Type = Bool;
+							}
+							{ IProperty 
+								- _Name = "GenerateDirectory";
+								- _Value = "False";
+								- _Type = Bool;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	- _name = "std";
+	- weakCGTime = 4.25.2010::19:51:50;
+	- strongCGTime = 4.25.2010::19:51:50;
+	- _defaultComposite = GUID 2518dc0e-9c2a-4bbd-89cb-2c670b7b5723;
+	- _eventsBaseID = -1;
+	- Classes = { IRPYRawContainer 
+		- size = 1;
+		- value = 
+		{ IClass 
+			- _id = GUID 2518dc0e-9c2a-4bbd-89cb-2c670b7b5723;
+			- _myState = 40960;
+			- _name = "TopLevel";
+			- weakCGTime = 4.25.2010::19:51:50;
+			- strongCGTime = 4.25.2010::19:51:50;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- _classModifier = Unspecified;
+		}
+	}
+	- _configurationRelatedTime = 1.2.1990::0:0:0;
+}
+

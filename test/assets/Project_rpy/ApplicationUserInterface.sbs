@@ -1,0 +1,67 @@
+I-Logix-RPY-Archive version 8.5.2 C++ 1159120
+{ ISubsystem 
+	- _id = GUID 21044c26-c649-4b75-8273-67e0e6cf9410;
+	- _myState = 8192;
+	- _name = "ApplicationUserInterface";
+	- Dependencies = { IRPYRawContainer 
+		- size = 2;
+		- value = 
+		{ IDependency 
+			- _id = GUID 9e7df3c8-27e1-4c97-9269-6d9bd46dd474;
+			- _myState = 2048;
+			- _name = "ApplicationModel";
+			- _dependsOn = { INObjectHandle 
+				- _m2Class = "ISubsystem";
+				- _filename = "ApplicationModel.sbs";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "ApplicationModel";
+				- _id = GUID ae1cb529-d6a5-4a57-85d0-e4e16822ed75;
+			}
+		}
+		{ IDependency 
+			- _id = GUID 91957072-a68c-4f5c-8307-45cf0f2d6162;
+			- _myState = 2048;
+			- _name = "GraphicalUserInterface";
+			- _dependsOn = { INObjectHandle 
+				- _m2Class = "ISubsystem";
+				- _filename = "GraphicalUserInterface.sbs";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "GraphicalUserInterface";
+				- _id = GUID b087c986-b373-4750-8bfd-a0aa2f5a0d3f;
+			}
+		}
+	}
+	- _theMainDiagram = { IHandle 
+		- _m2Class = "IDiagram";
+		- _filename = "";
+		- _subsystem = "";
+		- _class = "";
+		- _name = "PackageView";
+		- _id = GUID 69ee0633-361f-4b1f-8dc4-8d7c1f351e73;
+	}
+	- _lastID = 2;
+	- weakCGTime = 4.26.2010::8:13:22;
+	- strongCGTime = 4.26.2010::8:13:22;
+	- _defaultComposite = GUID d771f331-c9ff-4817-933a-af5db40b478b;
+	- _eventsBaseID = -1;
+	- Classes = { IRPYRawContainer 
+		- size = 1;
+		- value = 
+		{ IClass 
+			- _id = GUID d771f331-c9ff-4817-933a-af5db40b478b;
+			- _myState = 40960;
+			- _name = "TopLevel";
+			- weakCGTime = 1.1.1970::1:0:0;
+			- strongCGTime = 1.1.1970::1:0:0;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- _classModifier = Unspecified;
+		}
+	}
+	- _configurationRelatedTime = 1.1.1970::1:0:0;
+}
+

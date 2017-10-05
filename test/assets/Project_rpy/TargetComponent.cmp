@@ -1,0 +1,339 @@
+I-Logix-RPY-Archive version 8.5.2 C++ 1159120
+{ IComponent 
+	- _id = GUID 1cc071c8-1b53-4e12-abac-6a090ffe65e9;
+	- _myState = 8192;
+	- _properties = { IPropertyContainer 
+		- Subjects = { IRPYRawContainer 
+			- size = 1;
+			- value = 
+			{ IPropertySubject 
+				- _Name = "CPP_CG";
+				- Metaclasses = { IRPYRawContainer 
+					- size = 1;
+					- value = 
+					{ IPropertyMetaclass 
+						- _Name = "Configuration";
+						- Properties = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IProperty 
+								- _Name = "ContainerSet";
+								- _Value = "STLContainers";
+								- _Type = Enum;
+								- _ExtraTypeInfo = "OMContainers, STLContainers, OMUContainers";
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	- _name = "TargetComponent";
+	- _lastID = 1;
+	- m_buildType = Executable;
+	- m_libraries = "";
+	- m_additionalSources = "";
+	- m_standardHeaders = "";
+	- m_includePath = "";
+	- m_initializationCode = "";
+	- m_folder = { IFolder 
+		- _id = GUID 63f8df0a-2d75-40ca-b674-8e752ac0a19d;
+		- _myState = 73728;
+		- _name = "Files";
+		- m_path = "";
+		- Elements = { IRPYRawContainer 
+			- size = 11;
+			- value = 
+			{ IHandle 
+				- _m2Class = "IClass";
+				- _filename = "Application.sbs";
+				- _subsystem = "Application";
+				- _class = "";
+				- _name = "SmartPtr";
+				- _id = GUID 73acdc15-541b-488a-abd4-7c082dadb8b7;
+			}
+			{ IHandle 
+				- _m2Class = "IClass";
+				- _filename = "Continuous.sbs";
+				- _subsystem = "Application::Continuous";
+				- _class = "";
+				- _name = "Subject";
+				- _id = GUID c14c7265-394f-499f-a8ba-ea634648c485;
+			}
+			{ IHandle 
+				- _m2Class = "IClass";
+				- _filename = "Application.sbs";
+				- _subsystem = "Application";
+				- _class = "";
+				- _name = "GenericPool";
+				- _id = GUID 8b41a6f2-5b82-488f-8905-740c618178d7;
+			}
+			{ IHandle 
+				- _m2Class = "IClass";
+				- _filename = "Application.sbs";
+				- _subsystem = "Application";
+				- _class = "";
+				- _name = "Monitor";
+				- _id = GUID e6b67b4c-b05f-4fdd-8a42-be4f6d59435e;
+			}
+			{ IHandle 
+				- _m2Class = "IClass";
+				- _filename = "Application.sbs";
+				- _subsystem = "Application";
+				- _class = "";
+				- _name = "Dummy";
+				- _id = GUID e20c20c7-2065-4e41-aee3-e4b83f01196f;
+			}
+			{ IHandle 
+				- _m2Class = "IClass";
+				- _filename = "AbstractHW.sbs";
+				- _subsystem = "AbstractHW";
+				- _class = "";
+				- _name = "ExtInputs";
+				- _id = GUID c298dd4e-8345-4920-9b9d-b2d5af814bdb;
+			}
+			{ IHandle 
+				- _m2Class = "IClass";
+				- _filename = "AbstractHW.sbs";
+				- _subsystem = "AbstractHW";
+				- _class = "";
+				- _name = "ExtOutAnalogue";
+				- _id = GUID e7378ed2-b319-4592-a1ed-ca2e20ecb9df;
+			}
+			{ IHandle 
+				- _m2Class = "IClass";
+				- _filename = "AbstractHW.sbs";
+				- _subsystem = "AbstractHW";
+				- _class = "";
+				- _name = "ExtOutSerial";
+				- _id = GUID 9947fa55-9bb8-4efa-a5cb-3123a7bb9373;
+			}
+			{ IHandle 
+				- _m2Class = "ISubsystem";
+				- _filename = "Comm.sbs";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "Comm";
+				- _id = GUID ad699984-b70d-45a2-ade8-5d423ff37318;
+			}
+			{ IHandle 
+				- _m2Class = "ISubsystem";
+				- _filename = "Continuous.sbs";
+				- _subsystem = "Application";
+				- _class = "";
+				- _name = "Continuous";
+				- _id = GUID 80d1923f-5842-48bd-84c1-c7497be71eca;
+			}
+			{ IHandle 
+				- _m2Class = "ISubsystem";
+				- _filename = "Discrete.sbs";
+				- _subsystem = "Application";
+				- _class = "";
+				- _name = "Discrete";
+				- _id = GUID b99cf7b4-c288-4b92-9148-aa7b0a3c8a1c;
+			}
+		}
+		- Files = { IRPYRawContainer 
+			- size = 0;
+		}
+	}
+	- m_configActive = { ICodeGenConfigInfoHandle 
+		- _m2Class = "ICodeGenConfigInfo";
+		- _id = GUID 19bd3465-0e6e-4ca2-b51b-4a7466b87739;
+	}
+	- Configs = { IRPYRawContainer 
+		- size = 2;
+		- value = 
+		{ ICodeGenConfigInfo 
+			- _id = GUID 19bd3465-0e6e-4ca2-b51b-4a7466b87739;
+			- _myState = 8192;
+			- _properties = { IPropertyContainer 
+				- Subjects = { IRPYRawContainer 
+					- size = 1;
+					- value = 
+					{ IPropertySubject 
+						- _Name = "CPP_CG";
+						- Metaclasses = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertyMetaclass 
+								- _Name = "Configuration";
+								- Properties = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IProperty 
+										- _Name = "Environment";
+										- _Value = "Linux";
+										- _Type = Enum;
+										- _ExtraTypeInfo = "Microsoft,MicrosoftDLL,MSVC9,MSVC9DLL,VxWorks,VxWorks6diab,VxWorks6gnu,VxWorks6diab_RTP,VxWorks6gnu_RTP,Solaris2,Cygwin,MultiWin32,Multi4Win32,MSStandardLibrary,MSVC9StandardLibrary,MicrosoftWinCE600,OseSfk,Linux,Solaris2GNU,QNXNeutrinoGCC, QNXNeutrinoMomentics,INTEGRITY,INTEGRITY5,IntegrityESTL,Integrity5ESTL,NucleusPLUS-PPC,WorkbenchManaged,WorkbenchManaged_RTP";
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			- _name = "Target";
+			- HyperLinks = { IRPYRawContainer 
+				- size = 2;
+				- value = 
+				{ IMHyperLink 
+					- _id = GUID d21d415d-368c-430d-831f-b77ceba0edcb;
+					- _dependsOn = { INObjectHandle 
+						- _m2Class = "";
+					}
+					- _linkDispName = "Edit Makefile";
+					- _linkType = "FREE";
+					- _linkTarget = "C:\\IHA\\TI-IRTS\\sapien190\\rhapsody\\Design\\TargetComponent\\DefaultConfig\\TargetComponent.mak";
+					- isConfigurationFileHyperLink = 1;
+				}
+				{ IMHyperLink 
+					- _id = GUID ace9d75c-5636-4028-b6bf-ce71fe47b813;
+					- _dependsOn = { INObjectHandle 
+						- _m2Class = "";
+					}
+					- _linkDispName = "Edit Main File";
+					- _linkType = "FREE";
+					- _linkTarget = "C:\\IHA\\TI-IRTS\\sapien190\\rhapsody\\Design\\TargetComponent\\DefaultConfig\\MainTargetComponent";
+					- isConfigurationFileHyperLink = 1;
+				}
+			}
+			- _scopeType = Explicit;
+			- _libraries = "";
+			- _additionalSources = "";
+			- _standardHeaders = "wfdb/wfdb.h,math.h,wfdb/ecgcodes.h";
+			- _includePath = "";
+			- _targetMain = "";
+			- _instrumentation = None;
+			- _timeModel = RealTime;
+			- m_generateActors = 0;
+			- _statechartImplementation = Flat;
+			- _initializationCode = "";
+			- _checksList = 0 ;
+			- ScopeElements = { IRPYRawContainer 
+				- size = 0;
+			}
+			- InitialInstances = { IRPYRawContainer 
+				- size = 0;
+			}
+			- _root = { IFolder 
+				- _id = GUID 59845a93-ce72-4e53-acfd-17501b3abd62;
+				- _myState = 73728;
+				- _name = "Target";
+				- m_path = "C:\\Ubuntu_share\\sapien190\\source\\Sandbox\\sapine_v1\\rpy";
+				- Elements = { IRPYRawContainer 
+					- size = 0;
+				}
+				- Files = { IRPYRawContainer 
+					- size = 0;
+				}
+			}
+			- weakCGTime = 5.7.2010::13:44:5;
+			- strongCGTime = 5.7.2010::13:44:5;
+			- AnimScopeElements = { IRPYRawContainer 
+				- size = 0;
+			}
+			- m_allInAnimScope = 1;
+		}
+		{ ICodeGenConfigInfo 
+			- _id = GUID fb28499c-c40d-4263-81e7-3de95db6b7d7;
+			- _myState = 8192;
+			- _properties = { IPropertyContainer 
+				- Subjects = { IRPYRawContainer 
+					- size = 1;
+					- value = 
+					{ IPropertySubject 
+						- _Name = "CPP_CG";
+						- Metaclasses = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertyMetaclass 
+								- _Name = "Configuration";
+								- Properties = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IProperty 
+										- _Name = "Environment";
+										- _Value = "Cygwin";
+										- _Type = Enum;
+										- _ExtraTypeInfo = "Microsoft,MicrosoftDLL,MSVC9,MSVC9DLL,VxWorks,VxWorks6diab,VxWorks6gnu,VxWorks6diab_RTP,VxWorks6gnu_RTP,Solaris2,Cygwin,MultiWin32,Multi4Win32,MSStandardLibrary,MSVC9StandardLibrary,MicrosoftWinCE600,OseSfk,Linux,Solaris2GNU,QNXNeutrinoGCC, QNXNeutrinoMomentics,INTEGRITY,INTEGRITY5,IntegrityESTL,Integrity5ESTL,NucleusPLUS-PPC,WorkbenchManaged,WorkbenchManaged_RTP";
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			- _name = "Cygwin";
+			- HyperLinks = { IRPYRawContainer 
+				- size = 2;
+				- value = 
+				{ IMHyperLink 
+					- _id = GUID 668a2665-acd8-4edc-9862-97775fcca718;
+					- _dependsOn = { INObjectHandle 
+						- _m2Class = "";
+					}
+					- _linkDispName = "Edit Makefile";
+					- _linkType = "FREE";
+					- _linkTarget = "C:/IHA/TI-IRTS/sapien190/rhapsody/Design/TargetComponent/configuration_0/TargetComponent.mak";
+					- isConfigurationFileHyperLink = 1;
+				}
+				{ IMHyperLink 
+					- _id = GUID c515978c-dd48-480d-ab41-bdac4d275375;
+					- _dependsOn = { INObjectHandle 
+						- _m2Class = "";
+					}
+					- _linkDispName = "Edit Main File";
+					- _linkType = "FREE";
+					- _linkTarget = "C:/IHA/TI-IRTS/sapien190/rhapsody/Design/TargetComponent/configuration_0/MainTargetComponent";
+					- isConfigurationFileHyperLink = 1;
+				}
+			}
+			- _scopeType = Explicit;
+			- _libraries = "";
+			- _additionalSources = "";
+			- _standardHeaders = "wfdb/wfdb.h,math.h,wfdb/ecgcodes.h";
+			- _includePath = "";
+			- _targetMain = "";
+			- _instrumentation = None;
+			- _timeModel = RealTime;
+			- m_generateActors = 0;
+			- _statechartImplementation = Flat;
+			- _initializationCode = "";
+			- _checksList = 0 ;
+			- ScopeElements = { IRPYRawContainer 
+				- size = 0;
+			}
+			- InitialInstances = { IRPYRawContainer 
+				- size = 0;
+			}
+			- _root = { IFolder 
+				- _id = GUID c0836ed4-215d-448d-91f4-aa507485dc91;
+				- _myState = 8192;
+				- _name = "Cygwin";
+				- m_path = "";
+				- Elements = { IRPYRawContainer 
+					- size = 0;
+				}
+				- Files = { IRPYRawContainer 
+					- size = 0;
+				}
+			}
+			- weakCGTime = 5.5.2010::19:1:36;
+			- strongCGTime = 5.5.2010::19:1:36;
+			- AnimScopeElements = { IRPYRawContainer 
+				- size = 0;
+			}
+			- m_allInAnimScope = 1;
+		}
+	}
+	- VariationPoints = { IRPYRawContainer 
+		- size = 0;
+	}
+	- SelectedVariants = { IRPYRawContainer 
+		- size = 0;
+	}
+	- weakCGTime = 5.13.2010::20:26:1;
+	- strongCGTime = 5.13.2010::20:26:1;
+}
+

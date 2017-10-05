@@ -1,0 +1,5892 @@
+I-Logix-RPY-Archive version 8.5.2 C++ 1159120
+{ IComponent 
+	- _id = GUID 4c889174-623b-45f4-a4aa-fbd6880e010b;
+	- _myState = 8192;
+	- _name = "WfdbComponent";
+	- Dependencies = { IRPYRawContainer 
+		- size = 1;
+		- value = 
+		{ IDependency 
+			- _id = GUID 19306171-1369-4ed7-a685-ab5c5ff0f570;
+			- _myState = 2048;
+			- _name = "CodeCentricCpp";
+			- Stereotypes = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IHandle 
+					- _m2Class = "IStereotype";
+					- _filename = "PredefinedTypes.sbs";
+					- _subsystem = "PredefinedTypes";
+					- _class = "";
+					- _name = "AppliedProfile";
+					- _id = GUID d2eca2c1-e5a5-4296-9453-29283c4ed8bc;
+				}
+			}
+			- _dependsOn = { INObjectHandle 
+				- _m2Class = "IProfile";
+				- _filename = "CodeCentric75Cpp.sbs";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "CodeCentricCpp";
+				- _id = GUID 31554408-0e42-4d1b-8dd8-e9137a1c869a;
+			}
+		}
+	}
+	- m_buildType = Executable;
+	- m_libraries = "";
+	- m_additionalSources = "";
+	- m_standardHeaders = "";
+	- m_includePath = "";
+	- m_initializationCode = "";
+	- m_folder = { IFolder 
+		- _id = GUID b1e29adc-1635-4a75-87c9-21900ea0dffa;
+		- _myState = 73728;
+		- _name = "Files";
+		- m_path = "C:\\IHA\\TI-IRTS\\sapien190\\rhapsody\\Design";
+		- Elements = { IRPYRawContainer 
+			- size = 1;
+			- value = 
+			{ IHandle 
+				- _m2Class = "";
+			}
+		}
+		- Files = { IRPYRawContainer 
+			- size = 5;
+			- value = 
+			{ IFolder 
+				- _id = GUID abcb6dd8-da4c-458e-8c9f-c9a4c89cf466;
+				- _myState = 8192;
+				- _name = "wfdb";
+				- m_path = "";
+				- Elements = { IRPYRawContainer 
+					- size = 0;
+				}
+				- Files = { IRPYRawContainer 
+					- size = 10;
+					- value = 
+					{ IFile 
+						- _id = GUID 7c6405a0-ee6c-4242-bf01-7a202ffef3ec;
+						- _myState = 8192;
+						- _properties = { IPropertyContainer 
+							- Subjects = { IRPYRawContainer 
+								- size = 2;
+								- value = 
+								{ IPropertySubject 
+									- _Name = "CG";
+									- Metaclasses = { IRPYRawContainer 
+										- size = 1;
+										- value = 
+										{ IPropertyMetaclass 
+											- _Name = "File";
+											- Properties = { IRPYRawContainer 
+												- size = 2;
+												- value = 
+												{ IProperty 
+													- _Name = "HeaderDirectivePattern";
+													- _Value = "";
+													- _Type = String;
+												}
+												{ IProperty 
+													- _Name = "ImpExtension";
+													- _Value = ".c";
+													- _Type = String;
+												}
+											}
+										}
+									}
+								}
+								{ IPropertySubject 
+									- _Name = "CPP_CG";
+									- Metaclasses = { IRPYRawContainer 
+										- size = 1;
+										- value = 
+										{ IPropertyMetaclass 
+											- _Name = "File";
+											- Properties = { IRPYRawContainer 
+												- size = 4;
+												- value = 
+												{ IProperty 
+													- _Name = "ImplementationFooter";
+													- _Value = "";
+													- _Type = MultiLine;
+												}
+												{ IProperty 
+													- _Name = "ImplementationHeader";
+													- _Value = "";
+													- _Type = MultiLine;
+												}
+												{ IProperty 
+													- _Name = "SpecificationFooter";
+													- _Value = "";
+													- _Type = MultiLine;
+												}
+												{ IProperty 
+													- _Name = "SpecificationHeader";
+													- _Value = "";
+													- _Type = MultiLine;
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+						- _name = "annot";
+						- Dependencies = { IRPYRawContainer 
+							- size = 3;
+							- value = 
+							{ IDependency 
+								- _id = GUID 0f89a645-7572-473e-b9b8-bb24b7c4c3ee;
+								- _myState = 2048;
+								- _properties = { IPropertyContainer 
+									- Subjects = { IRPYRawContainer 
+										- size = 1;
+										- value = 
+										{ IPropertySubject 
+											- _Name = "CG";
+											- Metaclasses = { IRPYRawContainer 
+												- size = 1;
+												- value = 
+												{ IPropertyMetaclass 
+													- _Name = "Dependency";
+													- Properties = { IRPYRawContainer 
+														- size = 1;
+														- value = 
+														{ IProperty 
+															- _Name = "UsageType";
+															- _Value = "Specification";
+															- _Type = Enum;
+															- _ExtraTypeInfo = "Specification,Implementation,Existence";
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+								- _name = "wfdblib";
+								- Stereotypes = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IHandle 
+										- _m2Class = "IStereotype";
+										- _filename = "PredefinedTypes.sbs";
+										- _subsystem = "PredefinedTypes";
+										- _class = "";
+										- _name = "Usage";
+										- _id = GUID 42aa4325-6112-4e88-87ce-66008878f1db;
+									}
+								}
+								- _dependsOn = { INObjectHandle 
+									- _m2Class = "IFile";
+									- _id = GUID 92b1548d-ed54-489a-bcbc-c8a07520b6ec;
+								}
+							}
+							{ IDependency 
+								- _id = GUID ad45a1b5-1ba2-4d0e-ad9b-e0878b005c30;
+								- _myState = 2048;
+								- _properties = { IPropertyContainer 
+									- Subjects = { IRPYRawContainer 
+										- size = 1;
+										- value = 
+										{ IPropertySubject 
+											- _Name = "CG";
+											- Metaclasses = { IRPYRawContainer 
+												- size = 1;
+												- value = 
+												{ IPropertyMetaclass 
+													- _Name = "Dependency";
+													- Properties = { IRPYRawContainer 
+														- size = 1;
+														- value = 
+														{ IProperty 
+															- _Name = "UsageType";
+															- _Value = "Specification";
+															- _Type = Enum;
+															- _ExtraTypeInfo = "Specification,Implementation,Existence";
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+								- _name = "ecgcodes";
+								- Stereotypes = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IHandle 
+										- _m2Class = "IStereotype";
+										- _filename = "PredefinedTypes.sbs";
+										- _subsystem = "PredefinedTypes";
+										- _class = "";
+										- _name = "Usage";
+										- _id = GUID 42aa4325-6112-4e88-87ce-66008878f1db;
+									}
+								}
+								- _dependsOn = { INObjectHandle 
+									- _m2Class = "IFile";
+									- _id = GUID d7da0fe3-f11c-4c6e-86a0-6e8b371faae7;
+								}
+							}
+							{ IDependency 
+								- _id = GUID c8f87a81-6a38-4576-bff5-e9219f51e6c4;
+								- _myState = 2048;
+								- _properties = { IPropertyContainer 
+									- Subjects = { IRPYRawContainer 
+										- size = 1;
+										- value = 
+										{ IPropertySubject 
+											- _Name = "CG";
+											- Metaclasses = { IRPYRawContainer 
+												- size = 1;
+												- value = 
+												{ IPropertyMetaclass 
+													- _Name = "Dependency";
+													- Properties = { IRPYRawContainer 
+														- size = 1;
+														- value = 
+														{ IProperty 
+															- _Name = "UsageType";
+															- _Value = "Specification";
+															- _Type = Enum;
+															- _ExtraTypeInfo = "Specification,Implementation,Existence";
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+								- _name = "ecgmap";
+								- Stereotypes = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IHandle 
+										- _m2Class = "IStereotype";
+										- _filename = "PredefinedTypes.sbs";
+										- _subsystem = "PredefinedTypes";
+										- _class = "";
+										- _name = "Usage";
+										- _id = GUID 42aa4325-6112-4e88-87ce-66008878f1db;
+									}
+								}
+								- _dependsOn = { INObjectHandle 
+									- _m2Class = "IFile";
+									- _id = GUID dd51b182-a198-4dd5-a4a5-9f26431d212a;
+								}
+							}
+						}
+						- m_path = "";
+						- m_type = implFile;
+						- Fragments = { IRPYRawContainer 
+							- size = 3;
+							- value = 
+							{ IFileFragment 
+								- _id = GUID 32b3c204-b1b6-4ba3-89e4-1d97d3c9b3eb;
+								- _name = "wfdblib";
+								- m_type = specFragment;
+								- m_text = "";
+								- m_startRow = 4294967295;
+								- m_startCol_Short = 1;
+								- m_endRow = 4294967295;
+								- m_endCol_Short = 268;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "IDependency";
+									- _id = GUID 0f89a645-7572-473e-b9b8-bb24b7c4c3ee;
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID a05337f1-2f9c-4f38-a5ff-e7c57f1deb84;
+								- _name = "ecgcodes";
+								- m_type = specFragment;
+								- m_text = "";
+								- m_startRow = 4294967295;
+								- m_startCol_Short = 1;
+								- m_endRow = 4294967295;
+								- m_endCol_Short = 348;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "IDependency";
+									- _id = GUID ad45a1b5-1ba2-4d0e-ad9b-e0878b005c30;
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID b8391f4e-ee04-4a5d-bbd7-837a2ebb091d;
+								- _name = "ecgmap";
+								- m_type = specFragment;
+								- m_text = "";
+								- m_startRow = 4294967295;
+								- m_startCol_Short = 1;
+								- m_endRow = 4294967295;
+								- m_endCol_Short = 348;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "IDependency";
+									- _id = GUID c8f87a81-6a38-4576-bff5-e9219f51e6c4;
+								}
+							}
+						}
+					}
+					{ IFile 
+						- _id = GUID dd51b182-a198-4dd5-a4a5-9f26431d212a;
+						- _myState = 8192;
+						- _properties = { IPropertyContainer 
+							- Subjects = { IRPYRawContainer 
+								- size = 2;
+								- value = 
+								{ IPropertySubject 
+									- _Name = "CG";
+									- Metaclasses = { IRPYRawContainer 
+										- size = 1;
+										- value = 
+										{ IPropertyMetaclass 
+											- _Name = "File";
+											- Properties = { IRPYRawContainer 
+												- size = 1;
+												- value = 
+												{ IProperty 
+													- _Name = "HeaderDirectivePattern";
+													- _Value = "";
+													- _Type = String;
+												}
+											}
+										}
+									}
+								}
+								{ IPropertySubject 
+									- _Name = "CPP_CG";
+									- Metaclasses = { IRPYRawContainer 
+										- size = 1;
+										- value = 
+										{ IPropertyMetaclass 
+											- _Name = "File";
+											- Properties = { IRPYRawContainer 
+												- size = 4;
+												- value = 
+												{ IProperty 
+													- _Name = "ImplementationFooter";
+													- _Value = "";
+													- _Type = MultiLine;
+												}
+												{ IProperty 
+													- _Name = "ImplementationHeader";
+													- _Value = "";
+													- _Type = MultiLine;
+												}
+												{ IProperty 
+													- _Name = "SpecificationFooter";
+													- _Value = "";
+													- _Type = MultiLine;
+												}
+												{ IProperty 
+													- _Name = "SpecificationHeader";
+													- _Value = "";
+													- _Type = MultiLine;
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+						- _name = "ecgmap";
+						- Dependencies = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IDependency 
+								- _id = GUID 72786b94-4a45-4341-9a96-3c8ae80922e8;
+								- _myState = 2048;
+								- _properties = { IPropertyContainer 
+									- Subjects = { IRPYRawContainer 
+										- size = 1;
+										- value = 
+										{ IPropertySubject 
+											- _Name = "CG";
+											- Metaclasses = { IRPYRawContainer 
+												- size = 1;
+												- value = 
+												{ IPropertyMetaclass 
+													- _Name = "Dependency";
+													- Properties = { IRPYRawContainer 
+														- size = 1;
+														- value = 
+														{ IProperty 
+															- _Name = "UsageType";
+															- _Value = "Specification";
+															- _Type = Enum;
+															- _ExtraTypeInfo = "Specification,Implementation,Existence";
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+								- _name = "ecgcodes";
+								- Stereotypes = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IHandle 
+										- _m2Class = "IStereotype";
+										- _filename = "PredefinedTypes.sbs";
+										- _subsystem = "PredefinedTypes";
+										- _class = "";
+										- _name = "Usage";
+										- _id = GUID 42aa4325-6112-4e88-87ce-66008878f1db;
+									}
+								}
+								- _dependsOn = { INObjectHandle 
+									- _m2Class = "IFile";
+									- _id = GUID d7da0fe3-f11c-4c6e-86a0-6e8b371faae7;
+								}
+							}
+						}
+						- m_path = "";
+						- m_type = specFile;
+						- Fragments = { IRPYRawContainer 
+							- size = 28;
+							- value = 
+							{ IFileFragment 
+								- _id = GUID 759d6666-9677-491d-976a-5de988387191;
+								- _name = "/* file: ecgmap.h	G. Moody        8 June 1983
+			Last revised:	4 May 1999	wfdblib 10.0.0
+ECG annotation code mapping macros
+
+_______________________________________________________________________________
+wfdb: a library for reading and writing annotated waveforms (time series data)
+Copyright (C) 1999 George B. Moody
+
+This library is free software; you can redistribute it and/or modify it under
+the terms of the GNU Library General Public License as published by the Free
+Software Foundation; either version 2 of the License, or (at your option) any
+later version.
+
+This library is distributed in the hope that it will be useful, but WITHOUT ANY
+WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+PARTICULAR PURPOSE.  See the GNU Library General Public License for more
+details.
+
+You should have received a copy of the GNU Library General Public License along
+with this library; if not, write to the Free Software Foundation, Inc., 59
+Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+
+You may contact the author by e-mail (george@mit.edu) or postal mail
+(MIT Room E25-505A, Cambridge, MA 02139 USA).  For updates to this software,
+please visit PhysioNet (http://www.physionet.org/).
+_______________________________________________________________________________
+
+These macros evaluate their arguments only once, so that they behave like
+functions with respect to side-effects (e.g., `isqrs(x++)' is safe).  With
+the exception of isann(), each macro uses a table;  to avoid wasting space
+in programs compiled from more than one source, try to keep all references
+to these macros in a single source file so that multiple instances of the
+tables are not required.  To save even more space, simply define the unneeded
+macros before including this file (e.g., `#define map1').*/";
+								- m_type = textFragment;
+								- m_text = "/* file: ecgmap.h	G. Moody        8 June 1983
+			Last revised:	4 May 1999	wfdblib 10.0.0
+ECG annotation code mapping macros
+
+_______________________________________________________________________________
+wfdb: a library for reading and writing annotated waveforms (time series data)
+Copyright (C) 1999 George B. Moody
+
+This library is free software; you can redistribute it and/or modify it under
+the terms of the GNU Library General Public License as published by the Free
+Software Foundation; either version 2 of the License, or (at your option) any
+later version.
+
+This library is distributed in the hope that it will be useful, but WITHOUT ANY
+WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+PARTICULAR PURPOSE.  See the GNU Library General Public License for more
+details.
+
+You should have received a copy of the GNU Library General Public License along
+with this library; if not, write to the Free Software Foundation, Inc., 59
+Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+
+You may contact the author by e-mail (george@mit.edu) or postal mail
+(MIT Room E25-505A, Cambridge, MA 02139 USA).  For updates to this software,
+please visit PhysioNet (http://www.physionet.org/).
+_______________________________________________________________________________
+
+These macros evaluate their arguments only once, so that they behave like
+functions with respect to side-effects (e.g., `isqrs(x++)' is safe).  With
+the exception of isann(), each macro uses a table;  to avoid wasting space
+in programs compiled from more than one source, try to keep all references
+to these macros in a single source file so that multiple instances of the
+tables are not required.  To save even more space, simply define the unneeded
+macros before including this file (e.g., `#define map1').*/
+";
+								- m_startRow = 2;
+								- m_startCol_Short = 65535;
+								- m_endRow = 35;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID d58f54f0-62a4-42e2-b159-722a2cd6c40f;
+								- _name = "/* avoid multiple definitions */";
+								- m_type = textFragment;
+								- m_text = "/* avoid multiple definitions */
+";
+								- m_startRow = 37;
+								- m_startCol_Short = 65535;
+								- m_endRow = 37;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID ace3dbab-ab1e-45a0-b89e-8c94d3b11b19;
+								- _name = "/* isann(A) is true if A is a legal annotation code, false otherwise */";
+								- m_type = textFragment;
+								- m_text = "/* isann(A) is true if A is a legal annotation code, false otherwise */
+";
+								- m_startRow = 44;
+								- m_startCol_Short = 65535;
+								- m_endRow = 44;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 0ed3f0e2-492e-4f8d-9c74-0c77fa559bb0;
+								- _name = "/* macro temporary variable */";
+								- m_type = textFragment;
+								- m_text = "/* macro temporary variable */
+";
+								- m_startRow = 46;
+								- m_startCol_Short = 65535;
+								- m_endRow = 46;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 3de9a3b6-2adf-4bfb-a0b6-2a0dd413bea4;
+								- _name = "/* isqrs(A) is true (1) if A denotes a QRS complex, false (0) otherwise */";
+								- m_type = textFragment;
+								- m_text = "/* isqrs(A) is true (1) if A denotes a QRS complex, false (0) otherwise */
+";
+								- m_startRow = 48;
+								- m_startCol_Short = 65535;
+								- m_endRow = 48;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 51372c31-5401-4698-a15a-0b102c6381ef;
+								- _name = "/* 0 - 9 */";
+								- m_type = textFragment;
+								- m_text = "/* 0 - 9 */
+";
+								- m_startRow = 53;
+								- m_startCol_Short = 65535;
+								- m_endRow = 53;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID f15b8f17-3159-445b-bfed-8cabb5865ab6;
+								- _name = "/* 10 - 19 */";
+								- m_type = textFragment;
+								- m_text = "/* 10 - 19 */
+";
+								- m_startRow = 54;
+								- m_startCol_Short = 65535;
+								- m_endRow = 54;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 71937966-e487-4300-904a-748ec9c5ea1d;
+								- _name = "/* 20 - 29 */";
+								- m_type = textFragment;
+								- m_text = "/* 20 - 29 */
+";
+								- m_startRow = 55;
+								- m_startCol_Short = 65535;
+								- m_endRow = 55;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 0943991e-befd-4e66-b4bd-dcfc31056325;
+								- _name = "/* 30 - 39 */";
+								- m_type = textFragment;
+								- m_text = "/* 30 - 39 */
+";
+								- m_startRow = 56;
+								- m_startCol_Short = 65535;
+								- m_endRow = 56;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 2daa08b5-7fb8-4141-8f05-01a1422b78a4;
+								- _name = "/* 40 - 49 */";
+								- m_type = textFragment;
+								- m_text = "/* 40 - 49 */
+";
+								- m_startRow = 57;
+								- m_startCol_Short = 65535;
+								- m_endRow = 57;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 5863209d-2170-4755-b8ca-0371f2aaf51e;
+								- _name = "/* map1(A) maps A into one of {NOTQRS, NORMAL, PVC, FUSION, LEARN} */";
+								- m_type = textFragment;
+								- m_text = "/* map1(A) maps A into one of {NOTQRS, NORMAL, PVC, FUSION, LEARN} */
+";
+								- m_startRow = 61;
+								- m_startCol_Short = 65535;
+								- m_endRow = 61;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID fb248fcf-124b-4ddb-a2f6-ebdaaeac3baf;
+								- _name = "/* map2(A) maps A into one of {NOTQRS, NORMAL, SVPB, PVC, FUSION, LEARN} */";
+								- m_type = textFragment;
+								- m_text = "/* map2(A) maps A into one of {NOTQRS, NORMAL, SVPB, PVC, FUSION, LEARN} */
+";
+								- m_startRow = 79;
+								- m_startCol_Short = 65535;
+								- m_endRow = 79;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 3d87304f-3b99-489e-ae29-ff6ed57152cc;
+								- _name = "/* ammap(A) maps an AHA annotation code, A, into an MIT annotation code */";
+								- m_type = textFragment;
+								- m_text = "/* ammap(A) maps an AHA annotation code, A, into an MIT annotation code */
+";
+								- m_startRow = 97;
+								- m_startCol_Short = 65535;
+								- m_endRow = 97;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 668a9d53-ac3e-47d3-829e-4131972c907a;
+								- _name = "/* 'E' - 'I' */";
+								- m_type = textFragment;
+								- m_text = "/* 'E' - 'I' */
+";
+								- m_startRow = 102;
+								- m_startCol_Short = 65535;
+								- m_endRow = 102;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 2f27ce22-1058-4c79-b92c-05472b237778;
+								- _name = "/* 'J' - 'N' */";
+								- m_type = textFragment;
+								- m_text = "/* 'J' - 'N' */
+";
+								- m_startRow = 103;
+								- m_startCol_Short = 65535;
+								- m_endRow = 103;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID f00863e8-d4c0-4da4-8093-ec7982cf1b83;
+								- _name = "/* 'O' - 'S' */";
+								- m_type = textFragment;
+								- m_text = "/* 'O' - 'S' */
+";
+								- m_startRow = 104;
+								- m_startCol_Short = 65535;
+								- m_endRow = 104;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 905b53a7-5598-4644-a78c-b8c25c7f16e2;
+								- _name = "/* 'T' - 'X' */";
+								- m_type = textFragment;
+								- m_text = "/* 'T' - 'X' */
+";
+								- m_startRow = 105;
+								- m_startCol_Short = 65535;
+								- m_endRow = 105;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID d3cbcd40-8ed8-48bd-9c95-2b9826a58491;
+								- _name = "/* 'Y' - ']' */";
+								- m_type = textFragment;
+								- m_text = "/* 'Y' - ']' */
+";
+								- m_startRow = 106;
+								- m_startCol_Short = 65535;
+								- m_endRow = 106;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID d4f71afb-cf03-4390-8915-b1a231008b24;
+								- _name = "/* mamap(A,S) maps MIT code A, subtype S, into an AHA annotation code */";
+								- m_type = textFragment;
+								- m_text = "/* mamap(A,S) maps MIT code A, subtype S, into an AHA annotation code */
+";
+								- m_startRow = 110;
+								- m_startCol_Short = 65535;
+								- m_endRow = 110;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID e0a1e707-ee1d-4b07-8f7e-58580ce0987a;
+								- _name = "/* Annotation position codes.  These may be used by applications which plot
+   signals and annotations to determine where to print annotation mnemonics. */";
+								- m_type = textFragment;
+								- m_text = "/* Annotation position codes.  These may be used by applications which plot
+   signals and annotations to determine where to print annotation mnemonics. */
+";
+								- m_startRow = 129;
+								- m_startCol_Short = 65535;
+								- m_endRow = 130;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID a0288bd0-3b2b-42a1-aa76-f4ea66e9605b;
+								- _name = "/* for undefined annotation types */";
+								- m_type = textFragment;
+								- m_text = "/* for undefined annotation types */
+";
+								- m_startRow = 131;
+								- m_startCol_Short = 65535;
+								- m_endRow = 131;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 4a02a872-c01f-46ad-a40a-2a1d96b61262;
+								- _name = "/* standard position */";
+								- m_type = textFragment;
+								- m_text = "/* standard position */
+";
+								- m_startRow = 132;
+								- m_startCol_Short = 65535;
+								- m_endRow = 132;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID ff5e5199-a6b9-4650-bf44-3ec6fb43d48f;
+								- _name = "/* a level above APSTD */";
+								- m_type = textFragment;
+								- m_text = "/* a level above APSTD */
+";
+								- m_startRow = 133;
+								- m_startCol_Short = 65535;
+								- m_endRow = 133;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 35789dd5-06a6-4ad6-aa62-0aaedfcf6855;
+								- _name = "/* a level below APSTD */";
+								- m_type = textFragment;
+								- m_text = "/* a level below APSTD */
+";
+								- m_startRow = 134;
+								- m_startCol_Short = 65535;
+								- m_endRow = 134;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 9a7f9f6f-af39-47c4-bce1-bc005a08bd05;
+								- _name = "/* attached to the signal specified by `chan' */";
+								- m_type = textFragment;
+								- m_text = "/* attached to the signal specified by `chan' */
+";
+								- m_startRow = 135;
+								- m_startCol_Short = 65535;
+								- m_endRow = 135;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID b4da2b0e-6a00-4430-ad43-b03f3ee5d1e3;
+								- _name = "/* a level above APATT */";
+								- m_type = textFragment;
+								- m_text = "/* a level above APATT */
+";
+								- m_startRow = 136;
+								- m_startCol_Short = 65535;
+								- m_endRow = 136;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID be8eefae-6730-4cd4-8935-152f3f011020;
+								- _name = "/* a level below APATT */";
+								- m_type = textFragment;
+								- m_text = "/* a level below APATT */
+";
+								- m_startRow = 137;
+								- m_startCol_Short = 65535;
+								- m_endRow = 137;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 90eda68b-c8a4-4e23-9d34-36dde819d9a9;
+								- _name = "/* annpos(A) returns the appropriate position code for A */";
+								- m_type = textFragment;
+								- m_text = "/* annpos(A) returns the appropriate position code for A */
+";
+								- m_startRow = 139;
+								- m_startCol_Short = 65535;
+								- m_endRow = 139;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+						}
+					}
+					{ IFile 
+						- _id = GUID d7da0fe3-f11c-4c6e-86a0-6e8b371faae7;
+						- _myState = 8192;
+						- _properties = { IPropertyContainer 
+							- Subjects = { IRPYRawContainer 
+								- size = 2;
+								- value = 
+								{ IPropertySubject 
+									- _Name = "CG";
+									- Metaclasses = { IRPYRawContainer 
+										- size = 1;
+										- value = 
+										{ IPropertyMetaclass 
+											- _Name = "File";
+											- Properties = { IRPYRawContainer 
+												- size = 1;
+												- value = 
+												{ IProperty 
+													- _Name = "HeaderDirectivePattern";
+													- _Value = "";
+													- _Type = String;
+												}
+											}
+										}
+									}
+								}
+								{ IPropertySubject 
+									- _Name = "CPP_CG";
+									- Metaclasses = { IRPYRawContainer 
+										- size = 1;
+										- value = 
+										{ IPropertyMetaclass 
+											- _Name = "File";
+											- Properties = { IRPYRawContainer 
+												- size = 4;
+												- value = 
+												{ IProperty 
+													- _Name = "ImplementationFooter";
+													- _Value = "";
+													- _Type = MultiLine;
+												}
+												{ IProperty 
+													- _Name = "ImplementationHeader";
+													- _Value = "";
+													- _Type = MultiLine;
+												}
+												{ IProperty 
+													- _Name = "SpecificationFooter";
+													- _Value = "";
+													- _Type = MultiLine;
+												}
+												{ IProperty 
+													- _Name = "SpecificationHeader";
+													- _Value = "";
+													- _Type = MultiLine;
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+						- _name = "ecgcodes";
+						- m_path = "";
+						- m_type = specFile;
+						- Fragments = { IRPYRawContainer 
+							- size = 46;
+							- value = 
+							{ IFileFragment 
+								- _id = GUID 2f3c2f4e-3df8-4d83-b38b-0394766c1226;
+								- _name = "/* file: ecgcodes.h	T. Baker and G. Moody	  June 1981
+			Last revised:  29 April 1999	wfdblib 10.0.0
+ECG annotation codes
+
+_______________________________________________________________________________
+wfdb: a library for reading and writing annotated waveforms (time series data)
+Copyright (C) 1999 George B. Moody
+
+This library is free software; you can redistribute it and/or modify it under
+the terms of the GNU Library General Public License as published by the Free
+Software Foundation; either version 2 of the License, or (at your option) any
+later version.
+
+This library is distributed in the hope that it will be useful, but WITHOUT ANY
+WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+PARTICULAR PURPOSE.  See the GNU Library General Public License for more
+details.
+
+You should have received a copy of the GNU Library General Public License along
+with this library; if not, write to the Free Software Foundation, Inc., 59
+Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+
+You may contact the author by e-mail (george@mit.edu) or postal mail
+(MIT Room E25-505A, Cambridge, MA 02139 USA).  For updates to this software,
+please visit PhysioNet (http://www.physionet.org/).
+_______________________________________________________________________________
+
+*/";
+								- m_type = textFragment;
+								- m_text = "/* file: ecgcodes.h	T. Baker and G. Moody	  June 1981
+			Last revised:  29 April 1999	wfdblib 10.0.0
+ECG annotation codes
+
+_______________________________________________________________________________
+wfdb: a library for reading and writing annotated waveforms (time series data)
+Copyright (C) 1999 George B. Moody
+
+This library is free software; you can redistribute it and/or modify it under
+the terms of the GNU Library General Public License as published by the Free
+Software Foundation; either version 2 of the License, or (at your option) any
+later version.
+
+This library is distributed in the hope that it will be useful, but WITHOUT ANY
+WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+PARTICULAR PURPOSE.  See the GNU Library General Public License for more
+details.
+
+You should have received a copy of the GNU Library General Public License along
+with this library; if not, write to the Free Software Foundation, Inc., 59
+Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+
+You may contact the author by e-mail (george@mit.edu) or postal mail
+(MIT Room E25-505A, Cambridge, MA 02139 USA).  For updates to this software,
+please visit PhysioNet (http://www.physionet.org/).
+_______________________________________________________________________________
+
+*/
+";
+								- m_startRow = 1;
+								- m_startCol_Short = 1;
+								- m_endRow = 28;
+								- m_endCol_Short = 3;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 9c7a4e59-a645-4688-8ed2-4a0f1cc2cd17;
+								- _name = "/* avoid multiple definitions */";
+								- m_type = textFragment;
+								- m_text = "/* avoid multiple definitions */
+";
+								- m_startRow = 30;
+								- m_startCol_Short = 25;
+								- m_endRow = 30;
+								- m_endCol_Short = 57;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID f32827f1-fcf1-4e08-a38b-c1818331577a;
+								- _name = "/* not-QRS (not a getann/putann code) */";
+								- m_type = textFragment;
+								- m_text = "/* not-QRS (not a getann/putann code) */
+";
+								- m_startRow = 33;
+								- m_startCol_Short = 18;
+								- m_endRow = 33;
+								- m_endCol_Short = 58;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 57fd4933-8c49-403d-b9e5-878374e5cb98;
+								- _name = "/* normal beat */";
+								- m_type = textFragment;
+								- m_text = "/* normal beat */
+";
+								- m_startRow = 34;
+								- m_startCol_Short = 18;
+								- m_endRow = 34;
+								- m_endCol_Short = 35;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID bb549880-1932-41ab-9e0d-af1e8d892e9b;
+								- _name = "/* left bundle branch block beat */";
+								- m_type = textFragment;
+								- m_text = "/* left bundle branch block beat */
+";
+								- m_startRow = 35;
+								- m_startCol_Short = 16;
+								- m_endRow = 35;
+								- m_endCol_Short = 51;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 5fbc0832-5936-4637-a789-a2d39a77a9f9;
+								- _name = "/* right bundle branch block beat */";
+								- m_type = textFragment;
+								- m_text = "/* right bundle branch block beat */
+";
+								- m_startRow = 36;
+								- m_startCol_Short = 16;
+								- m_endRow = 36;
+								- m_endCol_Short = 52;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID d4a20985-a67c-4c64-a025-c132eb24aade;
+								- _name = "/* aberrated atrial premature beat */";
+								- m_type = textFragment;
+								- m_text = "/* aberrated atrial premature beat */
+";
+								- m_startRow = 37;
+								- m_startCol_Short = 17;
+								- m_endRow = 37;
+								- m_endCol_Short = 54;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID cbb8850a-4150-4047-b334-84c7b8750d17;
+								- _name = "/* premature ventricular contraction */";
+								- m_type = textFragment;
+								- m_text = "/* premature ventricular contraction */
+";
+								- m_startRow = 38;
+								- m_startCol_Short = 15;
+								- m_endRow = 38;
+								- m_endCol_Short = 54;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID b4a97292-3c4d-4f46-a7d2-23692b1f248b;
+								- _name = "/* fusion of ventricular and normal beat */";
+								- m_type = textFragment;
+								- m_text = "/* fusion of ventricular and normal beat */
+";
+								- m_startRow = 39;
+								- m_startCol_Short = 18;
+								- m_endRow = 39;
+								- m_endCol_Short = 61;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 2e92beac-e6fd-448a-abed-00bc0b6254d1;
+								- _name = "/* nodal (junctional) premature beat */";
+								- m_type = textFragment;
+								- m_text = "/* nodal (junctional) premature beat */
+";
+								- m_startRow = 40;
+								- m_startCol_Short = 15;
+								- m_endRow = 40;
+								- m_endCol_Short = 54;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID fb6575d0-7ab9-46e6-b0ca-9c7e64b17d42;
+								- _name = "/* atrial premature contraction */";
+								- m_type = textFragment;
+								- m_text = "/* atrial premature contraction */
+";
+								- m_startRow = 41;
+								- m_startCol_Short = 15;
+								- m_endRow = 41;
+								- m_endCol_Short = 49;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID dd2ac7e7-62ba-412d-b4cb-e66545619fd4;
+								- _name = "/* premature or ectopic supraventricular beat */";
+								- m_type = textFragment;
+								- m_text = "/* premature or ectopic supraventricular beat */
+";
+								- m_startRow = 42;
+								- m_startCol_Short = 16;
+								- m_endRow = 42;
+								- m_endCol_Short = 64;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 216771dc-c4fe-49b3-b51f-e289d1d2af91;
+								- _name = "/* ventricular escape beat */";
+								- m_type = textFragment;
+								- m_text = "/* ventricular escape beat */
+";
+								- m_startRow = 43;
+								- m_startCol_Short = 17;
+								- m_endRow = 43;
+								- m_endCol_Short = 46;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 4f290a18-f285-44ce-90f3-0db6a6616a6e;
+								- _name = "/* nodal (junctional) escape beat */";
+								- m_type = textFragment;
+								- m_text = "/* nodal (junctional) escape beat */
+";
+								- m_startRow = 44;
+								- m_startCol_Short = 17;
+								- m_endRow = 44;
+								- m_endCol_Short = 53;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 6cb8a875-35b0-4269-a702-2805f1f22e7a;
+								- _name = "/* paced beat */";
+								- m_type = textFragment;
+								- m_text = "/* paced beat */
+";
+								- m_startRow = 45;
+								- m_startCol_Short = 17;
+								- m_endRow = 45;
+								- m_endCol_Short = 33;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 14dc5956-e1cd-414c-8956-30376251797c;
+								- _name = "/* unclassifiable beat */";
+								- m_type = textFragment;
+								- m_text = "/* unclassifiable beat */
+";
+								- m_startRow = 46;
+								- m_startCol_Short = 20;
+								- m_endRow = 46;
+								- m_endCol_Short = 45;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID e065848e-586b-49b3-9c83-3ce1207c7bdb;
+								- _name = "/* signal quality change */";
+								- m_type = textFragment;
+								- m_text = "/* signal quality change */
+";
+								- m_startRow = 47;
+								- m_startCol_Short = 18;
+								- m_endRow = 47;
+								- m_endCol_Short = 45;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 7a978c1b-2282-4f9b-90a0-7ea75e5ffb02;
+								- _name = "/* isolated QRS-like artifact */";
+								- m_type = textFragment;
+								- m_text = "/* isolated QRS-like artifact */
+";
+								- m_startRow = 48;
+								- m_startCol_Short = 18;
+								- m_endRow = 48;
+								- m_endCol_Short = 50;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 342b00de-45a0-4459-84d5-560f0f6f7b5f;
+								- _name = "/* ST change */";
+								- m_type = textFragment;
+								- m_text = "/* ST change */
+";
+								- m_startRow = 49;
+								- m_startCol_Short = 17;
+								- m_endRow = 49;
+								- m_endCol_Short = 32;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID be54f9c6-dac4-44fa-b8c2-df4cfb66b9a5;
+								- _name = "/* T-wave change */";
+								- m_type = textFragment;
+								- m_text = "/* T-wave change */
+";
+								- m_startRow = 50;
+								- m_startCol_Short = 16;
+								- m_endRow = 50;
+								- m_endCol_Short = 35;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID b615bf25-a40e-46ba-a0f7-0cb4c3f3b0e6;
+								- _name = "/* systole */";
+								- m_type = textFragment;
+								- m_text = "/* systole */
+";
+								- m_startRow = 51;
+								- m_startCol_Short = 20;
+								- m_endRow = 51;
+								- m_endCol_Short = 33;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 93d5339b-9a0c-4eeb-9df6-2855d9e27fae;
+								- _name = "/* diastole */";
+								- m_type = textFragment;
+								- m_text = "/* diastole */
+";
+								- m_startRow = 52;
+								- m_startCol_Short = 21;
+								- m_endRow = 52;
+								- m_endCol_Short = 35;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 3ede0ab5-28b3-4f75-9c5e-ff607fd4bbd3;
+								- _name = "/* comment annotation */";
+								- m_type = textFragment;
+								- m_text = "/* comment annotation */
+";
+								- m_startRow = 53;
+								- m_startCol_Short = 17;
+								- m_endRow = 53;
+								- m_endCol_Short = 41;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 0ad694d2-d119-424d-a006-1468c919e8bc;
+								- _name = "/* measurement annotation */";
+								- m_type = textFragment;
+								- m_text = "/* measurement annotation */
+";
+								- m_startRow = 54;
+								- m_startCol_Short = 20;
+								- m_endRow = 54;
+								- m_endCol_Short = 48;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 5b2ef7be-7662-4ef5-84db-a9aa8843c2a4;
+								- _name = "/* P-wave peak */";
+								- m_type = textFragment;
+								- m_text = "/* P-wave peak */
+";
+								- m_startRow = 55;
+								- m_startCol_Short = 18;
+								- m_endRow = 55;
+								- m_endCol_Short = 35;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 92e81909-8275-4a1e-ad8e-56dfdf868091;
+								- _name = "/* left or right bundle branch block */";
+								- m_type = textFragment;
+								- m_text = "/* left or right bundle branch block */
+";
+								- m_startRow = 56;
+								- m_startCol_Short = 16;
+								- m_endRow = 56;
+								- m_endCol_Short = 55;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID abe494e6-a63e-40b1-b741-51d8895281cf;
+								- _name = "/* non-conducted pacer spike */";
+								- m_type = textFragment;
+								- m_text = "/* non-conducted pacer spike */
+";
+								- m_startRow = 57;
+								- m_startCol_Short = 19;
+								- m_endRow = 57;
+								- m_endCol_Short = 50;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID c4f2789b-c95b-44ac-b472-ea53c38848ec;
+								- _name = "/* T-wave peak */";
+								- m_type = textFragment;
+								- m_text = "/* T-wave peak */
+";
+								- m_startRow = 58;
+								- m_startCol_Short = 18;
+								- m_endRow = 58;
+								- m_endCol_Short = 35;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID b144718f-04ac-40a2-adee-be8de7004f11;
+								- _name = "/* rhythm change */";
+								- m_type = textFragment;
+								- m_text = "/* rhythm change */
+";
+								- m_startRow = 59;
+								- m_startCol_Short = 19;
+								- m_endRow = 59;
+								- m_endCol_Short = 38;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID f2324a83-9c3b-45e2-abb8-a25c6d5d3e45;
+								- _name = "/* U-wave peak */";
+								- m_type = textFragment;
+								- m_text = "/* U-wave peak */
+";
+								- m_startRow = 60;
+								- m_startCol_Short = 18;
+								- m_endRow = 60;
+								- m_endCol_Short = 35;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID df11843b-146e-4a03-8315-c1a9e331d46d;
+								- _name = "/* learning */";
+								- m_type = textFragment;
+								- m_text = "/* learning */
+";
+								- m_startRow = 61;
+								- m_startCol_Short = 18;
+								- m_endRow = 61;
+								- m_endCol_Short = 32;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 1f98b413-7758-45b7-82ca-e99d7ae32891;
+								- _name = "/* ventricular flutter wave */";
+								- m_type = textFragment;
+								- m_text = "/* ventricular flutter wave */
+";
+								- m_startRow = 62;
+								- m_startCol_Short = 18;
+								- m_endRow = 62;
+								- m_endCol_Short = 48;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 84a58ac4-594a-4577-96e8-9ac64a135702;
+								- _name = "/* start of ventricular flutter/fibrillation */";
+								- m_type = textFragment;
+								- m_text = "/* start of ventricular flutter/fibrillation */
+";
+								- m_startRow = 63;
+								- m_startCol_Short = 17;
+								- m_endRow = 63;
+								- m_endCol_Short = 64;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID af5a3fa4-bded-41de-a94d-c46ee333bf6e;
+								- _name = "/* end of ventricular flutter/fibrillation */";
+								- m_type = textFragment;
+								- m_text = "/* end of ventricular flutter/fibrillation */
+";
+								- m_startRow = 64;
+								- m_startCol_Short = 18;
+								- m_endRow = 64;
+								- m_endCol_Short = 63;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID aaa48afc-c383-46f4-9b92-7c4f274b66bd;
+								- _name = "/* atrial escape beat */";
+								- m_type = textFragment;
+								- m_text = "/* atrial escape beat */
+";
+								- m_startRow = 65;
+								- m_startCol_Short = 17;
+								- m_endRow = 65;
+								- m_endCol_Short = 41;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 60dd1afe-937f-45ab-b02c-71ac799cc036;
+								- _name = "/* supraventricular escape beat */";
+								- m_type = textFragment;
+								- m_text = "/* supraventricular escape beat */
+";
+								- m_startRow = 66;
+								- m_startCol_Short = 18;
+								- m_endRow = 66;
+								- m_endCol_Short = 52;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 9fb30e61-4984-43e0-a2f8-494244c2ceab;
+								- _name = "/* link to external data (aux contains URL) */";
+								- m_type = textFragment;
+								- m_text = "/* link to external data (aux contains URL) */
+";
+								- m_startRow = 67;
+								- m_startCol_Short = 20;
+								- m_endRow = 67;
+								- m_endCol_Short = 66;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 6fb29385-9257-46ae-867f-639c09c36f94;
+								- _name = "/* non-conducted P-wave (blocked APB) */";
+								- m_type = textFragment;
+								- m_text = "/* non-conducted P-wave (blocked APB) */
+";
+								- m_startRow = 68;
+								- m_startCol_Short = 17;
+								- m_endRow = 68;
+								- m_endCol_Short = 57;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID dbef6e79-c188-4919-8b73-ad5dcaf30215;
+								- _name = "/* fusion of paced and normal beat */";
+								- m_type = textFragment;
+								- m_text = "/* fusion of paced and normal beat */
+";
+								- m_startRow = 69;
+								- m_startCol_Short = 17;
+								- m_endRow = 69;
+								- m_endCol_Short = 54;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 497464e4-3b71-4be1-9f97-64d7461f846a;
+								- _name = "/* waveform onset */";
+								- m_type = textFragment;
+								- m_text = "/* waveform onset */
+";
+								- m_startRow = 70;
+								- m_startCol_Short = 17;
+								- m_endRow = 70;
+								- m_endCol_Short = 37;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 4e6fc612-a91e-4b2e-a329-f4687775a2ac;
+								- _name = "/* PQ junction (beginning of QRS) */";
+								- m_type = textFragment;
+								- m_text = "/* PQ junction (beginning of QRS) */
+";
+								- m_startRow = 71;
+								- m_startCol_Short = 17;
+								- m_endRow = 71;
+								- m_endCol_Short = 53;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID d1214e26-040e-42d6-8b81-e2e80c645d9e;
+								- _name = "/* waveform end */";
+								- m_type = textFragment;
+								- m_text = "/* waveform end */
+";
+								- m_startRow = 72;
+								- m_startCol_Short = 18;
+								- m_endRow = 72;
+								- m_endCol_Short = 36;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 82f710ef-31c4-4986-9df9-fa408d5c2336;
+								- _name = "/* J point (end of QRS) */";
+								- m_type = textFragment;
+								- m_text = "/* J point (end of QRS) */
+";
+								- m_startRow = 73;
+								- m_startCol_Short = 19;
+								- m_endRow = 73;
+								- m_endCol_Short = 45;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 389b90d0-64a7-4275-8160-e7d6cd6092e9;
+								- _name = "/* R-on-T premature ventricular contraction */";
+								- m_type = textFragment;
+								- m_text = "/* R-on-T premature ventricular contraction */
+";
+								- m_startRow = 74;
+								- m_startCol_Short = 17;
+								- m_endRow = 74;
+								- m_endCol_Short = 63;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID e1dc75cb-249b-40c5-a32d-5be1f3ea0a18;
+								- _name = "/* ... annotation codes between RONT+1 and ACMAX inclusive are user-defined */";
+								- m_type = textFragment;
+								- m_text = "/* ... annotation codes between RONT+1 and ACMAX inclusive are user-defined */
+";
+								- m_startRow = 76;
+								- m_startCol_Short = 1;
+								- m_endRow = 76;
+								- m_endCol_Short = 79;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID a9535845-632f-494f-b35c-85b7c95f7d75;
+								- _name = "/* value of largest valid annot code (must be < 50) */";
+								- m_type = textFragment;
+								- m_text = "/* value of largest valid annot code (must be < 50) */
+";
+								- m_startRow = 78;
+								- m_startCol_Short = 18;
+								- m_endRow = 78;
+								- m_endCol_Short = 72;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+						}
+					}
+					{ IFile 
+						- _id = GUID cc1939cd-c4e3-43fd-8e6c-5658cc1016c0;
+						- _myState = 8192;
+						- _properties = { IPropertyContainer 
+							- Subjects = { IRPYRawContainer 
+								- size = 2;
+								- value = 
+								{ IPropertySubject 
+									- _Name = "CG";
+									- Metaclasses = { IRPYRawContainer 
+										- size = 1;
+										- value = 
+										{ IPropertyMetaclass 
+											- _Name = "File";
+											- Properties = { IRPYRawContainer 
+												- size = 1;
+												- value = 
+												{ IProperty 
+													- _Name = "HeaderDirectivePattern";
+													- _Value = "";
+													- _Type = String;
+												}
+											}
+										}
+									}
+								}
+								{ IPropertySubject 
+									- _Name = "CPP_CG";
+									- Metaclasses = { IRPYRawContainer 
+										- size = 1;
+										- value = 
+										{ IPropertyMetaclass 
+											- _Name = "File";
+											- Properties = { IRPYRawContainer 
+												- size = 4;
+												- value = 
+												{ IProperty 
+													- _Name = "ImplementationFooter";
+													- _Value = "";
+													- _Type = MultiLine;
+												}
+												{ IProperty 
+													- _Name = "ImplementationHeader";
+													- _Value = "";
+													- _Type = MultiLine;
+												}
+												{ IProperty 
+													- _Name = "SpecificationFooter";
+													- _Value = "";
+													- _Type = MultiLine;
+												}
+												{ IProperty 
+													- _Name = "SpecificationHeader";
+													- _Value = "";
+													- _Type = MultiLine;
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+						- _name = "wfdb";
+						- Dependencies = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IDependency 
+								- _id = GUID 2aac9f88-3f88-4dd3-9721-606674bb8d4f;
+								- _myState = 2048;
+								- _properties = { IPropertyContainer 
+									- Subjects = { IRPYRawContainer 
+										- size = 1;
+										- value = 
+										{ IPropertySubject 
+											- _Name = "CG";
+											- Metaclasses = { IRPYRawContainer 
+												- size = 1;
+												- value = 
+												{ IPropertyMetaclass 
+													- _Name = "Dependency";
+													- Properties = { IRPYRawContainer 
+														- size = 1;
+														- value = 
+														{ IProperty 
+															- _Name = "UsageType";
+															- _Value = "Specification";
+															- _Type = Enum;
+															- _ExtraTypeInfo = "Specification,Implementation,Existence";
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+								- _name = "string";
+								- Stereotypes = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IHandle 
+										- _m2Class = "IStereotype";
+										- _filename = "PredefinedTypes.sbs";
+										- _subsystem = "PredefinedTypes";
+										- _class = "";
+										- _name = "Usage";
+										- _id = GUID 42aa4325-6112-4e88-87ce-66008878f1db;
+									}
+								}
+								- _dependsOn = { INObjectHandle 
+									- _m2Class = "IFile";
+									- _id = GUID 9b7ad2b0-b4f2-4a72-9b58-e406b6f0da3b;
+								}
+							}
+						}
+						- m_path = "";
+						- m_type = specFile;
+						- Fragments = { IRPYRawContainer 
+							- size = 96;
+							- value = 
+							{ IFileFragment 
+								- _id = GUID 6caa84b3-5bb6-4d45-b3af-734210372d53;
+								- _name = "/* file: wfdb.h		G. Moody	13 June 1983
+			Last revised:   12 March 2010	wfdblib 10.5.0
+WFDB library type, constant, structure, and function interface definitions
+
+_______________________________________________________________________________
+wfdb: a library for reading and writing annotated waveforms (time series data)
+Copyright (C) 1983-2010 George B. Moody
+
+This library is free software; you can redistribute it and/or modify it under
+the terms of the GNU Library General Public License as published by the Free
+Software Foundation; either version 2 of the License, or (at your option) any
+later version.
+
+This library is distributed in the hope that it will be useful, but WITHOUT ANY
+WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+PARTICULAR PURPOSE.  See the GNU Library General Public License for more
+details.
+
+You should have received a copy of the GNU Library General Public License along
+with this library; if not, write to the Free Software Foundation, Inc., 59
+Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+
+You may contact the author by e-mail (george@mit.edu) or postal mail
+(MIT Room E25-505A, Cambridge, MA 02139 USA).  For updates to this software,
+please visit PhysioNet (http://www.physionet.org/).
+_______________________________________________________________________________
+
+*/";
+								- m_type = textFragment;
+								- m_text = "/* file: wfdb.h		G. Moody	13 June 1983
+			Last revised:   12 March 2010	wfdblib 10.5.0
+WFDB library type, constant, structure, and function interface definitions
+
+_______________________________________________________________________________
+wfdb: a library for reading and writing annotated waveforms (time series data)
+Copyright (C) 1983-2010 George B. Moody
+
+This library is free software; you can redistribute it and/or modify it under
+the terms of the GNU Library General Public License as published by the Free
+Software Foundation; either version 2 of the License, or (at your option) any
+later version.
+
+This library is distributed in the hope that it will be useful, but WITHOUT ANY
+WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+PARTICULAR PURPOSE.  See the GNU Library General Public License for more
+details.
+
+You should have received a copy of the GNU Library General Public License along
+with this library; if not, write to the Free Software Foundation, Inc., 59
+Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+
+You may contact the author by e-mail (george@mit.edu) or postal mail
+(MIT Room E25-505A, Cambridge, MA 02139 USA).  For updates to this software,
+please visit PhysioNet (http://www.physionet.org/).
+_______________________________________________________________________________
+
+*/
+";
+								- m_startRow = 1;
+								- m_startCol_Short = 65535;
+								- m_endRow = 28;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID cec5a513-5bcd-40b2-978e-a9688e7b64ce;
+								- _name = "/* avoid multiple definitions */";
+								- m_type = textFragment;
+								- m_text = "/* avoid multiple definitions */
+";
+								- m_startRow = 30;
+								- m_startCol_Short = 65535;
+								- m_endRow = 30;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID b1f023cb-7096-4bac-905d-e0795f1bf456;
+								- _name = "/* WFDB library version. */";
+								- m_type = textFragment;
+								- m_text = "/* WFDB library version. */
+";
+								- m_startRow = 33;
+								- m_startCol_Short = 65535;
+								- m_endRow = 33;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 250cb49e-037e-43f2-bbc6-a0b81c7e3bd7;
+								- _name = "/* if 1, library includes code for HTTP, FTP clients */";
+								- m_type = textFragment;
+								- m_text = "/* if 1, library includes code for HTTP, FTP clients */
+";
+								- m_startRow = 37;
+								- m_startCol_Short = 65535;
+								- m_endRow = 37;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 3fc526bf-b8b1-4f1d-b9a7-a5a557e0f9a9;
+								- _name = "/* Determine what type of compiler is being used. */";
+								- m_type = textFragment;
+								- m_text = "/* Determine what type of compiler is being used. */
+";
+								- m_startRow = 40;
+								- m_startCol_Short = 65535;
+								- m_endRow = 40;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID c6cd21e7-7422-4507-9f83-f6fcb33a2d74;
+								- _name = "/* true for ANSI C compilers only */";
+								- m_type = textFragment;
+								- m_text = "/* true for ANSI C compilers only */
+";
+								- m_startRow = 41;
+								- m_startCol_Short = 65535;
+								- m_endRow = 41;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID f1a38788-030e-4340-bccb-1894de449d68;
+								- _name = "/* function prototypes will be needed */";
+								- m_type = textFragment;
+								- m_text = "/* function prototypes will be needed */
+";
+								- m_startRow = 42;
+								- m_startCol_Short = 65535;
+								- m_endRow = 42;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 1b9543a9-85cb-4ee5-9718-31f387adaf58;
+								- _name = "/* we don't want MS-Windows API in this case */";
+								- m_type = textFragment;
+								- m_text = "/* we don't want MS-Windows API in this case */
+";
+								- m_startRow = 43;
+								- m_startCol_Short = 65535;
+								- m_endRow = 43;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID cd16344f-990a-42b7-bf4c-fce1e2c65a0e;
+								- _name = "/* ... or 32-bit MS-Windows API either */";
+								- m_type = textFragment;
+								- m_text = "/* ... or 32-bit MS-Windows API either */
+";
+								- m_startRow = 44;
+								- m_startCol_Short = 65535;
+								- m_endRow = 44;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 772d35a2-acd9-4533-a429-75ceff90e423;
+								- _name = "/* true for some C++ compilers */";
+								- m_type = textFragment;
+								- m_text = "/* true for some C++ compilers */
+";
+								- m_startRow = 47;
+								- m_startCol_Short = 65535;
+								- m_endRow = 47;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID b2c44356-3484-45a1-a7b4-81b4d613ec17;
+								- _name = "/* true for some other C++ compilers */";
+								- m_type = textFragment;
+								- m_text = "/* true for some other C++ compilers */
+";
+								- m_startRow = 52;
+								- m_startCol_Short = 65535;
+								- m_endRow = 52;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 041d105d-5165-4ecc-bb71-1101ef2c9424;
+								- _name = "/* true when compiling for 32-bit MS Windows */";
+								- m_type = textFragment;
+								- m_text = "/* true when compiling for 32-bit MS Windows */
+";
+								- m_startRow = 57;
+								- m_startCol_Short = 65535;
+								- m_endRow = 57;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID da13698f-4002-44d7-b5b3-a1c187787b0f;
+								- _name = "/* true when compiling for MS Windows */";
+								- m_type = textFragment;
+								- m_text = "/* true when compiling for MS Windows */
+";
+								- m_startRow = 63;
+								- m_startCol_Short = 65535;
+								- m_endRow = 63;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID f5e49704-66e2-473c-99fa-50c4f44e9f1b;
+								- _name = "/* should be true for K&R C compilers only */";
+								- m_type = textFragment;
+								- m_text = "/* should be true for K&R C compilers only */
+";
+								- m_startRow = 67;
+								- m_startCol_Short = 65535;
+								- m_endRow = 67;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 6aadccab-42ac-41d3-b2b9-5228ba084eb6;
+								- _name = "/* Simple data types */";
+								- m_type = textFragment;
+								- m_text = "/* Simple data types */
+";
+								- m_startRow = 72;
+								- m_startCol_Short = 65535;
+								- m_endRow = 72;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID dea5b21a-c60b-4956-a3c7-539831ae1364;
+								- _name = "/* units are adus */";
+								- m_type = textFragment;
+								- m_text = "/* units are adus */
+";
+								- m_startRow = 73;
+								- m_startCol_Short = 65535;
+								- m_endRow = 73;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID e984d353-f95d-4e88-8852-7d53def07958;
+								- _name = "/* units are sample intervals */";
+								- m_type = textFragment;
+								- m_text = "/* units are sample intervals */
+";
+								- m_startRow = 74;
+								- m_startCol_Short = 65535;
+								- m_endRow = 74;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 3c901457-6cd0-48c6-a45e-97c62de56922;
+								- _name = "/* units are days */";
+								- m_type = textFragment;
+								- m_text = "/* units are days */
+";
+								- m_startRow = 75;
+								- m_startCol_Short = 65535;
+								- m_endRow = 75;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 48f80074-449e-4f6e-8e9d-e1f1e3adc5d2;
+								- _name = "/* units are Hz (samples/second/signal) */";
+								- m_type = textFragment;
+								- m_text = "/* units are Hz (samples/second/signal) */
+";
+								- m_startRow = 76;
+								- m_startCol_Short = 65535;
+								- m_endRow = 76;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 01ae3989-d930-40aa-a43f-327aa50c4dab;
+								- _name = "/* units are adus per physical unit */";
+								- m_type = textFragment;
+								- m_text = "/* units are adus per physical unit */
+";
+								- m_startRow = 77;
+								- m_startCol_Short = 65535;
+								- m_endRow = 77;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 9247fa63-b6e0-4441-8cab-4be6c14fa65b;
+								- _name = "/* signal number */";
+								- m_type = textFragment;
+								- m_text = "/* signal number */
+";
+								- m_startRow = 79;
+								- m_startCol_Short = 65535;
+								- m_endRow = 79;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 72186e9c-fdfd-4502-902e-18cd79d4778c;
+								- _name = "/* getvec and getframe return a sample with a value of WFDB_INVALID_SAMPLE
+   when the amplitude of a signal is undefined (e.g., the input is clipped or
+   the signal is not available) and padding is disabled (see WFDB_GVPAD, below).
+   WFDB_INVALID_SAMPLE is the minimum value for a 16-bit WFDB_Sample.  In
+   a format 24 or 32 signal, this value will be near mid-range, but it should
+   occur only rarely in such cases;  if this is a concern, WFDB_INVALID_SAMPLE
+   can be redefined and the WFDB library can be recompiled. */";
+								- m_type = textFragment;
+								- m_text = "/* getvec and getframe return a sample with a value of WFDB_INVALID_SAMPLE
+   when the amplitude of a signal is undefined (e.g., the input is clipped or
+   the signal is not available) and padding is disabled (see WFDB_GVPAD, below).
+   WFDB_INVALID_SAMPLE is the minimum value for a 16-bit WFDB_Sample.  In
+   a format 24 or 32 signal, this value will be near mid-range, but it should
+   occur only rarely in such cases;  if this is a concern, WFDB_INVALID_SAMPLE
+   can be redefined and the WFDB library can be recompiled. */
+";
+								- m_startRow = 82;
+								- m_startCol_Short = 65535;
+								- m_endRow = 88;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 6c8130e3-ac0f-419b-ac5f-43a0f9373fb7;
+								- _name = "/* Array sizes
+   Many older applications use the values of WFDB_MAXANN, WFDB_MAXSIG, and
+   WFDB_MAXSPF to determine array sizes, but (since WFDB library version 10.2)
+   there are no longer any fixed limits imposed by the WFDB library.
+*/";
+								- m_type = textFragment;
+								- m_text = "/* Array sizes
+   Many older applications use the values of WFDB_MAXANN, WFDB_MAXSIG, and
+   WFDB_MAXSPF to determine array sizes, but (since WFDB library version 10.2)
+   there are no longer any fixed limits imposed by the WFDB library.
+*/
+";
+								- m_startRow = 91;
+								- m_startCol_Short = 65535;
+								- m_endRow = 95;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID b7f06ed8-9e84-402c-8029-4e05a18d2167;
+								- _name = "/* maximum number of input or output annotators */";
+								- m_type = textFragment;
+								- m_text = "/* maximum number of input or output annotators */
+";
+								- m_startRow = 96;
+								- m_startCol_Short = 65535;
+								- m_endRow = 96;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 246292c3-6e43-40c6-9d01-f81802afc4db;
+								- _name = "/* maximum number of input or output signals */";
+								- m_type = textFragment;
+								- m_text = "/* maximum number of input or output signals */
+";
+								- m_startRow = 97;
+								- m_startCol_Short = 65535;
+								- m_endRow = 97;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID d9085ea6-ab97-473b-88c3-4306c64c7f06;
+								- _name = "/* maximum number of samples per signal per frame */";
+								- m_type = textFragment;
+								- m_text = "/* maximum number of samples per signal per frame */
+";
+								- m_startRow = 98;
+								- m_startCol_Short = 65535;
+								- m_endRow = 98;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 20b0e5e8-1f26-419c-9c77-50fa8990fb3a;
+								- _name = "/* maximum length of record name */";
+								- m_type = textFragment;
+								- m_text = "/* maximum length of record name */
+";
+								- m_startRow = 99;
+								- m_startCol_Short = 65535;
+								- m_endRow = 99;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID a0048164-fd51-4bd9-bf92-31c91b651fa2;
+								- _name = "/* maximum length of WFDB_siginfo `.units' string */";
+								- m_type = textFragment;
+								- m_text = "/* maximum length of WFDB_siginfo `.units' string */
+";
+								- m_startRow = 100;
+								- m_startCol_Short = 65535;
+								- m_endRow = 100;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 8bae912a-defb-4152-ae12-f877675d9562;
+								- _name = "/* maximum length of WFDB_siginfo `.desc' string */";
+								- m_type = textFragment;
+								- m_text = "/* maximum length of WFDB_siginfo `.desc' string */
+";
+								- m_startRow = 101;
+								- m_startCol_Short = 65535;
+								- m_endRow = 101;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID cd3dda8b-71e3-43dc-bece-941aac8e5f3a;
+								- _name = "/* WFDB_anninfo '.stat' values */";
+								- m_type = textFragment;
+								- m_text = "/* WFDB_anninfo '.stat' values */
+";
+								- m_startRow = 103;
+								- m_startCol_Short = 65535;
+								- m_endRow = 103;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 4b472a63-dc6b-4430-8aa0-fd1a16f5fff4;
+								- _name = "/* standard input annotation file */";
+								- m_type = textFragment;
+								- m_text = "/* standard input annotation file */
+";
+								- m_startRow = 104;
+								- m_startCol_Short = 65535;
+								- m_endRow = 104;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 57b37220-bd9c-4b1d-9df8-c01076bd68ea;
+								- _name = "/* standard output annotation file */";
+								- m_type = textFragment;
+								- m_text = "/* standard output annotation file */
+";
+								- m_startRow = 105;
+								- m_startCol_Short = 65535;
+								- m_endRow = 105;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID dfada507-264c-4e68-939f-c5fc08f9c267;
+								- _name = "/* AHA-format input annotation file */";
+								- m_type = textFragment;
+								- m_text = "/* AHA-format input annotation file */
+";
+								- m_startRow = 106;
+								- m_startCol_Short = 65535;
+								- m_endRow = 106;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID ac2843db-c672-4292-b7ec-cc602a9fc1c4;
+								- _name = "/* AHA-format output annotation file */";
+								- m_type = textFragment;
+								- m_text = "/* AHA-format output annotation file */
+";
+								- m_startRow = 107;
+								- m_startCol_Short = 65535;
+								- m_endRow = 107;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 55280a4b-4073-47d2-988f-5054dc4ca597;
+								- _name = "/* WFDB_siginfo '.fmt' values
+FMT_LIST is suitable as an initializer for a static array; it lists all of
+the legal values for the format field in a WFDB_siginfo structure.
+ fmt    meaning
+   0	null signal (nothing read or written)
+   8	8-bit first differences
+  16	16-bit 2's complement amplitudes, low byte first
+  61	16-bit 2's complement amplitudes, high byte first
+  80	8-bit offset binary amplitudes
+ 160	16-bit offset binary amplitudes
+ 212	2 12-bit amplitudes bit-packed in 3 bytes
+ 310	3 10-bit amplitudes bit-packed in 4 bytes
+ 311    3 10-bit amplitudes bit-packed in 4 bytes
+  24	24-bit 2's complement amplitudes, low byte first
+  32	32-bit 2's complement amplitudes, low byte first
+*/";
+								- m_type = textFragment;
+								- m_text = "/* WFDB_siginfo '.fmt' values
+FMT_LIST is suitable as an initializer for a static array; it lists all of
+the legal values for the format field in a WFDB_siginfo structure.
+ fmt    meaning
+   0	null signal (nothing read or written)
+   8	8-bit first differences
+  16	16-bit 2's complement amplitudes, low byte first
+  61	16-bit 2's complement amplitudes, high byte first
+  80	8-bit offset binary amplitudes
+ 160	16-bit offset binary amplitudes
+ 212	2 12-bit amplitudes bit-packed in 3 bytes
+ 310	3 10-bit amplitudes bit-packed in 4 bytes
+ 311    3 10-bit amplitudes bit-packed in 4 bytes
+  24	24-bit 2's complement amplitudes, low byte first
+  32	32-bit 2's complement amplitudes, low byte first
+*/
+";
+								- m_startRow = 109;
+								- m_startCol_Short = 65535;
+								- m_endRow = 124;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 4e9c33d2-749d-4314-8881-21307a527a44;
+								- _name = "/* number of items in WFDB_FMT_LIST */";
+								- m_type = textFragment;
+								- m_text = "/* number of items in WFDB_FMT_LIST */
+";
+								- m_startRow = 126;
+								- m_startCol_Short = 65535;
+								- m_endRow = 126;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 9b3aa7a3-3aea-4e3f-957d-a290b7c5854a;
+								- _name = "/* Default signal specifications */";
+								- m_type = textFragment;
+								- m_text = "/* Default signal specifications */
+";
+								- m_startRow = 128;
+								- m_startCol_Short = 65535;
+								- m_endRow = 128;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 550549a9-aceb-4fd0-9b39-6de4f56298cd;
+								- _name = "/* default sampling frequency (Hz) */";
+								- m_type = textFragment;
+								- m_text = "/* default sampling frequency (Hz) */
+";
+								- m_startRow = 129;
+								- m_startCol_Short = 65535;
+								- m_endRow = 129;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 090381a0-5911-41ca-a13d-2ead4957189e;
+								- _name = "/* default value for gain (adu/physical unit) */";
+								- m_type = textFragment;
+								- m_text = "/* default value for gain (adu/physical unit) */
+";
+								- m_startRow = 130;
+								- m_startCol_Short = 65535;
+								- m_endRow = 130;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID cdfc9f66-c157-47e7-aada-adfe78c75daa;
+								- _name = "/* default value for ADC resolution (bits) */";
+								- m_type = textFragment;
+								- m_text = "/* default value for ADC resolution (bits) */
+";
+								- m_startRow = 131;
+								- m_startCol_Short = 65535;
+								- m_endRow = 131;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 1a442998-100a-44e9-875f-17fb6a93801b;
+								- _name = "/* getvec operating modes */";
+								- m_type = textFragment;
+								- m_text = "/* getvec operating modes */
+";
+								- m_startRow = 133;
+								- m_startCol_Short = 65535;
+								- m_endRow = 133;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 2054e2fd-f3a7-464c-9bb5-5231ad93c114;
+								- _name = "/* return one sample per signal per frame */";
+								- m_type = textFragment;
+								- m_text = "/* return one sample per signal per frame */
+";
+								- m_startRow = 134;
+								- m_startCol_Short = 65535;
+								- m_endRow = 134;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 27b65475-2500-4906-bfd7-d2b6f79a91f8;
+								- _name = "/* return each sample of oversampled signals,
+				   duplicating samples of other signals */";
+								- m_type = textFragment;
+								- m_text = "/* return each sample of oversampled signals,
+				   duplicating samples of other signals */
+";
+								- m_startRow = 135;
+								- m_startCol_Short = 65535;
+								- m_endRow = 136;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID f57f7999-09db-48f2-8e42-2c5fc8415139;
+								- _name = "/* replace invalid samples with previous valid
+				   samples */";
+								- m_type = textFragment;
+								- m_text = "/* replace invalid samples with previous valid
+				   samples */
+";
+								- m_startRow = 137;
+								- m_startCol_Short = 65535;
+								- m_endRow = 138;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 2e0c7caa-421d-45c7-bc50-706c2b23ef6e;
+								- _name = "/* calinfo '.caltype' values
+WFDB_AC_COUPLED and WFDB_DC_COUPLED are used in combination with the pulse
+shape definitions below to characterize calibration pulses. */";
+								- m_type = textFragment;
+								- m_text = "/* calinfo '.caltype' values
+WFDB_AC_COUPLED and WFDB_DC_COUPLED are used in combination with the pulse
+shape definitions below to characterize calibration pulses. */
+";
+								- m_startRow = 140;
+								- m_startCol_Short = 65535;
+								- m_endRow = 142;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID df40551b-f7f1-43f8-ace3-338cb2db84ef;
+								- _name = "/* AC coupled signal */";
+								- m_type = textFragment;
+								- m_text = "/* AC coupled signal */
+";
+								- m_startRow = 143;
+								- m_startCol_Short = 65535;
+								- m_endRow = 143;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 92fa45e5-3eee-458f-ae8c-44ad931f75a3;
+								- _name = "/* DC coupled signal */";
+								- m_type = textFragment;
+								- m_text = "/* DC coupled signal */
+";
+								- m_startRow = 144;
+								- m_startCol_Short = 65535;
+								- m_endRow = 144;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID ed502374-eede-43b9-9f12-efd786d6b85d;
+								- _name = "/* square wave pulse */";
+								- m_type = textFragment;
+								- m_text = "/* square wave pulse */
+";
+								- m_startRow = 145;
+								- m_startCol_Short = 65535;
+								- m_endRow = 145;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 92cfb1b5-bd68-4831-8a9d-64a8931a33f6;
+								- _name = "/* sine wave pulse */";
+								- m_type = textFragment;
+								- m_text = "/* sine wave pulse */
+";
+								- m_startRow = 146;
+								- m_startCol_Short = 65535;
+								- m_endRow = 146;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID ca529c7b-9581-4d3d-ba95-b25ab06998cf;
+								- _name = "/* sawtooth pulse */";
+								- m_type = textFragment;
+								- m_text = "/* sawtooth pulse */
+";
+								- m_startRow = 147;
+								- m_startCol_Short = 65535;
+								- m_endRow = 147;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 704a6d92-dbd4-4540-b413-bbac7d23e4e4;
+								- _name = "/* undefined pulse shape */";
+								- m_type = textFragment;
+								- m_text = "/* undefined pulse shape */
+";
+								- m_startRow = 148;
+								- m_startCol_Short = 65535;
+								- m_endRow = 148;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID dce55bdc-55b2-47c4-a79a-b6018b7dc074;
+								- _name = "/* Structure definitions */";
+								- m_type = textFragment;
+								- m_text = "/* Structure definitions */
+";
+								- m_startRow = 150;
+								- m_startCol_Short = 65535;
+								- m_endRow = 150;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID f5dedf19-f643-45ae-9ce9-71a27f8372a6;
+								- _name = "/* signal information structure */";
+								- m_type = textFragment;
+								- m_text = "/* signal information structure */
+";
+								- m_startRow = 151;
+								- m_startCol_Short = 65535;
+								- m_endRow = 151;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID bd7610c8-8682-4e40-bc20-69d1167a52bb;
+								- _name = "/* filename of signal file */";
+								- m_type = textFragment;
+								- m_text = "/* filename of signal file */
+";
+								- m_startRow = 152;
+								- m_startCol_Short = 65535;
+								- m_endRow = 152;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 3837b7bf-48fb-4ab0-9f8e-e9093480e856;
+								- _name = "/* signal description */";
+								- m_type = textFragment;
+								- m_text = "/* signal description */
+";
+								- m_startRow = 153;
+								- m_startCol_Short = 65535;
+								- m_endRow = 153;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID fae424e2-a0c5-412a-bb4a-8bd493b545ed;
+								- _name = "/* physical units (mV unless otherwise specified) */";
+								- m_type = textFragment;
+								- m_text = "/* physical units (mV unless otherwise specified) */
+";
+								- m_startRow = 154;
+								- m_startCol_Short = 65535;
+								- m_endRow = 154;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 73e2afd8-0476-4f70-ac4d-0ba7ae69f35c;
+								- _name = "/* gain (ADC units/physical unit, 0: uncalibrated) */";
+								- m_type = textFragment;
+								- m_text = "/* gain (ADC units/physical unit, 0: uncalibrated) */
+";
+								- m_startRow = 155;
+								- m_startCol_Short = 65535;
+								- m_endRow = 155;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID f7a1bca0-9408-4e79-93ae-561f1baa6298;
+								- _name = "/* initial value (that of sample number 0) */";
+								- m_type = textFragment;
+								- m_text = "/* initial value (that of sample number 0) */
+";
+								- m_startRow = 156;
+								- m_startCol_Short = 65535;
+								- m_endRow = 156;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 8a48f586-523b-4e9a-a3bd-038aae3f9b1e;
+								- _name = "/* format (8, 16, etc.) */";
+								- m_type = textFragment;
+								- m_text = "/* format (8, 16, etc.) */
+";
+								- m_startRow = 158;
+								- m_startCol_Short = 65535;
+								- m_endRow = 158;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID f6f14c36-c04e-4e03-916e-2c991802035c;
+								- _name = "/* samples per frame (>1 for oversampled signals) */";
+								- m_type = textFragment;
+								- m_text = "/* samples per frame (>1 for oversampled signals) */
+";
+								- m_startRow = 159;
+								- m_startCol_Short = 65535;
+								- m_endRow = 159;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID f6b74695-9bfe-462c-bcec-1f17936fcb54;
+								- _name = "/* block size (for character special files only) */";
+								- m_type = textFragment;
+								- m_text = "/* block size (for character special files only) */
+";
+								- m_startRow = 160;
+								- m_startCol_Short = 65535;
+								- m_endRow = 160;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 3212746a-d7c2-46c7-b283-1dcc934d8400;
+								- _name = "/* ADC resolution in bits */";
+								- m_type = textFragment;
+								- m_text = "/* ADC resolution in bits */
+";
+								- m_startRow = 161;
+								- m_startCol_Short = 65535;
+								- m_endRow = 161;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID c74d3584-4498-498b-a347-f2b0e28d4f1d;
+								- _name = "/* ADC output given 0 VDC input */";
+								- m_type = textFragment;
+								- m_text = "/* ADC output given 0 VDC input */
+";
+								- m_startRow = 162;
+								- m_startCol_Short = 65535;
+								- m_endRow = 162;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 22b24faf-73e5-4020-adf8-81fc5ec53f8b;
+								- _name = "/* ADC output given 0 physical units input */";
+								- m_type = textFragment;
+								- m_text = "/* ADC output given 0 physical units input */
+";
+								- m_startRow = 163;
+								- m_startCol_Short = 65535;
+								- m_endRow = 163;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID b9e54106-d986-4beb-8877-92738e39746d;
+								- _name = "/* number of samples (0: unspecified) */";
+								- m_type = textFragment;
+								- m_text = "/* number of samples (0: unspecified) */
+";
+								- m_startRow = 164;
+								- m_startCol_Short = 65535;
+								- m_endRow = 164;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 6d96b0d3-809c-4718-8d04-b2c2fb5fa0b4;
+								- _name = "/* 16-bit checksum of all samples */";
+								- m_type = textFragment;
+								- m_text = "/* 16-bit checksum of all samples */
+";
+								- m_startRow = 165;
+								- m_startCol_Short = 65535;
+								- m_endRow = 165;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID c87a181c-f81c-481b-b707-d18c4141c833;
+								- _name = "/* calibration information structure */";
+								- m_type = textFragment;
+								- m_text = "/* calibration information structure */
+";
+								- m_startRow = 168;
+								- m_startCol_Short = 65535;
+								- m_endRow = 168;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 3118799b-b2b0-4e30-89f9-d43da9db3995;
+								- _name = "/* low level of calibration pulse in physical units */";
+								- m_type = textFragment;
+								- m_text = "/* low level of calibration pulse in physical units */
+";
+								- m_startRow = 169;
+								- m_startCol_Short = 65535;
+								- m_endRow = 169;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 0d3f9b0e-a25b-4906-8c28-079aeb871f0c;
+								- _name = "/* high level of calibration pulse in physical units */";
+								- m_type = textFragment;
+								- m_text = "/* high level of calibration pulse in physical units */
+";
+								- m_startRow = 170;
+								- m_startCol_Short = 65535;
+								- m_endRow = 170;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 1c4ef5b8-b7a6-4e18-b7bf-252c986b5fe1;
+								- _name = "/* customary plotting scale (physical units per cm) */";
+								- m_type = textFragment;
+								- m_text = "/* customary plotting scale (physical units per cm) */
+";
+								- m_startRow = 171;
+								- m_startCol_Short = 65535;
+								- m_endRow = 171;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID a32a2209-f9fa-4081-bc29-ae3e91e5ca32;
+								- _name = "/* signal type */";
+								- m_type = textFragment;
+								- m_text = "/* signal type */
+";
+								- m_startRow = 172;
+								- m_startCol_Short = 65535;
+								- m_endRow = 172;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID e70a6b3b-b968-4323-b139-06b782dd52cd;
+								- _name = "/* physical units */";
+								- m_type = textFragment;
+								- m_text = "/* physical units */
+";
+								- m_startRow = 173;
+								- m_startCol_Short = 65535;
+								- m_endRow = 173;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 50885b4c-3280-401a-bc9c-7349fcf2ebd7;
+								- _name = "/* calibration pulse type (see definitions above) */";
+								- m_type = textFragment;
+								- m_text = "/* calibration pulse type (see definitions above) */
+";
+								- m_startRow = 174;
+								- m_startCol_Short = 65535;
+								- m_endRow = 174;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID c6cd714f-0354-45f0-9bd9-0a6ed2e35e82;
+								- _name = "/* annotator information structure */";
+								- m_type = textFragment;
+								- m_text = "/* annotator information structure */
+";
+								- m_startRow = 177;
+								- m_startCol_Short = 65535;
+								- m_endRow = 177;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID b78d1573-2c1e-4a88-9616-bc2b264c031f;
+								- _name = "/* annotator name */";
+								- m_type = textFragment;
+								- m_text = "/* annotator name */
+";
+								- m_startRow = 178;
+								- m_startCol_Short = 65535;
+								- m_endRow = 178;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 510faffa-df23-474f-9390-55b21c98aaf3;
+								- _name = "/* file type/access code (READ, WRITE, etc.) */";
+								- m_type = textFragment;
+								- m_text = "/* file type/access code (READ, WRITE, etc.) */
+";
+								- m_startRow = 179;
+								- m_startCol_Short = 65535;
+								- m_endRow = 179;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID adf68a2f-2530-4eaa-aa7e-a9d765ac927d;
+								- _name = "/* annotation structure */";
+								- m_type = textFragment;
+								- m_text = "/* annotation structure */
+";
+								- m_startRow = 182;
+								- m_startCol_Short = 65535;
+								- m_endRow = 182;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID cf7909b2-ed92-4d43-a67f-007037a167b4;
+								- _name = "/* annotation time, in sample intervals from
+			   the beginning of the record */";
+								- m_type = textFragment;
+								- m_text = "/* annotation time, in sample intervals from
+			   the beginning of the record */
+";
+								- m_startRow = 183;
+								- m_startCol_Short = 65535;
+								- m_endRow = 184;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID ac47dbe6-b6a0-47b0-8905-8b9a0068e527;
+								- _name = "/* annotation type (< ACMAX, see <wfdb/ecgcodes.h> */";
+								- m_type = textFragment;
+								- m_text = "/* annotation type (< ACMAX, see <wfdb/ecgcodes.h> */
+";
+								- m_startRow = 185;
+								- m_startCol_Short = 65535;
+								- m_endRow = 185;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 1848e5c2-e8bd-4619-a64a-3168ab69fbbb;
+								- _name = "/* annotation subtype */";
+								- m_type = textFragment;
+								- m_text = "/* annotation subtype */
+";
+								- m_startRow = 186;
+								- m_startCol_Short = 65535;
+								- m_endRow = 186;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 0c067938-6a18-44e7-98ab-6806ac45de6b;
+								- _name = "/* channel number */";
+								- m_type = textFragment;
+								- m_text = "/* channel number */
+";
+								- m_startRow = 187;
+								- m_startCol_Short = 65535;
+								- m_endRow = 187;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 8e2c8957-6ab9-465c-ba5d-96e809c55454;
+								- _name = "/* pointer to auxiliary information */";
+								- m_type = textFragment;
+								- m_text = "/* pointer to auxiliary information */
+";
+								- m_startRow = 189;
+								- m_startCol_Short = 65535;
+								- m_endRow = 189;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID d39ed1e1-a4c6-4b37-9ca5-d49daf94937a;
+								- _name = "/* Composite data types */";
+								- m_type = textFragment;
+								- m_text = "/* Composite data types */
+";
+								- m_startRow = 192;
+								- m_startCol_Short = 65535;
+								- m_endRow = 192;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID ad248fac-796f-4659-b005-37b3a0df2a56;
+								- _name = "/* Dynamic memory allocation macros. */";
+								- m_type = textFragment;
+								- m_text = "/* Dynamic memory allocation macros. */
+";
+								- m_startRow = 198;
+								- m_startCol_Short = 65535;
+								- m_endRow = 198;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 04a6b807-5008-4c87-8f44-b8168ad19f85;
+								- _name = "/* Function types */";
+								- m_type = textFragment;
+								- m_text = "/* Function types */
+";
+								- m_startRow = 210;
+								- m_startCol_Short = 65535;
+								- m_endRow = 210;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 878d07a1-55d5-48c1-a940-fdd495ffb584;
+								- _name = "/* for everything *except* MS Windows applications */";
+								- m_type = textFragment;
+								- m_text = "/* for everything *except* MS Windows applications */
+";
+								- m_startRow = 211;
+								- m_startCol_Short = 65535;
+								- m_endRow = 211;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID a0dd206e-78fa-4cdf-a948-4a4b701aa861;
+								- _name = "/* for 16-bit MS Windows applications using the WFDB DLL */";
+								- m_type = textFragment;
+								- m_text = "/* for 16-bit MS Windows applications using the WFDB DLL */
+";
+								- m_startRow = 222;
+								- m_startCol_Short = 65535;
+								- m_endRow = 222;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 4fec6e6a-a216-4e75-a909-3ad198b9ff33;
+								- _name = "/* typedefs don't work properly with _far or _pascal -- must use #defines */";
+								- m_type = textFragment;
+								- m_text = "/* typedefs don't work properly with _far or _pascal -- must use #defines */
+";
+								- m_startRow = 223;
+								- m_startCol_Short = 65535;
+								- m_endRow = 223;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 2ac096ea-88d7-465d-8525-143e36ee8229;
+								- _name = "/* for 32-bit MS Windows applications using the WFDB DLL */";
+								- m_type = textFragment;
+								- m_text = "/* for 32-bit MS Windows applications using the WFDB DLL */
+";
+								- m_startRow = 233;
+								- m_startCol_Short = 65535;
+								- m_endRow = 233;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 3c8258bc-f931-48a3-84fa-3c47ceb957df;
+								- _name = "/* from windef.h */";
+								- m_type = textFragment;
+								- m_text = "/* from windef.h */
+";
+								- m_startRow = 235;
+								- m_startCol_Short = 65535;
+								- m_endRow = 235;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID aa670e42-1984-4055-bfc3-b1e9ff23dd31;
+								- _name = "/* Specify C linkage for C++ compilers. */";
+								- m_type = textFragment;
+								- m_text = "/* Specify C linkage for C++ compilers. */
+";
+								- m_startRow = 249;
+								- m_startCol_Short = 65535;
+								- m_endRow = 249;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID d6175c36-3931-448c-91c3-d982616afe6c;
+								- _name = "/* Define function prototypes for ANSI C compilers and C++ compilers */";
+								- m_type = textFragment;
+								- m_text = "/* Define function prototypes for ANSI C compilers and C++ compilers */
+";
+								- m_startRow = 254;
+								- m_startCol_Short = 65535;
+								- m_endRow = 254;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID d3343622-cd52-4c6d-80ef-1c141fe4abe3;
+								- _name = "/* declare only function return types for K&R C compilers */";
+								- m_type = textFragment;
+								- m_text = "/* declare only function return types for K&R C compilers */
+";
+								- m_startRow = 359;
+								- m_startCol_Short = 65535;
+								- m_endRow = 359;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 15f4eb17-92ba-4c90-9494-25cd07804ccd;
+								- _name = "/* Remove local preprocessor definitions. */";
+								- m_type = textFragment;
+								- m_text = "/* Remove local preprocessor definitions. */
+";
+								- m_startRow = 382;
+								- m_startCol_Short = 65535;
+								- m_endRow = 382;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 038f9905-172e-4fca-8b94-459420ea6087;
+								- _name = "/* Include some useful function declarations.  This section includes standard
+   header files if available and provides alternative declarations for those
+   platforms that need them.
+
+  The ANSI/ISO C standard requires conforming compilers to predefine __STDC__.
+  Non-conforming compilers for MS-Windows may or may not predefine _WINDOWS;
+  if you use such a compiler, you may need to define _WINDOWS manually. */";
+								- m_type = textFragment;
+								- m_text = "/* Include some useful function declarations.  This section includes standard
+   header files if available and provides alternative declarations for those
+   platforms that need them.
+
+  The ANSI/ISO C standard requires conforming compilers to predefine __STDC__.
+  Non-conforming compilers for MS-Windows may or may not predefine _WINDOWS;
+  if you use such a compiler, you may need to define _WINDOWS manually. */
+";
+								- m_startRow = 396;
+								- m_startCol_Short = 65535;
+								- m_endRow = 402;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 97037bec-1e44-4c9a-8c8e-b141d1b49483;
+								- _name = "string";
+								- m_type = specFragment;
+								- m_text = "";
+								- m_startRow = 4294967295;
+								- m_startCol_Short = 1;
+								- m_endRow = 4294967295;
+								- m_endCol_Short = 285;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "IDependency";
+									- _id = GUID 2aac9f88-3f88-4dd3-9721-606674bb8d4f;
+								}
+							}
+						}
+					}
+					{ IFile 
+						- _id = GUID 92b1548d-ed54-489a-bcbc-c8a07520b6ec;
+						- _myState = 8192;
+						- _properties = { IPropertyContainer 
+							- Subjects = { IRPYRawContainer 
+								- size = 2;
+								- value = 
+								{ IPropertySubject 
+									- _Name = "CG";
+									- Metaclasses = { IRPYRawContainer 
+										- size = 1;
+										- value = 
+										{ IPropertyMetaclass 
+											- _Name = "File";
+											- Properties = { IRPYRawContainer 
+												- size = 1;
+												- value = 
+												{ IProperty 
+													- _Name = "HeaderDirectivePattern";
+													- _Value = "";
+													- _Type = String;
+												}
+											}
+										}
+									}
+								}
+								{ IPropertySubject 
+									- _Name = "CPP_CG";
+									- Metaclasses = { IRPYRawContainer 
+										- size = 1;
+										- value = 
+										{ IPropertyMetaclass 
+											- _Name = "File";
+											- Properties = { IRPYRawContainer 
+												- size = 4;
+												- value = 
+												{ IProperty 
+													- _Name = "ImplementationFooter";
+													- _Value = "";
+													- _Type = MultiLine;
+												}
+												{ IProperty 
+													- _Name = "ImplementationHeader";
+													- _Value = "";
+													- _Type = MultiLine;
+												}
+												{ IProperty 
+													- _Name = "SpecificationFooter";
+													- _Value = "";
+													- _Type = MultiLine;
+												}
+												{ IProperty 
+													- _Name = "SpecificationHeader";
+													- _Value = "";
+													- _Type = MultiLine;
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+						- _name = "wfdblib";
+						- Dependencies = { IRPYRawContainer 
+							- size = 2;
+							- value = 
+							{ IDependency 
+								- _id = GUID 7f1bc3c9-773d-4354-bac6-468d74f706fd;
+								- _myState = 2048;
+								- _properties = { IPropertyContainer 
+									- Subjects = { IRPYRawContainer 
+										- size = 1;
+										- value = 
+										{ IPropertySubject 
+											- _Name = "CG";
+											- Metaclasses = { IRPYRawContainer 
+												- size = 1;
+												- value = 
+												{ IPropertyMetaclass 
+													- _Name = "Dependency";
+													- Properties = { IRPYRawContainer 
+														- size = 1;
+														- value = 
+														{ IProperty 
+															- _Name = "UsageType";
+															- _Value = "Specification";
+															- _Type = Enum;
+															- _ExtraTypeInfo = "Specification,Implementation,Existence";
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+								- _name = "wfdb";
+								- Stereotypes = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IHandle 
+										- _m2Class = "IStereotype";
+										- _filename = "PredefinedTypes.sbs";
+										- _subsystem = "PredefinedTypes";
+										- _class = "";
+										- _name = "Usage";
+										- _id = GUID 42aa4325-6112-4e88-87ce-66008878f1db;
+									}
+								}
+								- _dependsOn = { INObjectHandle 
+									- _m2Class = "IFile";
+									- _id = GUID cc1939cd-c4e3-43fd-8e6c-5658cc1016c0;
+								}
+							}
+							{ IDependency 
+								- _id = GUID c978fe21-96d4-400e-86db-135a6d923790;
+								- _myState = 2048;
+								- _properties = { IPropertyContainer 
+									- Subjects = { IRPYRawContainer 
+										- size = 1;
+										- value = 
+										{ IPropertySubject 
+											- _Name = "CG";
+											- Metaclasses = { IRPYRawContainer 
+												- size = 1;
+												- value = 
+												{ IPropertyMetaclass 
+													- _Name = "Dependency";
+													- Properties = { IRPYRawContainer 
+														- size = 1;
+														- value = 
+														{ IProperty 
+															- _Name = "UsageType";
+															- _Value = "Specification";
+															- _Type = Enum;
+															- _ExtraTypeInfo = "Specification,Implementation,Existence";
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+								- _name = "stdio";
+								- Stereotypes = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IHandle 
+										- _m2Class = "IStereotype";
+										- _filename = "PredefinedTypes.sbs";
+										- _subsystem = "PredefinedTypes";
+										- _class = "";
+										- _name = "Usage";
+										- _id = GUID 42aa4325-6112-4e88-87ce-66008878f1db;
+									}
+								}
+								- _dependsOn = { INObjectHandle 
+									- _m2Class = "IFile";
+									- _id = GUID 5a91f8c1-34c5-4b5a-ba58-ba3128f2dafe;
+								}
+							}
+						}
+						- m_path = "";
+						- m_type = specFile;
+						- Fragments = { IRPYRawContainer 
+							- size = 43;
+							- value = 
+							{ IFileFragment 
+								- _id = GUID 837b917e-7cd9-42bf-8a93-ae9acac0e0f2;
+								- _name = "/* file: wfdblib.h	G. Moody	13 April 1989
+                        Last revised:	 1 March 2010       wfdblib 10.5.0
+External definitions for WFDB library private functions
+
+_______________________________________________________________________________
+wfdb: a library for reading and writing annotated waveforms (time series data)
+Copyright (C) 1989-2010 George B. Moody
+
+This library is free software; you can redistribute it and/or modify it under
+the terms of the GNU Library General Public License as published by the Free
+Software Foundation; either version 2 of the License, or (at your option) any
+later version.
+
+This library is distributed in the hope that it will be useful, but WITHOUT ANY
+WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+PARTICULAR PURPOSE.  See the GNU Library General Public License for more
+details.
+
+You should have received a copy of the GNU Library General Public License along
+with this library; if not, write to the Free Software Foundation, Inc., 59
+Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+
+You may contact the author by e-mail (george@mit.edu) or postal mail
+(MIT Room E25-505A, Cambridge, MA 02139 USA).  For updates to this software,
+please visit PhysioNet (http://www.physionet.org/).
+_______________________________________________________________________________
+
+These definitions may be included in WFDB library source files to permit them
+to share information about library private functions, which are not intended
+to be invoked directly by user programs.  By convention, all externally defined
+symbols reserved to the library begin with the characters \"wfdb_\".
+*/";
+								- m_type = textFragment;
+								- m_text = "/* file: wfdblib.h	G. Moody	13 April 1989
+                        Last revised:	 1 March 2010       wfdblib 10.5.0
+External definitions for WFDB library private functions
+
+_______________________________________________________________________________
+wfdb: a library for reading and writing annotated waveforms (time series data)
+Copyright (C) 1989-2010 George B. Moody
+
+This library is free software; you can redistribute it and/or modify it under
+the terms of the GNU Library General Public License as published by the Free
+Software Foundation; either version 2 of the License, or (at your option) any
+later version.
+
+This library is distributed in the hope that it will be useful, but WITHOUT ANY
+WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+PARTICULAR PURPOSE.  See the GNU Library General Public License for more
+details.
+
+You should have received a copy of the GNU Library General Public License along
+with this library; if not, write to the Free Software Foundation, Inc., 59
+Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+
+You may contact the author by e-mail (george@mit.edu) or postal mail
+(MIT Room E25-505A, Cambridge, MA 02139 USA).  For updates to this software,
+please visit PhysioNet (http://www.physionet.org/).
+_______________________________________________________________________________
+
+These definitions may be included in WFDB library source files to permit them
+to share information about library private functions, which are not intended
+to be invoked directly by user programs.  By convention, all externally defined
+symbols reserved to the library begin with the characters \"wfdb_\".
+*/
+";
+								- m_startRow = 1;
+								- m_startCol_Short = 65535;
+								- m_endRow = 32;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 6141615e-3dec-48cc-b57d-4c1dcf774a55;
+								- _name = "/* MS-Windows users are strongly advised to compile the WFDB library using the
+   free Cygwin tools (www.cygwin.com).  Use of other compilers may be possible
+   but is not supported.
+
+   Cygwin users:  Note that the symbols _WINDOWS, _WINDLL, WIN32, etc. are
+   not defined and should not be defined when compiling the WFDB software
+   package using gcc.  Cygwin's POSIX emulation layer avoids the need for
+   the various workarounds required when using other compilers under
+   MS-Windows.
+
+   If you are using another MS-Windows compiler, you will need these
+   workarounds, and you should be careful to define _WINDOWS, _WINDLL, and
+   _WIN32 as appropriate.  Older versions of the WFDB library were successfully
+   compiled under MS-DOS and under 16-bit versions of MS-Windows, but the
+   conditionally compiled code written to support these platforms has not been
+   tested recently.
+
+   Define the symbol _WINDLL if this library is to be compiled as a Microsoft
+   Windows DLL.  Note that a DLL's private functions (such as those listed
+   below) *cannot* be called by Windows user programs, which can call only DLL
+   functions that use the Pascal calling interface (see wfdb.h).  To compile
+   this library for use in a Microsoft Windows application, but *not* as a DLL,
+   define the symbol _WINDOWS instead of _WINDLL. */
+/* #define _WINDLL */";
+								- m_type = textFragment;
+								- m_text = "/* MS-Windows users are strongly advised to compile the WFDB library using the
+   free Cygwin tools (www.cygwin.com).  Use of other compilers may be possible
+   but is not supported.
+
+   Cygwin users:  Note that the symbols _WINDOWS, _WINDLL, WIN32, etc. are
+   not defined and should not be defined when compiling the WFDB software
+   package using gcc.  Cygwin's POSIX emulation layer avoids the need for
+   the various workarounds required when using other compilers under
+   MS-Windows.
+
+   If you are using another MS-Windows compiler, you will need these
+   workarounds, and you should be careful to define _WINDOWS, _WINDLL, and
+   _WIN32 as appropriate.  Older versions of the WFDB library were successfully
+   compiled under MS-DOS and under 16-bit versions of MS-Windows, but the
+   conditionally compiled code written to support these platforms has not been
+   tested recently.
+
+   Define the symbol _WINDLL if this library is to be compiled as a Microsoft
+   Windows DLL.  Note that a DLL's private functions (such as those listed
+   below) *cannot* be called by Windows user programs, which can call only DLL
+   functions that use the Pascal calling interface (see wfdb.h).  To compile
+   this library for use in a Microsoft Windows application, but *not* as a DLL,
+   define the symbol _WINDOWS instead of _WINDLL. */
+/* #define _WINDLL */
+";
+								- m_startRow = 36;
+								- m_startCol_Short = 65535;
+								- m_endRow = 59;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 94c45c79-a6b3-492f-b308-6cbf6a2f4f88;
+								- _name = "/* Define the symbol MSDOS if this library is to be used under MS-DOS or MS
+   Windows.  Note: MSDOS is predefined by some MS-DOS and MS Windows compilers.
+*/";
+								- m_type = textFragment;
+								- m_text = "/* Define the symbol MSDOS if this library is to be used under MS-DOS or MS
+   Windows.  Note: MSDOS is predefined by some MS-DOS and MS Windows compilers.
+*/
+";
+								- m_startRow = 77;
+								- m_startCol_Short = 65535;
+								- m_endRow = 79;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID df0984ec-8f31-40bd-92df-c3cb513c5e1b;
+								- _name = "/* Macintosh users are strongly advised to use Mac OS X or later.  If you are
+   doing so, no special configuration is needed, and you may ignore this
+   section.
+
+   If you are running Mac OS 9 or earlier, you may be able to use the WFDB
+   software package, but this configuration has not been tested for many years,
+   and is not supported!  If you would like to try it, define MAC. */
+/* #define MAC */";
+								- m_type = textFragment;
+								- m_text = "/* Macintosh users are strongly advised to use Mac OS X or later.  If you are
+   doing so, no special configuration is needed, and you may ignore this
+   section.
+
+   If you are running Mac OS 9 or earlier, you may be able to use the WFDB
+   software package, but this configuration has not been tested for many years,
+   and is not supported!  If you would like to try it, define MAC. */
+/* #define MAC */
+";
+								- m_startRow = 86;
+								- m_startCol_Short = 65535;
+								- m_endRow = 93;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID e9387950-c4ee-4e76-bd1d-1fa2fb8db1cf;
+								- _name = "/* DEFWFDB is the default value of the WFDB path if the WFDB environment
+   variable is not set.  This value is edited by the configuration script
+   (../configure), which also edits this block of comments to match.
+
+   If WFDB_NETFILES support is disabled, the string \". /usr/database\" is
+   usually sufficient for a default WFDB path, thus restricting the search for
+   WFDB files to the current directory (\".\"), followed by /usr/database).
+   
+   If WFDB_NETFILES support is enabled, the first setting below adds the
+   web-accessible PhysioBank databases to the default path; you may wish to
+   change this to use a nearby PhysioNet mirror (for a list of mirrors, see
+   http://physionet.org/mirrors/).  DEFWFDB must not be NULL, however.
+*/";
+								- m_type = textFragment;
+								- m_text = "/* DEFWFDB is the default value of the WFDB path if the WFDB environment
+   variable is not set.  This value is edited by the configuration script
+   (../configure), which also edits this block of comments to match.
+
+   If WFDB_NETFILES support is disabled, the string \". /usr/database\" is
+   usually sufficient for a default WFDB path, thus restricting the search for
+   WFDB files to the current directory (\".\"), followed by /usr/database).
+   
+   If WFDB_NETFILES support is enabled, the first setting below adds the
+   web-accessible PhysioBank databases to the default path; you may wish to
+   change this to use a nearby PhysioNet mirror (for a list of mirrors, see
+   http://physionet.org/mirrors/).  DEFWFDB must not be NULL, however.
+*/
+";
+								- m_startRow = 95;
+								- m_startCol_Short = 65535;
+								- m_endRow = 107;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 1adfd542-0bbb-4286-b4f9-eeace79f3d30;
+								- _name = "/* Mac OS 9 and earlier, only:  The value of DEFWFDB given below specifies
+   that the WFDB path is to be read from the file udb/dbpath.mac on the third
+   edition of the MIT-BIH Arrhythmia Database CD-ROM (which has a volume name
+   of `MITADB3');  you may prefer to use a file on a writable disk for this
+   purpose, to make reconfiguration possible.  See getwfdb() in wfdbio.c for
+   further information.
+  
+   If the version of \"ISO 9660 File Access\" in the \"System:Extensions\" folder
+   is earlier than 5.0, either update your system software (recommended) or
+   define FIXISOCD. */";
+								- m_type = textFragment;
+								- m_text = "/* Mac OS 9 and earlier, only:  The value of DEFWFDB given below specifies
+   that the WFDB path is to be read from the file udb/dbpath.mac on the third
+   edition of the MIT-BIH Arrhythmia Database CD-ROM (which has a volume name
+   of `MITADB3');  you may prefer to use a file on a writable disk for this
+   purpose, to make reconfiguration possible.  See getwfdb() in wfdbio.c for
+   further information.
+  
+   If the version of \"ISO 9660 File Access\" in the \"System:Extensions\" folder
+   is earlier than 5.0, either update your system software (recommended) or
+   define FIXISOCD. */
+";
+								- m_startRow = 115;
+								- m_startCol_Short = 65535;
+								- m_endRow = 124;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID b6ddc1c3-413c-4ccb-8a4c-d3d059613529;
+								- _name = "/* #define FIXISOCD */";
+								- m_type = textFragment;
+								- m_text = "/* #define FIXISOCD */
+";
+								- m_startRow = 127;
+								- m_startCol_Short = 65535;
+								- m_endRow = 127;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID d5dcac90-b774-45ff-9215-43019887f04e;
+								- _name = "/* DEFWFDBCAL is the name of the default WFDB calibration file, used if the
+   WFDBCAL environment variable is not set.  This name need not include path
+   information if the calibration file is located in a directory included in
+   the WFDB path.  The value given below is the name of the standard
+   calibration file supplied on the various CD-ROM databases.  DEFWFDBCAL may
+   be NULL if you prefer not to have a default calibration file.  See calopen()
+   in calib.c for further information. */";
+								- m_type = textFragment;
+								- m_text = "/* DEFWFDBCAL is the name of the default WFDB calibration file, used if the
+   WFDBCAL environment variable is not set.  This name need not include path
+   information if the calibration file is located in a directory included in
+   the WFDB path.  The value given below is the name of the standard
+   calibration file supplied on the various CD-ROM databases.  DEFWFDBCAL may
+   be NULL if you prefer not to have a default calibration file.  See calopen()
+   in calib.c for further information. */
+";
+								- m_startRow = 136;
+								- m_startCol_Short = 65535;
+								- m_endRow = 142;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 0573620e-9a65-4b4e-a883-d1deb039ee5c;
+								- _name = "/* WFDB applications may write annotations out-of-order, but in almost all
+   cases, they expect that annotations they read must be in order.  The
+   environment variable WFDBANNSORT specifies if wfdbquit() should attempt to
+   sort annotations in any output annotation files before closing them (it
+   does this if WFDBANNSORT is non-zero, or if WFDBANNSORT is not set, and
+   DEFWFDBANNSORT is non-zero).  Sorting is done by invoking 'sortann' (see
+   ../app/sortann.c) as a separate process;  since this cannot be done from
+   an MS-Windows DLL, sorting is disabled by default in this case. */";
+								- m_type = textFragment;
+								- m_text = "/* WFDB applications may write annotations out-of-order, but in almost all
+   cases, they expect that annotations they read must be in order.  The
+   environment variable WFDBANNSORT specifies if wfdbquit() should attempt to
+   sort annotations in any output annotation files before closing them (it
+   does this if WFDBANNSORT is non-zero, or if WFDBANNSORT is not set, and
+   DEFWFDBANNSORT is non-zero).  Sorting is done by invoking 'sortann' (see
+   ../app/sortann.c) as a separate process;  since this cannot be done from
+   an MS-Windows DLL, sorting is disabled by default in this case. */
+";
+								- m_startRow = 145;
+								- m_startCol_Short = 65535;
+								- m_endRow = 152;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 12085257-ed10-4653-8034-0239e24d59ce;
+								- _name = "/* When reading multifrequency records, getvec() can operate in two modes:
+   WFDB_LOWRES (returning one sample per signal per frame), or WFDB_HIGHRES
+   (returning each sample of any oversampled signals, and duplicating samples
+   of other signals as necessary).  If the operating mode is not selected by
+   invoking setgvmode(), the value of the environment variable WFDBGVMODE
+   determines the mode (0: WFDB_LOWRES, 1: WFDB_HIGHRES);  if WFDBGVMODE
+   is not set, the value of DEFWFDBMODE determines the mode. */";
+								- m_type = textFragment;
+								- m_text = "/* When reading multifrequency records, getvec() can operate in two modes:
+   WFDB_LOWRES (returning one sample per signal per frame), or WFDB_HIGHRES
+   (returning each sample of any oversampled signals, and duplicating samples
+   of other signals as necessary).  If the operating mode is not selected by
+   invoking setgvmode(), the value of the environment variable WFDBGVMODE
+   determines the mode (0: WFDB_LOWRES, 1: WFDB_HIGHRES);  if WFDBGVMODE
+   is not set, the value of DEFWFDBMODE determines the mode. */
+";
+								- m_startRow = 159;
+								- m_startCol_Short = 65535;
+								- m_endRow = 165;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 3972d23f-c312-45bc-83c7-f6bb556a2d84;
+								- _name = "/* putenv() is available in POSIX, SVID, and BSD Unices and in MS-DOS and
+   32-bit MS Windows, but not under 16-bit MS Windows or under MacOS.  If it is
+   available, getwfdb() (in wfdbio.c) detects when the environment variables
+   WFDB, WFDBCAL, WFDBANNSORT, and WFDBGVMODE are not set, and sets them
+   according to DEFWFDB, DEFWFDBCAL, DEFWFDBANNSORT, and DEFWFDBGVMODE as
+   needed using putenv().  This feature is useful mainly for programs such as
+   WAVE, where these variables are set interactively and it is useful to show
+   their default values to the user; setwfdb() and getwfdb() do not depend on
+   it.
+*/";
+								- m_type = textFragment;
+								- m_text = "/* putenv() is available in POSIX, SVID, and BSD Unices and in MS-DOS and
+   32-bit MS Windows, but not under 16-bit MS Windows or under MacOS.  If it is
+   available, getwfdb() (in wfdbio.c) detects when the environment variables
+   WFDB, WFDBCAL, WFDBANNSORT, and WFDBGVMODE are not set, and sets them
+   according to DEFWFDB, DEFWFDBCAL, DEFWFDBANNSORT, and DEFWFDBGVMODE as
+   needed using putenv().  This feature is useful mainly for programs such as
+   WAVE, where these variables are set interactively and it is useful to show
+   their default values to the user; setwfdb() and getwfdb() do not depend on
+   it.
+*/
+";
+								- m_startRow = 168;
+								- m_startCol_Short = 65535;
+								- m_endRow = 177;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 180a94e0-22df-4eb8-88d1-b9b42e12615d;
+								- _name = "/* stdin/stdout may not be defined in some environments (e.g., for MS Windows
+   DLLs).  Defining them as NULL here allows the WFDB library to be compiled in
+   such environments (it does not allow use of stdin/stdout when the operating
+   environment does not provide them, however). */";
+								- m_type = textFragment;
+								- m_text = "/* stdin/stdout may not be defined in some environments (e.g., for MS Windows
+   DLLs).  Defining them as NULL here allows the WFDB library to be compiled in
+   such environments (it does not allow use of stdin/stdout when the operating
+   environment does not provide them, however). */
+";
+								- m_startRow = 184;
+								- m_startCol_Short = 65535;
+								- m_endRow = 187;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID c8f7ee2e-9fc6-4225-a166-1669b6ad3908;
+								- _name = "/* Structures used by internal WFDB library functions only */";
+								- m_type = textFragment;
+								- m_text = "/* Structures used by internal WFDB library functions only */
+";
+								- m_startRow = 203;
+								- m_startCol_Short = 65535;
+								- m_endRow = 203;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID c18223e5-adba-4003-b2c4-3a6737302eae;
+								- _name = "/* Values for WFDB_FILE 'type' field */";
+								- m_type = textFragment;
+								- m_text = "/* Values for WFDB_FILE 'type' field */
+";
+								- m_startRow = 221;
+								- m_startCol_Short = 65535;
+								- m_endRow = 221;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID d001060b-0e24-4b61-ba73-da333301401a;
+								- _name = "/* a local file, read via C standard I/O */";
+								- m_type = textFragment;
+								- m_text = "/* a local file, read via C standard I/O */
+";
+								- m_startRow = 222;
+								- m_startCol_Short = 65535;
+								- m_endRow = 222;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 760b8cde-87a7-4ac0-8b97-9312d16520df;
+								- _name = "/* a remote file, read via libwww */";
+								- m_type = textFragment;
+								- m_text = "/* a remote file, read via libwww */
+";
+								- m_startRow = 223;
+								- m_startCol_Short = 65535;
+								- m_endRow = 223;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 0834c872-0e19-4343-9cd9-756b3f833d01;
+								- _name = "/* Composite data types */";
+								- m_type = textFragment;
+								- m_text = "/* Composite data types */
+";
+								- m_startRow = 225;
+								- m_startCol_Short = 65535;
+								- m_endRow = 225;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID a36beb32-f893-4bf6-a0cb-3aa1930470a8;
+								- _name = "/* To enable http and ftp access as well as standard (local file) I/O via the
+   WFDB library, define WFDB_NETFILES=1 and link with libwww (see 'Makefile').
+   Otherwise, the WFDB library uses only the ANSI/ISO standard I/O library. */";
+								- m_type = textFragment;
+								- m_text = "/* To enable http and ftp access as well as standard (local file) I/O via the
+   WFDB library, define WFDB_NETFILES=1 and link with libwww (see 'Makefile').
+   Otherwise, the WFDB library uses only the ANSI/ISO standard I/O library. */
+";
+								- m_startRow = 229;
+								- m_startCol_Short = 65535;
+								- m_endRow = 231;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 10e13484-cb2b-44d8-bc41-b182067d2d8c;
+								- _name = "/* errno value: attempt to write to a read-only file system */";
+								- m_type = textFragment;
+								- m_text = "/* errno value: attempt to write to a read-only file system */
+";
+								- m_startRow = 240;
+								- m_startCol_Short = 65535;
+								- m_endRow = 240;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 32eb389b-2095-4489-a44d-dc069eb1be7d;
+								- _name = "/* Constants */
+/* #define USEHTCACHE */";
+								- m_type = textFragment;
+								- m_text = "/* Constants */
+/* #define USEHTCACHE */
+";
+								- m_startRow = 248;
+								- m_startCol_Short = 65535;
+								- m_endRow = 249;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID e30c50b9-656f-4efa-949d-61e0c9f96b16;
+								- _name = "/* uncomment to enable caching by libwww */";
+								- m_type = textFragment;
+								- m_text = "/* uncomment to enable caching by libwww */
+";
+								- m_startRow = 249;
+								- m_startCol_Short = 65535;
+								- m_endRow = 249;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID b4f1f657-a005-45cf-bc57-34dae791cd09;
+								- _name = "/* http cache parameters (effective only if USEHTCACHE is defined) */";
+								- m_type = textFragment;
+								- m_text = "/* http cache parameters (effective only if USEHTCACHE is defined) */
+";
+								- m_startRow = 251;
+								- m_startCol_Short = 65535;
+								- m_endRow = 251;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 7021b7af-c84c-49ea-b9d6-66854390387f;
+								- _name = "/* should be world-writable */";
+								- m_type = textFragment;
+								- m_text = "/* should be world-writable */
+";
+								- m_startRow = 252;
+								- m_startCol_Short = 65535;
+								- m_endRow = 252;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 110073b7-bea7-42e6-b612-64c745b2475f;
+								- _name = "/* max size of the entire http cache in MB */";
+								- m_type = textFragment;
+								- m_text = "/* max size of the entire http cache in MB */
+";
+								- m_startRow = 253;
+								- m_startCol_Short = 65535;
+								- m_endRow = 253;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID e216134e-7560-45c3-9a1f-bd947ad55407;
+								- _name = "/* max size of a single cache entry in MB */";
+								- m_type = textFragment;
+								- m_text = "/* max size of a single cache entry in MB */
+";
+								- m_startRow = 254;
+								- m_startCol_Short = 65535;
+								- m_endRow = 254;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID f0dc2794-09a2-4d8d-88be-11299424e39b;
+								- _name = "/* default bytes per http range request */";
+								- m_type = textFragment;
+								- m_text = "/* default bytes per http range request */
+";
+								- m_startRow = 256;
+								- m_startCol_Short = 65535;
+								- m_endRow = 256;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID c6606765-052e-41be-91a6-1d1a1bd176ec;
+								- _name = "/* values for netfile 'err' field */";
+								- m_type = textFragment;
+								- m_text = "/* values for netfile 'err' field */
+";
+								- m_startRow = 258;
+								- m_startCol_Short = 65535;
+								- m_endRow = 258;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID b6da56bb-b544-44d9-ae92-cb4070a8c670;
+								- _name = "/* no errors */";
+								- m_type = textFragment;
+								- m_text = "/* no errors */
+";
+								- m_startRow = 259;
+								- m_startCol_Short = 65535;
+								- m_endRow = 259;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID a7a3bcf3-248a-4636-96e2-3d6c04724acb;
+								- _name = "/* file pointer at EOF */";
+								- m_type = textFragment;
+								- m_text = "/* file pointer at EOF */
+";
+								- m_startRow = 260;
+								- m_startCol_Short = 65535;
+								- m_endRow = 260;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 7d875529-affd-4b39-b364-81e53a8d8fc1;
+								- _name = "/* read request failed */";
+								- m_type = textFragment;
+								- m_text = "/* read request failed */
+";
+								- m_startRow = 261;
+								- m_startCol_Short = 65535;
+								- m_endRow = 261;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID b545d169-be38-4218-84aa-14a17648b8c1;
+								- _name = "/* values for netfile 'mode' field */";
+								- m_type = textFragment;
+								- m_text = "/* values for netfile 'mode' field */
+";
+								- m_startRow = 263;
+								- m_startCol_Short = 65535;
+								- m_endRow = 263;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 4cf9eb50-73ad-4ab8-a4bf-7a4d8892250e;
+								- _name = "/* http range requests supported */";
+								- m_type = textFragment;
+								- m_text = "/* http range requests supported */
+";
+								- m_startRow = 264;
+								- m_startCol_Short = 65535;
+								- m_endRow = 264;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 17481ed5-54fe-4f79-8373-5b5c16f410b0;
+								- _name = "/* http range requests not supported */";
+								- m_type = textFragment;
+								- m_text = "/* http range requests not supported */
+";
+								- m_startRow = 265;
+								- m_startCol_Short = 65535;
+								- m_endRow = 265;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 6a6e1d84-e199-40e8-9278-1a90664a904d;
+								- _name = "/* WFDB_NETFILES = 0 -- use standard I/O functions only */";
+								- m_type = textFragment;
+								- m_text = "/* WFDB_NETFILES = 0 -- use standard I/O functions only */
+";
+								- m_startRow = 267;
+								- m_startCol_Short = 65535;
+								- m_endRow = 267;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 3585be86-15ec-449f-babd-cc30c7063fe4;
+								- _name = "/* these definitions are needed for 16-bit MS Windows only */";
+								- m_type = textFragment;
+								- m_text = "/* these definitions are needed for 16-bit MS Windows only */
+";
+								- m_startRow = 283;
+								- m_startCol_Short = 65535;
+								- m_endRow = 283;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 9d296cdd-923e-4ff7-8bc9-cff2f9871151;
+								- _name = "/* Define MKDIR as either the one-argument mkdir() (for the native MSDOS and
+   MS-Windows API) or the standard two-argument mkdir() (everywhere else). */";
+								- m_type = textFragment;
+								- m_text = "/* Define MKDIR as either the one-argument mkdir() (for the native MSDOS and
+   MS-Windows API) or the standard two-argument mkdir() (everywhere else). */
+";
+								- m_startRow = 294;
+								- m_startCol_Short = 65535;
+								- m_endRow = 295;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 664c8b10-0eb4-46a3-a304-2ab7a8e22bf7;
+								- _name = "/* Define function prototypes for ANSI C, MS Windows C, and C++ compilers */";
+								- m_type = textFragment;
+								- m_text = "/* Define function prototypes for ANSI C, MS Windows C, and C++ compilers */
+";
+								- m_startRow = 305;
+								- m_startCol_Short = 65535;
+								- m_endRow = 305;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID ce8a2e4b-2cc5-4352-91a5-6abb5fc06f51;
+								- _name = "/* These functions are defined in wfdbio.c */";
+								- m_type = textFragment;
+								- m_text = "/* These functions are defined in wfdbio.c */
+";
+								- m_startRow = 311;
+								- m_startCol_Short = 65535;
+								- m_endRow = 311;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID f81fc633-d0bb-45f2-be87-c726d4eeac22;
+								- _name = "/* These functions are defined in signal.c */";
+								- m_type = textFragment;
+								- m_text = "/* These functions are defined in signal.c */
+";
+								- m_startRow = 342;
+								- m_startCol_Short = 65535;
+								- m_endRow = 342;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 921dcfd0-b357-41da-b912-3c336112acf3;
+								- _name = "/* These functions are defined in annot.c */";
+								- m_type = textFragment;
+								- m_text = "/* These functions are defined in annot.c */
+";
+								- m_startRow = 347;
+								- m_startCol_Short = 65535;
+								- m_endRow = 347;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID ebf95c31-0f44-485a-b404-4c5953eaad95;
+								- _name = "/* declare only function return types for non-ANSI C compilers */";
+								- m_type = textFragment;
+								- m_text = "/* declare only function return types for non-ANSI C compilers */
+";
+								- m_startRow = 355;
+								- m_startCol_Short = 65535;
+								- m_endRow = 355;
+								- m_endCol_Short = 65535;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "";
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 2f9f3739-e55d-4811-b99b-b71f54e5a170;
+								- _name = "wfdb";
+								- m_type = specFragment;
+								- m_text = "";
+								- m_startRow = 4294967295;
+								- m_startCol_Short = 1;
+								- m_endRow = 4294967295;
+								- m_endCol_Short = 267;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "IDependency";
+									- _id = GUID 7f1bc3c9-773d-4354-bac6-468d74f706fd;
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 58dbf2ac-b81c-4269-973d-2e3ecbbb6331;
+								- _name = "stdio";
+								- m_type = specFragment;
+								- m_text = "";
+								- m_startRow = 4294967295;
+								- m_startCol_Short = 1;
+								- m_endRow = 4294967295;
+								- m_endCol_Short = 267;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "IDependency";
+									- _id = GUID c978fe21-96d4-400e-86db-135a6d923790;
+								}
+							}
+						}
+					}
+					{ IFile 
+						- _id = GUID 7fa4c740-9c2c-4c27-8074-45f27367a5a5;
+						- _myState = 8192;
+						- _properties = { IPropertyContainer 
+							- Subjects = { IRPYRawContainer 
+								- size = 2;
+								- value = 
+								{ IPropertySubject 
+									- _Name = "CG";
+									- Metaclasses = { IRPYRawContainer 
+										- size = 1;
+										- value = 
+										{ IPropertyMetaclass 
+											- _Name = "File";
+											- Properties = { IRPYRawContainer 
+												- size = 2;
+												- value = 
+												{ IProperty 
+													- _Name = "HeaderDirectivePattern";
+													- _Value = "";
+													- _Type = String;
+												}
+												{ IProperty 
+													- _Name = "ImpExtension";
+													- _Value = ".c";
+													- _Type = String;
+												}
+											}
+										}
+									}
+								}
+								{ IPropertySubject 
+									- _Name = "CPP_CG";
+									- Metaclasses = { IRPYRawContainer 
+										- size = 1;
+										- value = 
+										{ IPropertyMetaclass 
+											- _Name = "File";
+											- Properties = { IRPYRawContainer 
+												- size = 4;
+												- value = 
+												{ IProperty 
+													- _Name = "ImplementationFooter";
+													- _Value = "";
+													- _Type = MultiLine;
+												}
+												{ IProperty 
+													- _Name = "ImplementationHeader";
+													- _Value = "";
+													- _Type = MultiLine;
+												}
+												{ IProperty 
+													- _Name = "SpecificationFooter";
+													- _Value = "";
+													- _Type = MultiLine;
+												}
+												{ IProperty 
+													- _Name = "SpecificationHeader";
+													- _Value = "";
+													- _Type = MultiLine;
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+						- _name = "calib";
+						- Dependencies = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IDependency 
+								- _id = GUID 3d4ef24c-12d9-4f02-b55b-2829a8ba42c6;
+								- _myState = 2048;
+								- _properties = { IPropertyContainer 
+									- Subjects = { IRPYRawContainer 
+										- size = 1;
+										- value = 
+										{ IPropertySubject 
+											- _Name = "CG";
+											- Metaclasses = { IRPYRawContainer 
+												- size = 1;
+												- value = 
+												{ IPropertyMetaclass 
+													- _Name = "Dependency";
+													- Properties = { IRPYRawContainer 
+														- size = 1;
+														- value = 
+														{ IProperty 
+															- _Name = "UsageType";
+															- _Value = "Specification";
+															- _Type = Enum;
+															- _ExtraTypeInfo = "Specification,Implementation,Existence";
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+								- _name = "wfdblib";
+								- Stereotypes = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IHandle 
+										- _m2Class = "IStereotype";
+										- _filename = "PredefinedTypes.sbs";
+										- _subsystem = "PredefinedTypes";
+										- _class = "";
+										- _name = "Usage";
+										- _id = GUID 42aa4325-6112-4e88-87ce-66008878f1db;
+									}
+								}
+								- _dependsOn = { INObjectHandle 
+									- _m2Class = "IFile";
+									- _id = GUID 92b1548d-ed54-489a-bcbc-c8a07520b6ec;
+								}
+							}
+						}
+						- m_path = "";
+						- m_type = implFile;
+						- Fragments = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IFileFragment 
+								- _id = GUID 1cd3c3a5-8219-4416-a8c1-3aeb87a240f5;
+								- _name = "wfdblib";
+								- m_type = specFragment;
+								- m_text = "";
+								- m_startRow = 4294967295;
+								- m_startCol_Short = 1;
+								- m_endRow = 4294967295;
+								- m_endCol_Short = 340;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "IDependency";
+									- _id = GUID 3d4ef24c-12d9-4f02-b55b-2829a8ba42c6;
+								}
+							}
+						}
+					}
+					{ IFile 
+						- _id = GUID cf02fcd0-67f5-4041-8de6-cdc43da0c171;
+						- _myState = 8192;
+						- _properties = { IPropertyContainer 
+							- Subjects = { IRPYRawContainer 
+								- size = 2;
+								- value = 
+								{ IPropertySubject 
+									- _Name = "CG";
+									- Metaclasses = { IRPYRawContainer 
+										- size = 1;
+										- value = 
+										{ IPropertyMetaclass 
+											- _Name = "File";
+											- Properties = { IRPYRawContainer 
+												- size = 2;
+												- value = 
+												{ IProperty 
+													- _Name = "HeaderDirectivePattern";
+													- _Value = "";
+													- _Type = String;
+												}
+												{ IProperty 
+													- _Name = "ImpExtension";
+													- _Value = ".c";
+													- _Type = String;
+												}
+											}
+										}
+									}
+								}
+								{ IPropertySubject 
+									- _Name = "CPP_CG";
+									- Metaclasses = { IRPYRawContainer 
+										- size = 1;
+										- value = 
+										{ IPropertyMetaclass 
+											- _Name = "File";
+											- Properties = { IRPYRawContainer 
+												- size = 4;
+												- value = 
+												{ IProperty 
+													- _Name = "ImplementationFooter";
+													- _Value = "";
+													- _Type = MultiLine;
+												}
+												{ IProperty 
+													- _Name = "ImplementationHeader";
+													- _Value = "";
+													- _Type = MultiLine;
+												}
+												{ IProperty 
+													- _Name = "SpecificationFooter";
+													- _Value = "";
+													- _Type = MultiLine;
+												}
+												{ IProperty 
+													- _Name = "SpecificationHeader";
+													- _Value = "";
+													- _Type = MultiLine;
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+						- _name = "edr";
+						- Dependencies = { IRPYRawContainer 
+							- size = 4;
+							- value = 
+							{ IDependency 
+								- _id = GUID fd65e2f2-ef7a-4ae5-8aee-5c136eeeaaa4;
+								- _myState = 2048;
+								- _properties = { IPropertyContainer 
+									- Subjects = { IRPYRawContainer 
+										- size = 1;
+										- value = 
+										{ IPropertySubject 
+											- _Name = "CG";
+											- Metaclasses = { IRPYRawContainer 
+												- size = 1;
+												- value = 
+												{ IPropertyMetaclass 
+													- _Name = "Dependency";
+													- Properties = { IRPYRawContainer 
+														- size = 1;
+														- value = 
+														{ IProperty 
+															- _Name = "UsageType";
+															- _Value = "Specification";
+															- _Type = Enum;
+															- _ExtraTypeInfo = "Specification,Implementation,Existence";
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+								- _name = "stdio";
+								- Stereotypes = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IHandle 
+										- _m2Class = "IStereotype";
+										- _filename = "PredefinedTypes.sbs";
+										- _subsystem = "PredefinedTypes";
+										- _class = "";
+										- _name = "Usage";
+										- _id = GUID 42aa4325-6112-4e88-87ce-66008878f1db;
+									}
+								}
+								- _dependsOn = { INObjectHandle 
+									- _m2Class = "IFile";
+									- _id = GUID 5a91f8c1-34c5-4b5a-ba58-ba3128f2dafe;
+								}
+							}
+							{ IDependency 
+								- _id = GUID 4d6a6971-0a49-4db6-836a-495ebcc0ab60;
+								- _myState = 2048;
+								- _properties = { IPropertyContainer 
+									- Subjects = { IRPYRawContainer 
+										- size = 1;
+										- value = 
+										{ IPropertySubject 
+											- _Name = "CG";
+											- Metaclasses = { IRPYRawContainer 
+												- size = 1;
+												- value = 
+												{ IPropertyMetaclass 
+													- _Name = "Dependency";
+													- Properties = { IRPYRawContainer 
+														- size = 1;
+														- value = 
+														{ IProperty 
+															- _Name = "UsageType";
+															- _Value = "Specification";
+															- _Type = Enum;
+															- _ExtraTypeInfo = "Specification,Implementation,Existence";
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+								- _name = "math";
+								- Stereotypes = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IHandle 
+										- _m2Class = "IStereotype";
+										- _filename = "PredefinedTypes.sbs";
+										- _subsystem = "PredefinedTypes";
+										- _class = "";
+										- _name = "Usage";
+										- _id = GUID 42aa4325-6112-4e88-87ce-66008878f1db;
+									}
+								}
+								- _dependsOn = { INObjectHandle 
+									- _m2Class = "IFile";
+									- _id = GUID de8dbb38-4942-48a7-b9b7-cc6423f5d1eb;
+								}
+							}
+							{ IDependency 
+								- _id = GUID bb47fb86-1ac1-44e4-bcb0-7abfed1d330f;
+								- _myState = 2048;
+								- _properties = { IPropertyContainer 
+									- Subjects = { IRPYRawContainer 
+										- size = 1;
+										- value = 
+										{ IPropertySubject 
+											- _Name = "CG";
+											- Metaclasses = { IRPYRawContainer 
+												- size = 1;
+												- value = 
+												{ IPropertyMetaclass 
+													- _Name = "Dependency";
+													- Properties = { IRPYRawContainer 
+														- size = 1;
+														- value = 
+														{ IProperty 
+															- _Name = "UsageType";
+															- _Value = "Specification";
+															- _Type = Enum;
+															- _ExtraTypeInfo = "Specification,Implementation,Existence";
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+								- _name = "wfdb";
+								- Stereotypes = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IHandle 
+										- _m2Class = "IStereotype";
+										- _filename = "PredefinedTypes.sbs";
+										- _subsystem = "PredefinedTypes";
+										- _class = "";
+										- _name = "Usage";
+										- _id = GUID 42aa4325-6112-4e88-87ce-66008878f1db;
+									}
+								}
+								- _dependsOn = { INObjectHandle 
+									- _m2Class = "IFile";
+									- _id = GUID cc1939cd-c4e3-43fd-8e6c-5658cc1016c0;
+								}
+							}
+							{ IDependency 
+								- _id = GUID 5725bd39-fc30-4b7f-9d68-6a323ac68aa9;
+								- _myState = 2048;
+								- _properties = { IPropertyContainer 
+									- Subjects = { IRPYRawContainer 
+										- size = 1;
+										- value = 
+										{ IPropertySubject 
+											- _Name = "CG";
+											- Metaclasses = { IRPYRawContainer 
+												- size = 1;
+												- value = 
+												{ IPropertyMetaclass 
+													- _Name = "Dependency";
+													- Properties = { IRPYRawContainer 
+														- size = 1;
+														- value = 
+														{ IProperty 
+															- _Name = "UsageType";
+															- _Value = "Specification";
+															- _Type = Enum;
+															- _ExtraTypeInfo = "Specification,Implementation,Existence";
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+								- _name = "ecgmap";
+								- Stereotypes = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IHandle 
+										- _m2Class = "IStereotype";
+										- _filename = "PredefinedTypes.sbs";
+										- _subsystem = "PredefinedTypes";
+										- _class = "";
+										- _name = "Usage";
+										- _id = GUID 42aa4325-6112-4e88-87ce-66008878f1db;
+									}
+								}
+								- _dependsOn = { INObjectHandle 
+									- _m2Class = "IFile";
+									- _id = GUID dd51b182-a198-4dd5-a4a5-9f26431d212a;
+								}
+							}
+						}
+						- m_path = "";
+						- m_type = implFile;
+						- Fragments = { IRPYRawContainer 
+							- size = 4;
+							- value = 
+							{ IFileFragment 
+								- _id = GUID 837d1fa3-ec72-4296-994b-7065957eefd9;
+								- _name = "stdio";
+								- m_type = specFragment;
+								- m_text = "";
+								- m_startRow = 4294967295;
+								- m_startCol_Short = 1;
+								- m_endRow = 4294967295;
+								- m_endCol_Short = 267;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "IDependency";
+									- _id = GUID fd65e2f2-ef7a-4ae5-8aee-5c136eeeaaa4;
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 14e61d19-98da-4bd5-93df-67c9db714b8b;
+								- _name = "math";
+								- m_type = specFragment;
+								- m_text = "";
+								- m_startRow = 4294967295;
+								- m_startCol_Short = 1;
+								- m_endRow = 4294967295;
+								- m_endCol_Short = 267;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "IDependency";
+									- _id = GUID 4d6a6971-0a49-4db6-836a-495ebcc0ab60;
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 449be90b-e211-4b6d-97f9-ceb83f769594;
+								- _name = "wfdb";
+								- m_type = specFragment;
+								- m_text = "";
+								- m_startRow = 4294967295;
+								- m_startCol_Short = 1;
+								- m_endRow = 4294967295;
+								- m_endCol_Short = 267;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "IDependency";
+									- _id = GUID bb47fb86-1ac1-44e4-bcb0-7abfed1d330f;
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID 420023a5-e4fe-4898-b5ed-a18000cabf38;
+								- _name = "ecgmap";
+								- m_type = specFragment;
+								- m_text = "";
+								- m_startRow = 4294967295;
+								- m_startCol_Short = 1;
+								- m_endRow = 4294967295;
+								- m_endCol_Short = 267;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "IDependency";
+									- _id = GUID 5725bd39-fc30-4b7f-9d68-6a323ac68aa9;
+								}
+							}
+						}
+					}
+					{ IFile 
+						- _id = GUID d33b235c-93b4-4fde-a359-b0d0cd50d055;
+						- _myState = 8192;
+						- _properties = { IPropertyContainer 
+							- Subjects = { IRPYRawContainer 
+								- size = 2;
+								- value = 
+								{ IPropertySubject 
+									- _Name = "CG";
+									- Metaclasses = { IRPYRawContainer 
+										- size = 1;
+										- value = 
+										{ IPropertyMetaclass 
+											- _Name = "File";
+											- Properties = { IRPYRawContainer 
+												- size = 2;
+												- value = 
+												{ IProperty 
+													- _Name = "HeaderDirectivePattern";
+													- _Value = "";
+													- _Type = String;
+												}
+												{ IProperty 
+													- _Name = "ImpExtension";
+													- _Value = ".c";
+													- _Type = String;
+												}
+											}
+										}
+									}
+								}
+								{ IPropertySubject 
+									- _Name = "CPP_CG";
+									- Metaclasses = { IRPYRawContainer 
+										- size = 1;
+										- value = 
+										{ IPropertyMetaclass 
+											- _Name = "File";
+											- Properties = { IRPYRawContainer 
+												- size = 4;
+												- value = 
+												{ IProperty 
+													- _Name = "ImplementationFooter";
+													- _Value = "";
+													- _Type = MultiLine;
+												}
+												{ IProperty 
+													- _Name = "ImplementationHeader";
+													- _Value = "";
+													- _Type = MultiLine;
+												}
+												{ IProperty 
+													- _Name = "SpecificationFooter";
+													- _Value = "";
+													- _Type = MultiLine;
+												}
+												{ IProperty 
+													- _Name = "SpecificationHeader";
+													- _Value = "";
+													- _Type = MultiLine;
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+						- _name = "signal";
+						- Dependencies = { IRPYRawContainer 
+							- size = 2;
+							- value = 
+							{ IDependency 
+								- _id = GUID d34dc558-a20e-4312-b34c-d842f3e559d3;
+								- _myState = 2048;
+								- _properties = { IPropertyContainer 
+									- Subjects = { IRPYRawContainer 
+										- size = 1;
+										- value = 
+										{ IPropertySubject 
+											- _Name = "CG";
+											- Metaclasses = { IRPYRawContainer 
+												- size = 1;
+												- value = 
+												{ IPropertyMetaclass 
+													- _Name = "Dependency";
+													- Properties = { IRPYRawContainer 
+														- size = 1;
+														- value = 
+														{ IProperty 
+															- _Name = "UsageType";
+															- _Value = "Specification";
+															- _Type = Enum;
+															- _ExtraTypeInfo = "Specification,Implementation,Existence";
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+								- _name = "wfdblib";
+								- Stereotypes = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IHandle 
+										- _m2Class = "IStereotype";
+										- _filename = "PredefinedTypes.sbs";
+										- _subsystem = "PredefinedTypes";
+										- _class = "";
+										- _name = "Usage";
+										- _id = GUID 42aa4325-6112-4e88-87ce-66008878f1db;
+									}
+								}
+								- _dependsOn = { INObjectHandle 
+									- _m2Class = "IFile";
+									- _id = GUID 92b1548d-ed54-489a-bcbc-c8a07520b6ec;
+								}
+							}
+							{ IDependency 
+								- _id = GUID 8e61361b-635d-4d48-abc5-28433f36fe3c;
+								- _myState = 2048;
+								- _properties = { IPropertyContainer 
+									- Subjects = { IRPYRawContainer 
+										- size = 1;
+										- value = 
+										{ IPropertySubject 
+											- _Name = "CG";
+											- Metaclasses = { IRPYRawContainer 
+												- size = 1;
+												- value = 
+												{ IPropertyMetaclass 
+													- _Name = "Dependency";
+													- Properties = { IRPYRawContainer 
+														- size = 1;
+														- value = 
+														{ IProperty 
+															- _Name = "UsageType";
+															- _Value = "Specification";
+															- _Type = Enum;
+															- _ExtraTypeInfo = "Specification,Implementation,Existence";
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+								- _name = "time";
+								- Stereotypes = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IHandle 
+										- _m2Class = "IStereotype";
+										- _filename = "PredefinedTypes.sbs";
+										- _subsystem = "PredefinedTypes";
+										- _class = "";
+										- _name = "Usage";
+										- _id = GUID 42aa4325-6112-4e88-87ce-66008878f1db;
+									}
+								}
+								- _dependsOn = { INObjectHandle 
+									- _m2Class = "IFile";
+									- _id = GUID d7ad62a1-89eb-44a1-b5e3-640dec4e5be5;
+								}
+							}
+						}
+						- m_path = "";
+						- m_type = implFile;
+						- Fragments = { IRPYRawContainer 
+							- size = 2;
+							- value = 
+							{ IFileFragment 
+								- _id = GUID d5c06f1b-ee38-49b4-8a1d-0e5d04641ff7;
+								- _name = "wfdblib";
+								- m_type = specFragment;
+								- m_text = "";
+								- m_startRow = 4294967295;
+								- m_startCol_Short = 1;
+								- m_endRow = 4294967295;
+								- m_endCol_Short = 406;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "IDependency";
+									- _id = GUID d34dc558-a20e-4312-b34c-d842f3e559d3;
+								}
+							}
+							{ IFileFragment 
+								- _id = GUID efc6b1da-035b-4a49-9835-5331be8635ae;
+								- _name = "time";
+								- m_type = specFragment;
+								- m_text = "";
+								- m_startRow = 4294967295;
+								- m_startCol_Short = 1;
+								- m_endRow = 4294967295;
+								- m_endCol_Short = 406;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "IDependency";
+									- _id = GUID 8e61361b-635d-4d48-abc5-28433f36fe3c;
+								}
+							}
+						}
+					}
+					{ IFile 
+						- _id = GUID f0673774-bfb7-45e6-a009-62934b030a1f;
+						- _myState = 8192;
+						- _properties = { IPropertyContainer 
+							- Subjects = { IRPYRawContainer 
+								- size = 2;
+								- value = 
+								{ IPropertySubject 
+									- _Name = "CG";
+									- Metaclasses = { IRPYRawContainer 
+										- size = 1;
+										- value = 
+										{ IPropertyMetaclass 
+											- _Name = "File";
+											- Properties = { IRPYRawContainer 
+												- size = 2;
+												- value = 
+												{ IProperty 
+													- _Name = "HeaderDirectivePattern";
+													- _Value = "";
+													- _Type = String;
+												}
+												{ IProperty 
+													- _Name = "ImpExtension";
+													- _Value = ".c";
+													- _Type = String;
+												}
+											}
+										}
+									}
+								}
+								{ IPropertySubject 
+									- _Name = "CPP_CG";
+									- Metaclasses = { IRPYRawContainer 
+										- size = 1;
+										- value = 
+										{ IPropertyMetaclass 
+											- _Name = "File";
+											- Properties = { IRPYRawContainer 
+												- size = 4;
+												- value = 
+												{ IProperty 
+													- _Name = "ImplementationFooter";
+													- _Value = "";
+													- _Type = MultiLine;
+												}
+												{ IProperty 
+													- _Name = "ImplementationHeader";
+													- _Value = "";
+													- _Type = MultiLine;
+												}
+												{ IProperty 
+													- _Name = "SpecificationFooter";
+													- _Value = "";
+													- _Type = MultiLine;
+												}
+												{ IProperty 
+													- _Name = "SpecificationHeader";
+													- _Value = "";
+													- _Type = MultiLine;
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+						- _name = "wfdbinit";
+						- Dependencies = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IDependency 
+								- _id = GUID b9e601c0-4fdf-421c-b23a-399f555d1b29;
+								- _myState = 2048;
+								- _properties = { IPropertyContainer 
+									- Subjects = { IRPYRawContainer 
+										- size = 1;
+										- value = 
+										{ IPropertySubject 
+											- _Name = "CG";
+											- Metaclasses = { IRPYRawContainer 
+												- size = 1;
+												- value = 
+												{ IPropertyMetaclass 
+													- _Name = "Dependency";
+													- Properties = { IRPYRawContainer 
+														- size = 1;
+														- value = 
+														{ IProperty 
+															- _Name = "UsageType";
+															- _Value = "Specification";
+															- _Type = Enum;
+															- _ExtraTypeInfo = "Specification,Implementation,Existence";
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+								- _name = "wfdblib";
+								- Stereotypes = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IHandle 
+										- _m2Class = "IStereotype";
+										- _filename = "PredefinedTypes.sbs";
+										- _subsystem = "PredefinedTypes";
+										- _class = "";
+										- _name = "Usage";
+										- _id = GUID 42aa4325-6112-4e88-87ce-66008878f1db;
+									}
+								}
+								- _dependsOn = { INObjectHandle 
+									- _m2Class = "IFile";
+									- _id = GUID 92b1548d-ed54-489a-bcbc-c8a07520b6ec;
+								}
+							}
+						}
+						- m_path = "";
+						- m_type = implFile;
+						- Fragments = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IFileFragment 
+								- _id = GUID 24a74f75-0388-48ac-81e8-f769b84427a8;
+								- _name = "wfdblib";
+								- m_type = specFragment;
+								- m_text = "";
+								- m_startRow = 4294967295;
+								- m_startCol_Short = 1;
+								- m_endRow = 4294967295;
+								- m_endCol_Short = 442;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "IDependency";
+									- _id = GUID b9e601c0-4fdf-421c-b23a-399f555d1b29;
+								}
+							}
+						}
+					}
+					{ IFile 
+						- _id = GUID f0d7a70c-fdd7-48bd-b252-26888ac5c897;
+						- _myState = 8192;
+						- _properties = { IPropertyContainer 
+							- Subjects = { IRPYRawContainer 
+								- size = 2;
+								- value = 
+								{ IPropertySubject 
+									- _Name = "CG";
+									- Metaclasses = { IRPYRawContainer 
+										- size = 1;
+										- value = 
+										{ IPropertyMetaclass 
+											- _Name = "File";
+											- Properties = { IRPYRawContainer 
+												- size = 2;
+												- value = 
+												{ IProperty 
+													- _Name = "HeaderDirectivePattern";
+													- _Value = "";
+													- _Type = String;
+												}
+												{ IProperty 
+													- _Name = "ImpExtension";
+													- _Value = ".c";
+													- _Type = String;
+												}
+											}
+										}
+									}
+								}
+								{ IPropertySubject 
+									- _Name = "CPP_CG";
+									- Metaclasses = { IRPYRawContainer 
+										- size = 1;
+										- value = 
+										{ IPropertyMetaclass 
+											- _Name = "File";
+											- Properties = { IRPYRawContainer 
+												- size = 4;
+												- value = 
+												{ IProperty 
+													- _Name = "ImplementationFooter";
+													- _Value = "";
+													- _Type = MultiLine;
+												}
+												{ IProperty 
+													- _Name = "ImplementationHeader";
+													- _Value = "";
+													- _Type = MultiLine;
+												}
+												{ IProperty 
+													- _Name = "SpecificationFooter";
+													- _Value = "";
+													- _Type = MultiLine;
+												}
+												{ IProperty 
+													- _Name = "SpecificationHeader";
+													- _Value = "";
+													- _Type = MultiLine;
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+						- _name = "wfdbio";
+						- Dependencies = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IDependency 
+								- _id = GUID 89ca39ca-c4bb-48af-8cab-c358be7b5ce6;
+								- _myState = 2048;
+								- _properties = { IPropertyContainer 
+									- Subjects = { IRPYRawContainer 
+										- size = 1;
+										- value = 
+										{ IPropertySubject 
+											- _Name = "CG";
+											- Metaclasses = { IRPYRawContainer 
+												- size = 1;
+												- value = 
+												{ IPropertyMetaclass 
+													- _Name = "Dependency";
+													- Properties = { IRPYRawContainer 
+														- size = 1;
+														- value = 
+														{ IProperty 
+															- _Name = "UsageType";
+															- _Value = "Specification";
+															- _Type = Enum;
+															- _ExtraTypeInfo = "Specification,Implementation,Existence";
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+								- _name = "wfdblib";
+								- Stereotypes = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IHandle 
+										- _m2Class = "IStereotype";
+										- _filename = "PredefinedTypes.sbs";
+										- _subsystem = "PredefinedTypes";
+										- _class = "";
+										- _name = "Usage";
+										- _id = GUID 42aa4325-6112-4e88-87ce-66008878f1db;
+									}
+								}
+								- _dependsOn = { INObjectHandle 
+									- _m2Class = "IFile";
+									- _id = GUID 92b1548d-ed54-489a-bcbc-c8a07520b6ec;
+								}
+							}
+						}
+						- m_path = "";
+						- m_type = implFile;
+						- Fragments = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IFileFragment 
+								- _id = GUID d584c2f8-1635-4c01-a622-412625dd2b58;
+								- _name = "wfdblib";
+								- m_type = specFragment;
+								- m_text = "";
+								- m_startRow = 4294967295;
+								- m_startCol_Short = 1;
+								- m_endRow = 4294967295;
+								- m_endCol_Short = 453;
+								- m_subject = { INObjectHandle 
+									- _m2Class = "IDependency";
+									- _id = GUID 89ca39ca-c4bb-48af-8cab-c358be7b5ce6;
+								}
+							}
+						}
+					}
+				}
+			}
+			{ IFile 
+				- _id = GUID 9b7ad2b0-b4f2-4a72-9b58-e406b6f0da3b;
+				- _myState = 8192;
+				- _properties = { IPropertyContainer 
+					- Subjects = { IRPYRawContainer 
+						- size = 2;
+						- value = 
+						{ IPropertySubject 
+							- _Name = "CG";
+							- Metaclasses = { IRPYRawContainer 
+								- size = 1;
+								- value = 
+								{ IPropertyMetaclass 
+									- _Name = "File";
+									- Properties = { IRPYRawContainer 
+										- size = 3;
+										- value = 
+										{ IProperty 
+											- _Name = "AddToMakefile";
+											- _Value = "False";
+											- _Type = Bool;
+										}
+										{ IProperty 
+											- _Name = "Generate";
+											- _Value = "False";
+											- _Type = Bool;
+										}
+										{ IProperty 
+											- _Name = "HeaderDirectivePattern";
+											- _Value = "";
+											- _Type = String;
+										}
+									}
+								}
+							}
+						}
+						{ IPropertySubject 
+							- _Name = "CPP_CG";
+							- Metaclasses = { IRPYRawContainer 
+								- size = 1;
+								- value = 
+								{ IPropertyMetaclass 
+									- _Name = "File";
+									- Properties = { IRPYRawContainer 
+										- size = 4;
+										- value = 
+										{ IProperty 
+											- _Name = "ImplementationFooter";
+											- _Value = "";
+											- _Type = MultiLine;
+										}
+										{ IProperty 
+											- _Name = "ImplementationHeader";
+											- _Value = "";
+											- _Type = MultiLine;
+										}
+										{ IProperty 
+											- _Name = "SpecificationFooter";
+											- _Value = "";
+											- _Type = MultiLine;
+										}
+										{ IProperty 
+											- _Name = "SpecificationHeader";
+											- _Value = "";
+											- _Type = MultiLine;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+				- _name = "string";
+				- m_path = "";
+				- m_type = specFile;
+				- Fragments = { IRPYRawContainer 
+					- size = 0;
+				}
+			}
+			{ IFile 
+				- _id = GUID 5a91f8c1-34c5-4b5a-ba58-ba3128f2dafe;
+				- _myState = 8192;
+				- _properties = { IPropertyContainer 
+					- Subjects = { IRPYRawContainer 
+						- size = 2;
+						- value = 
+						{ IPropertySubject 
+							- _Name = "CG";
+							- Metaclasses = { IRPYRawContainer 
+								- size = 1;
+								- value = 
+								{ IPropertyMetaclass 
+									- _Name = "File";
+									- Properties = { IRPYRawContainer 
+										- size = 3;
+										- value = 
+										{ IProperty 
+											- _Name = "AddToMakefile";
+											- _Value = "False";
+											- _Type = Bool;
+										}
+										{ IProperty 
+											- _Name = "Generate";
+											- _Value = "False";
+											- _Type = Bool;
+										}
+										{ IProperty 
+											- _Name = "HeaderDirectivePattern";
+											- _Value = "";
+											- _Type = String;
+										}
+									}
+								}
+							}
+						}
+						{ IPropertySubject 
+							- _Name = "CPP_CG";
+							- Metaclasses = { IRPYRawContainer 
+								- size = 1;
+								- value = 
+								{ IPropertyMetaclass 
+									- _Name = "File";
+									- Properties = { IRPYRawContainer 
+										- size = 4;
+										- value = 
+										{ IProperty 
+											- _Name = "ImplementationFooter";
+											- _Value = "";
+											- _Type = MultiLine;
+										}
+										{ IProperty 
+											- _Name = "ImplementationHeader";
+											- _Value = "";
+											- _Type = MultiLine;
+										}
+										{ IProperty 
+											- _Name = "SpecificationFooter";
+											- _Value = "";
+											- _Type = MultiLine;
+										}
+										{ IProperty 
+											- _Name = "SpecificationHeader";
+											- _Value = "";
+											- _Type = MultiLine;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+				- _name = "stdio";
+				- m_path = "";
+				- m_type = specFile;
+				- Fragments = { IRPYRawContainer 
+					- size = 0;
+				}
+			}
+			{ IFile 
+				- _id = GUID de8dbb38-4942-48a7-b9b7-cc6423f5d1eb;
+				- _myState = 8192;
+				- _properties = { IPropertyContainer 
+					- Subjects = { IRPYRawContainer 
+						- size = 2;
+						- value = 
+						{ IPropertySubject 
+							- _Name = "CG";
+							- Metaclasses = { IRPYRawContainer 
+								- size = 1;
+								- value = 
+								{ IPropertyMetaclass 
+									- _Name = "File";
+									- Properties = { IRPYRawContainer 
+										- size = 3;
+										- value = 
+										{ IProperty 
+											- _Name = "AddToMakefile";
+											- _Value = "False";
+											- _Type = Bool;
+										}
+										{ IProperty 
+											- _Name = "Generate";
+											- _Value = "False";
+											- _Type = Bool;
+										}
+										{ IProperty 
+											- _Name = "HeaderDirectivePattern";
+											- _Value = "";
+											- _Type = String;
+										}
+									}
+								}
+							}
+						}
+						{ IPropertySubject 
+							- _Name = "CPP_CG";
+							- Metaclasses = { IRPYRawContainer 
+								- size = 1;
+								- value = 
+								{ IPropertyMetaclass 
+									- _Name = "File";
+									- Properties = { IRPYRawContainer 
+										- size = 4;
+										- value = 
+										{ IProperty 
+											- _Name = "ImplementationFooter";
+											- _Value = "";
+											- _Type = MultiLine;
+										}
+										{ IProperty 
+											- _Name = "ImplementationHeader";
+											- _Value = "";
+											- _Type = MultiLine;
+										}
+										{ IProperty 
+											- _Name = "SpecificationFooter";
+											- _Value = "";
+											- _Type = MultiLine;
+										}
+										{ IProperty 
+											- _Name = "SpecificationHeader";
+											- _Value = "";
+											- _Type = MultiLine;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+				- _name = "math";
+				- m_path = "";
+				- m_type = specFile;
+				- Fragments = { IRPYRawContainer 
+					- size = 0;
+				}
+			}
+			{ IFile 
+				- _id = GUID d7ad62a1-89eb-44a1-b5e3-640dec4e5be5;
+				- _myState = 8192;
+				- _properties = { IPropertyContainer 
+					- Subjects = { IRPYRawContainer 
+						- size = 2;
+						- value = 
+						{ IPropertySubject 
+							- _Name = "CG";
+							- Metaclasses = { IRPYRawContainer 
+								- size = 1;
+								- value = 
+								{ IPropertyMetaclass 
+									- _Name = "File";
+									- Properties = { IRPYRawContainer 
+										- size = 3;
+										- value = 
+										{ IProperty 
+											- _Name = "AddToMakefile";
+											- _Value = "False";
+											- _Type = Bool;
+										}
+										{ IProperty 
+											- _Name = "Generate";
+											- _Value = "False";
+											- _Type = Bool;
+										}
+										{ IProperty 
+											- _Name = "HeaderDirectivePattern";
+											- _Value = "";
+											- _Type = String;
+										}
+									}
+								}
+							}
+						}
+						{ IPropertySubject 
+							- _Name = "CPP_CG";
+							- Metaclasses = { IRPYRawContainer 
+								- size = 1;
+								- value = 
+								{ IPropertyMetaclass 
+									- _Name = "File";
+									- Properties = { IRPYRawContainer 
+										- size = 4;
+										- value = 
+										{ IProperty 
+											- _Name = "ImplementationFooter";
+											- _Value = "";
+											- _Type = MultiLine;
+										}
+										{ IProperty 
+											- _Name = "ImplementationHeader";
+											- _Value = "";
+											- _Type = MultiLine;
+										}
+										{ IProperty 
+											- _Name = "SpecificationFooter";
+											- _Value = "";
+											- _Type = MultiLine;
+										}
+										{ IProperty 
+											- _Name = "SpecificationHeader";
+											- _Value = "";
+											- _Type = MultiLine;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+				- _name = "time";
+				- m_path = "";
+				- m_type = specFile;
+				- Fragments = { IRPYRawContainer 
+					- size = 0;
+				}
+			}
+		}
+	}
+	- m_configActive = { ICodeGenConfigInfoHandle 
+		- _m2Class = "ICodeGenConfigInfo";
+		- _id = GUID 9a19293e-b1ee-41f5-af56-00f403fcfd7c;
+	}
+	- Configs = { IRPYRawContainer 
+		- size = 1;
+		- value = 
+		{ ICodeGenConfigInfo 
+			- _id = GUID 9a19293e-b1ee-41f5-af56-00f403fcfd7c;
+			- _myState = 8192;
+			- _properties = { IPropertyContainer 
+				- Subjects = { IRPYRawContainer 
+					- size = 4;
+					- value = 
+					{ IPropertySubject 
+						- _Name = "CG";
+						- Metaclasses = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertyMetaclass 
+								- _Name = "Configuration";
+								- Properties = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IProperty 
+										- _Name = "MainGenerationScheme";
+										- _Value = "UserInitializationOnly";
+										- _Type = Enum;
+										- _ExtraTypeInfo = "Full,UserInitializationOnly,None";
+									}
+								}
+							}
+						}
+					}
+					{ IPropertySubject 
+						- _Name = "CPP_CG";
+						- Metaclasses = { IRPYRawContainer 
+							- size = 3;
+							- value = 
+							{ IPropertyMetaclass 
+								- _Name = "Configuration";
+								- Properties = { IRPYRawContainer 
+									- size = 3;
+									- value = 
+									{ IProperty 
+										- _Name = "DefaultImplementationDirectory";
+										- _Value = "";
+										- _Type = String;
+									}
+									{ IProperty 
+										- _Name = "DefaultSpecificationDirectory";
+										- _Value = "";
+										- _Type = String;
+									}
+									{ IProperty 
+										- _Name = "Environment";
+										- _Value = "Cygwin";
+										- _Type = Enum;
+										- _ExtraTypeInfo = "Microsoft,MicrosoftDLL,MSVC9,MSVC9DLL,VxWorks,VxWorks6diab,VxWorks6gnu,VxWorks6diab_RTP,VxWorks6gnu_RTP,Solaris2,Cygwin,MultiWin32,Multi4Win32,MSStandardLibrary,MSVC9StandardLibrary,MicrosoftWinCE600,OseSfk,Linux,Solaris2GNU,QNXNeutrinoGCC, QNXNeutrinoMomentics,INTEGRITY,INTEGRITY5,IntegrityESTL,Integrity5ESTL,NucleusPLUS-PPC,WorkbenchManaged,WorkbenchManaged_RTP";
+									}
+								}
+							}
+							{ IPropertyMetaclass 
+								- _Name = "Framework";
+								- Properties = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IProperty 
+										- _Name = "IncludeHeaderFile";
+										- _Value = "OnlyOnAnimation";
+										- _Type = Enum;
+										- _ExtraTypeInfo = "Yes,OnlyOnAnimation,No";
+									}
+								}
+							}
+							{ IPropertyMetaclass 
+								- _Name = "Package";
+								- Properties = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IProperty 
+										- _Name = "GenerateDirectory";
+										- _Value = "True";
+										- _Type = Bool;
+									}
+								}
+							}
+						}
+					}
+					{ IPropertySubject 
+						- _Name = "CPP_ReverseEngineering";
+						- Metaclasses = { IRPYRawContainer 
+							- size = 3;
+							- value = 
+							{ IPropertyMetaclass 
+								- _Name = "Filtering";
+								- Properties = { IRPYRawContainer 
+									- size = 4;
+									- value = 
+									{ IProperty 
+										- _Name = "CreateReferenceClasses";
+										- _Value = "True";
+										- _Type = Bool;
+									}
+									{ IProperty 
+										- _Name = "IncludeInheritanceInReference";
+										- _Value = "False";
+										- _Type = Bool;
+									}
+									{ IProperty 
+										- _Name = "ReferenceClasses";
+										- _Value = "";
+										- _Type = String;
+									}
+									{ IProperty 
+										- _Name = "ReferenceDirectories";
+										- _Value = "";
+										- _Type = String;
+									}
+								}
+							}
+							{ IPropertyMetaclass 
+								- _Name = "ImplementationTrait";
+								- Properties = { IRPYRawContainer 
+									- size = 8;
+									- value = 
+									{ IProperty 
+										- _Name = "AnalyzeIncludeFiles";
+										- _Value = "OnlyFromSelected";
+										- _Type = Enum;
+										- _ExtraTypeInfo = "IgnoreIncludes, OnlyLogicalHeader, OnlyFromSelected, AllIncludes";
+									}
+									{ IProperty 
+										- _Name = "ImportAsExternal";
+										- _Value = "False";
+										- _Type = Bool;
+									}
+									{ IProperty 
+										- _Name = "MapToPackage";
+										- _Value = "Directory";
+										- _Type = Enum;
+										- _ExtraTypeInfo = "User,Directory";
+									}
+									{ IProperty 
+										- _Name = "ModelStyle";
+										- _Value = "ObjectBased";
+										- _Type = Enum;
+										- _ExtraTypeInfo = "Functional, ObjectBased";
+									}
+									{ IProperty 
+										- _Name = "ReflectDataMembers";
+										- _Value = "VisibilityAndHelpers";
+										- _Type = Enum;
+										- _ExtraTypeInfo = "None, VisibilityOnly, VisibilityAndHelpers";
+									}
+									{ IProperty 
+										- _Name = "RootDirectory";
+										- _Value = "C:\\IHA\\TI-IRTS\\sapien190\\rhapsody\\Design";
+										- _Type = String;
+									}
+									{ IProperty 
+										- _Name = "UserDataTypes";
+										- _Value = "";
+										- _Type = String;
+									}
+									{ IProperty 
+										- _Name = "UserPackage";
+										- _Value = "ReverseEngineering";
+										- _Type = String;
+									}
+								}
+							}
+							{ IPropertyMetaclass 
+								- _Name = "Parser";
+								- Properties = { IRPYRawContainer 
+									- size = 5;
+									- value = 
+									{ IProperty 
+										- _Name = "AdditionalKeywords";
+										- _Value = "far,near";
+										- _Type = String;
+									}
+									{ IProperty 
+										- _Name = "Defined";
+										- _Value = "";
+										- _Type = String;
+									}
+									{ IProperty 
+										- _Name = "ForceExpansionMacros";
+										- _Value = "";
+										- _Type = String;
+									}
+									{ IProperty 
+										- _Name = "IncludePath";
+										- _Value = "C:\\IHA\\TI-IRTS\\sapien190\\rhapsody\\Design\\wfdb";
+										- _Type = String;
+									}
+									{ IProperty 
+										- _Name = "Undefined";
+										- _Value = "";
+										- _Type = String;
+									}
+								}
+							}
+						}
+					}
+					{ IPropertySubject 
+						- _Name = "ReverseEngineering";
+						- Metaclasses = { IRPYRawContainer 
+							- size = 3;
+							- value = 
+							{ IPropertyMetaclass 
+								- _Name = "Main";
+								- Properties = { IRPYRawContainer 
+									- size = 2;
+									- value = 
+									{ IProperty 
+										- _Name = "Files";
+										- _Value = "C:\\IHA\\TI-IRTS\\sapien190\\rhapsody\\Design\\wfdb\\annot.c,C:\\IHA\\TI-IRTS\\sapien190\\rhapsody\\Design\\wfdb\\calib.c,C:\\IHA\\TI-IRTS\\sapien190\\rhapsody\\Design\\wfdb\\ecgcodes.h,C:\\IHA\\TI-IRTS\\sapien190\\rhapsody\\Design\\wfdb\\ecgmap.h,C:\\IHA\\TI-IRTS\\sapien190\\rhapsody\\Design\\wfdb\\edr.c,C:\\IHA\\TI-IRTS\\sapien190\\rhapsody\\Design\\wfdb\\signal.c,C:\\IHA\\TI-IRTS\\sapien190\\rhapsody\\Design\\wfdb\\wfdb.h,C:\\IHA\\TI-IRTS\\sapien190\\rhapsody\\Design\\wfdb\\wfdbinit.c,C:\\IHA\\TI-IRTS\\sapien190\\rhapsody\\Design\\wfdb\\wfdbio.c,C:\\IHA\\TI-IRTS\\sapien190\\rhapsody\\Design\\wfdb\\wfdblib.h";
+										- _Type = String;
+									}
+									{ IProperty 
+										- _Name = "UseTreeViewByDefault";
+										- _Value = "True";
+										- _Type = Bool;
+									}
+								}
+							}
+							{ IPropertyMetaclass 
+								- _Name = "Progress";
+								- Properties = { IRPYRawContainer 
+									- size = 2;
+									- value = 
+									{ IProperty 
+										- _Name = "ModelUpdatingFailed";
+										- _Value = "Report";
+										- _Type = Enum;
+										- _ExtraTypeInfo = "Ignore,Report,Abort";
+									}
+									{ IProperty 
+										- _Name = "ParsingError";
+										- _Value = "Report";
+										- _Type = Enum;
+										- _ExtraTypeInfo = "Ignore,Report,Abort";
+									}
+								}
+							}
+							{ IPropertyMetaclass 
+								- _Name = "Update";
+								- Properties = { IRPYRawContainer 
+									- size = 2;
+									- value = 
+									{ IProperty 
+										- _Name = "CreateObjectModelDiagrams";
+										- _Value = "True";
+										- _Type = Bool;
+									}
+									{ IProperty 
+										- _Name = "Policy";
+										- _Value = "Overwrite";
+										- _Type = Enum;
+										- _ExtraTypeInfo = "Overwrite,Merge";
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			- _name = "WfdbLib";
+			- HyperLinks = { IRPYRawContainer 
+				- size = 2;
+				- value = 
+				{ IMHyperLink 
+					- _id = GUID 1277fd2a-d443-4cb3-a1a9-3295b4500f93;
+					- _dependsOn = { INObjectHandle 
+						- _m2Class = "";
+					}
+					- _linkDispName = "Edit Makefile";
+					- _linkType = "FREE";
+					- _linkTarget = "C:\\IHA\\TI-IRTS\\sapien190\\rhapsody\\Design\\WfdbComponent\\WfdbLib\\WfdbComponent.mak";
+					- isConfigurationFileHyperLink = 1;
+				}
+				{ IMHyperLink 
+					- _id = GUID d52fd106-50af-41fd-a481-98cf6ba6a367;
+					- _dependsOn = { INObjectHandle 
+						- _m2Class = "";
+					}
+					- _linkDispName = "Edit Main File";
+					- _linkType = "FREE";
+					- _linkTarget = "C:\\IHA\\TI-IRTS\\sapien190\\rhapsody\\Design\\WfdbComponent\\WfdbLib\\MainWfdbComponent";
+					- isConfigurationFileHyperLink = 1;
+				}
+			}
+			- EmbededFiles = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IEmbededFile 
+					- _id = GUID 1cc1570f-9046-433e-b8d0-8f6a088b52e6;
+					- _name = "CollectedMacros.h";
+					- _MayNeedToRelocate = 0;
+					- _LastKnownFullPath = "C:\\IHA\\TI-IRTS\\sapien190\\rhapsody\\Design\\Project_rpy\\CollectedMacros.h";
+				}
+			}
+			- _scopeType = Explicit;
+			- _libraries = "";
+			- _additionalSources = "";
+			- _standardHeaders = "";
+			- _includePath = "";
+			- _targetMain = "";
+			- _instrumentation = None;
+			- _timeModel = RealTime;
+			- m_generateActors = 0;
+			- _statechartImplementation = Flat;
+			- _initializationCode = "";
+			- _checksList = 0 ;
+			- ScopeElements = { IRPYRawContainer 
+				- size = 0;
+			}
+			- InitialInstances = { IRPYRawContainer 
+				- size = 0;
+			}
+			- _root = { IFolder 
+				- _id = GUID d0b1040c-fc8b-4f7f-ae2f-2cdb31fe21c4;
+				- _myState = 8192;
+				- _name = "WfdbLib";
+				- m_path = ".";
+				- Elements = { IRPYRawContainer 
+					- size = 0;
+				}
+				- Files = { IRPYRawContainer 
+					- size = 0;
+				}
+			}
+			- weakCGTime = 4.30.2010::7:31:41;
+			- strongCGTime = 4.30.2010::7:31:41;
+			- AnimScopeElements = { IRPYRawContainer 
+				- size = 0;
+			}
+			- m_allInAnimScope = 1;
+		}
+	}
+	- VariationPoints = { IRPYRawContainer 
+		- size = 0;
+	}
+	- SelectedVariants = { IRPYRawContainer 
+		- size = 0;
+	}
+	- weakCGTime = 4.30.2010::7:31:41;
+	- strongCGTime = 4.30.2010::7:31:41;
+}
+
