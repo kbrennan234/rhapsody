@@ -1,5 +1,7 @@
 import os
 import re
+import time
+
 from lxml import etree
 
 class RhapsodyProjectParser:
@@ -31,7 +33,7 @@ class RhapsodyProjectParser:
             raise ValueError('Missing project directory:\n\t%s' % (basepath))
     
         self._project = {}
-        root = RhapsodyFileParser().parseFile(file)
+        root = RhapsodyFileParser.parseFile(file)
         self._project[file] = root
         
         if parseDependencies:
@@ -53,7 +55,7 @@ class RhapsodyProjectParser:
                 continue
             elif filename not in self._project:
                 link_path,_ = os.path.split(filename)
-                linked_node = RhapsodyFileParser().parseFile(filename)
+                linked_node = RhapsodyFileParser.parseFile(filename)
                 self._project[filename] = linked_node
                 self._parseDependencies(linked_node, link_path)
         
@@ -68,7 +70,7 @@ class RhapsodyProjectParser:
                 continue
             elif filename not in self._project:
                 link_path,_ = os.path.split(filename)
-                linked_node = RhapsodyFileParser().parseFile(filename)
+                linked_node = RhapsodyFileParser.parseFile(filename)
                 self._project[filename] = linked_node
                 self._parseDependencies(linked_node, link_path)
          
@@ -83,7 +85,7 @@ class RhapsodyProjectParser:
                 continue
             elif filename not in self._project:
                 link_path,_ = os.path.split(filename)
-                linked_node = RhapsodyFileParser().parseFile(filename)
+                linked_node = RhapsodyFileParser.parseFile(filename)
                 self._project[filename] = linked_node
                 self._parseDependencies(linked_node, link_path)
 
@@ -100,207 +102,211 @@ class RhapsodyFileParser:
     CHILD_QUOTE_RE = re.compile(r'\s*(\"(?<!\\)\")\s*;', re.MULTILINE|re.DOTALL)
     CHILD_VALUE_RE = re.compile(r'(?=[^"]*"[^"]*(?:"[^"]*"[^"]*)*$);', re.MULTILINE|re.DOTALL) #re.compile(r'\s*(.*?);\s*', re.MULTILINE|re.DOTALL)
     
-    __slots__ = ['_content', '_contentOffset', '_contentLength']
-    
-    def __init__(self):
-        """ Constructor """
+    @staticmethod
+    def parse(source):
+        """ Translate rhapsody file into xml. Takes in file descriptor or a string in rhapsody style formatting"""
         
-        self._content = ""
-        self._contentOffset = 0
-            
-    def parseFile(self, source):
-        """ Translate rhapsody file into xml. Takes in either a file object or filename. """
-        
-        if isinstance(source, str):
-            if not os.path.isfile(source):
-                raise ValueError('Invalid filename (Path does not exist or not a file):\n\t%s' % (source))
-            
-            with open(source, 'r') as f:
-                root = self.parse(f.read())
-        elif isinstance(source, file):
-            root = self.parse(f.read())
+        content = None
+        if isinstance(source, file):
+            content = source.read()
+        elif isinstance(content, str):
+            content = source
         else:
             raise ValueError('Invalid source (Expected file object or filename)')
-            
-        return root
-            
-    def parse(self, content):
-        """ Translate rhapsody file into xml. Takes in a string in rhapsody style formatting"""
         
-        if not isinstance(content, str):
-            raise ValueError('Invalid source (Expected string)')
-    
-        self._content = content
-        self._content = ''.join(c for c in self._content if self._valid_xml_char_ordinal(c))
-        self._contentOffset = 0
-        self._contentLength = len(self._content)
+        content = ''.join(c for c in content if RhapsodyFileParser._valid_xml_char_ordinal(c))
+        contentLength = len(content)
         
-        match = self.FILE_INFO_RE.match(self._content)
+        match = RhapsodyFileParser.FILE_INFO_RE.match(content)
         if match is None:
-            raise ValueError('Expected file information at line %d' % (self._getLineNum()))
+            raise ValueError('Expected file information at line %d' % (RhapsodyFileParser._getLineNum(content, 0)))
         
         root = etree.Element('root')
         root.set('rhapsody_type', match.group(1))
         root.set('rhapsody_version', match.group(2))
         root.set('rhapsody_lang', match.group(3))
         root.set('id', match.group(4))
-        self._contentOffset = match.end()
+        contentOffset = match.end()
         
-        root = self._parseBlock(root)
+        root, _ = RhapsodyFileParser._parseBlock(root, content, contentLength, contentOffset)
 
         return root
     
-    def toString(self, filename, root):
-        f = open(filename, 'w')
-        
+    @staticmethod
+    def toString(root):
         file_type = root.get('rhapsody_type', '')
         rhapsody_version = root.get('rhapsody_version', '')
         file_lang = root.get('rhapsody_lang', '')
         file_id = root.get('id', '')
         
-        f.write('%s version %s %s %s\n' % (file_type, rhapsody_version, file_lang, file_id))
+        content = '%s version %s %s %s\n' % (file_type, rhapsody_version, file_lang, file_id)
+        content += RhapsodyFileParser._toChildString(root, 0)
+        content += '\n'
         
-        self._toChildString(f, root, 0)
-        f.write('\n')
+        return content
+    
+    @staticmethod
+    def getGuidDict(root):
+        guid_dict = {}
         
-        f.close()
-     
-    def _toChildString(self, f, node, level):
+        # find all model elements with a GUID
+        for node in root.xpath("//_id/.."):
+            # ignore dependencies
+            if ('_dependsOn' != node.tag): 
+                id_node = node.find('_id')
+                if id_node is not None:
+                    guid_dict[id_node.text] = node
+
+        return guid_dict
+    
+    @staticmethod
+    def _toChildString(node, level):
+        content = ''
+    
         if (0 == len(node)):
-            f.write(node.text + ";")
+            content += node.text + ';'
         else:
-            f.write('{ %s \n' % (node.get('type', '')))
+            content += '{ %s \n' % (node.get('type', ''))
             
             isValueNode = False
             
             for child in node:
                 if (True == isValueNode):
                     if (0 == len(child)):
-                        self._toChildString(f, child, level + 1)
+                        RhapsodyFileParser._toChildString(child, level + 1)
                     else:
-                        f.write('\n' + '\t'*(level + 1))
-                        self._toChildString(f, child, level + 1)
+                        content += '\n' + '\t'*(level + 1)
+                        content += RhapsodyFileParser._toChildString(child, level + 1)
                 elif ('size' == child.tag):
-                    f.write('\t'*(level + 1) + '- size = %s;\n' % (child.text))
+                    content += '\t'*(level + 1) + '- size = %s;\n' % (child.text)
                     if (0 != int(child.text)):
-                        f.write('\t'*(level + 1) + '- value = ')
+                        content += '\t'*(level + 1) + '- value = '
                         isValueNode = True
                 elif ('elementList' == child.tag):
-                    f.write('\t'*(level + 1) + '- elementList = %d;\n' % (len(child)))
+                    content += '\t'*(level + 1) + '- elementList = %d;\n' % (len(child))
                     for granChild in child:
-                        f.write('\t'*(level + 1))
-                        self._toChildString(f, granChild, (level + 1))
-                        f.write('\n')
-                    f.write('\t'*(level + 1) + '\n')
+                        content += '\t'*(level + 1)
+                        content += RhapsodyFileParser._toChildString(granChild, (level + 1))
+                        content += '\n'
+                    content += '\t'*(level + 1) + '\n'
                 else:
-                    f.write('\t'*(level + 1) + '- %s = ' % (child.tag))
-                    self._toChildString(f, child, level + 1)
-                    f.write('\n')
+                    content += '\t'*(level + 1) + '- %s = ' % (child.tag)
+                    content += RhapsodyFileParser._toChildString(child, level + 1)
+                    content += '\n'
 
             if (True == isValueNode):
-                f.write('\n')
+                content += '\n'
                     
-            f.write('\t'*level + '}')
+            content += '\t'*level + '}'
+            
+        return content
     
-    def _parseBlock(self, node):
-        match = self.BLOCK_START_RE.match(self._content, self._contentOffset)
+    @staticmethod
+    def _parseBlock(node, content, contentLength, contentOffset):
+        match = RhapsodyFileParser.BLOCK_START_RE.match(content, contentOffset)
         if match is None:
-            raise ValueError("Invalid block at line %d" % (self._getLineNum()))
+            raise ValueError("Invalid block at line %d" % (RhapsodyFileParser._getLineNum(content, contentOffset)))
         
         node.set('type', match.group(1))
-        self._contentOffset = match.end()
+        contentOffset = match.end()
         
         while (True):
-            match =  self.BLOCK_END_RE.match(self._content, self._contentOffset)
+            match = RhapsodyFileParser.BLOCK_END_RE.match(content, contentOffset)
             if match:
-                self._contentOffset = match.end()
+                contentOffset = match.end()
                 break
             else:
-                match =  self.CHILD_RE.match(self._content, self._contentOffset)
+                match = RhapsodyFileParser.CHILD_RE.match(content, contentOffset)
                 if match:
-                    self._contentOffset = match.end()
-                    if 'size' == match.group(1):
-                        match =  self.SIZE_RE.match(self._content, self._contentOffset)
+                    contentOffset = match.end()
+                    if ('size' == match.group(1)):
+                        match = RhapsodyFileParser.SIZE_RE.match(content, contentOffset)
                         if match is None:
-                            raise ValueError('Invalid size attribute at line %d' % (self._getLineNum()))
+                            raise ValueError('Invalid size attribute at line %d' % (RhapsodyFileParser._getLineNum(content, contentOffset)))
                         count = int(match.group(1))
-                        self._contentOffset = match.end()
+                        contentOffset = match.end()
                         
                         child = etree.SubElement(node, 'size')
                         child.text = match.group(1)
                         
-                        if 0 != count:
-                            match =  self.VALUE_RE.match(self._content, self._contentOffset)
+                        if (0 != count):
+                            match = RhapsodyFileParser.VALUE_RE.match(content, contentOffset)
                             if match is None:
-                                raise ValueError('Invalid value attribute at line %d' % (self._getLineNum()))
-                            self._contentOffset = match.end()
+                                raise ValueError('Invalid value attribute at line %d' % (RhapsodyFileParser._getLineNum(content, contentOffset)))
+                            contentOffset = match.end()
                             
                             for _ in range(0, count):
                                 child = etree.SubElement(node, 'value')
-                                child = self._parseChildContent(child)
+                                child, contentOffset = RhapsodyFileParser._parseChildContent(child, content, contentLength, contentOffset)
                                 
-                    elif 'elementList' == match.group(1):
+                    elif ('elementList' == match.group(1)):
                         elemListNode = etree.SubElement(node, 'elementList')
-                        match = self.SIZE_RE.match(self._content, self._contentOffset)
+                        match = RhapsodyFileParser.SIZE_RE.match(content, contentOffset)
                         if match is None:
-                            raise ValueError('Invalid elementList attribute at line %d' % (self._getLineNum()))
+                            raise ValueError('Invalid elementList attribute at line %d' % (RhapsodyFileParser._getLineNum(content, contentOffset)))
                         count = int(match.group(1))
-                        self._contentOffset = match.end()
+                        contentOffset = match.end()
                         
-                        if 0 < count:
+                        if (0 < count):
                             for _ in range(0, count):
                                 child = etree.SubElement(elemListNode, 'element')
-                                child = self._parseChildContent(child)
+                                child, contentOffset = RhapsodyFileParser._parseChildContent(child, content, contentLength, contentOffset)
                                 
                     else:
                         child = etree.SubElement(node, match.group(1))
-                        child = self._parseChildContent(child)
+                        child, contentOffset = RhapsodyFileParser._parseChildContent(child, content, contentLength, contentOffset)
                 else:
-                    raise ValueError('Expected } at line %d' % (self._getLineNum()))
+                    raise ValueError('Expected } at line %d' % (RhapsodyFileParser._getLineNum(content, contentOffset)))
         
-        return node
+        return node, contentOffset
     
-    def _parseChildContent(self, node):
-        match =  self.BLOCK_START_RE.match(self._content, self._contentOffset)
+    @staticmethod
+    def _parseChildContent(node, content, contentLength, contentOffset):
+        match = RhapsodyFileParser.BLOCK_START_RE.match(content, contentOffset)
         if match:
-            node = self._parseBlock(node)
+            node, contentOffset = RhapsodyFileParser._parseBlock(node, content, contentLength, contentOffset)
         else:
-            contentStart = self._contentOffset
-            self._findLineEnd()
-            node.text = self._content[contentStart:self._contentOffset-1]
-        return node
+            contentStart = contentOffset
+            contentOffset = RhapsodyFileParser._findLineEnd(content, contentLength, contentOffset)
+            node.text = content[contentStart:contentOffset-1]
+        return node, contentOffset
     
-    def _findLineEnd(self):
+    @staticmethod
+    def _findLineEnd(content, contentLength, contentOffset):
         isInQuote = False
         
-        endStartInd = self._content.find(';', self._contentOffset)
+        endStartInd = content.find(';', contentOffset)
         if -1 == endStartInd:
-            raise ValueError('Missing ; at line %d' % (self._getLineNum()))
+            raise ValueError('Missing ; at line %d' % (RhapsodyFileParser._getLineNum(content, contentOffset)))
         
-        quoteStartInd = self._content.find('"', self._contentOffset)
+        quoteStartInd = content.find('"', contentOffset)
         if -1 == quoteStartInd:
-            quoteStartInd = self._contentLength
+            quoteStartInd = contentLength
         
-        while (1):
+        while (True):
             if (endStartInd < quoteStartInd):
-                self._contentOffset = endStartInd + 1
+                contentOffset = endStartInd + 1
                 if ~isInQuote:
                     break
                 else:
-                    endStartInd = self._content.find(';', self._contentOffset)
+                    endStartInd = content.find(';', contentOffset)
                     if -1 == endStartInd:
-                        raise ValueError('Missing ; at line %d' % (self._getLineNum()))
+                        raise ValueError('Missing ; at line %d' % (RhapsodyFileParser._getLineNum(content, contentOffset)))
             else:
-                self._contentOffset = quoteStartInd + 1
+                contentOffset = quoteStartInd + 1
                 isInQuote = ~isInQuote;
-                quoteStartInd = self._content.find('"', self._contentOffset)
-                if -1 == quoteStartInd:
-                    quoteStartInd = self._contentLength
-    
-    def _getLineNum(self):
-        return self._content.count('\n', 0, self._contentOffset);
+                quoteStartInd = content.find('"', contentOffset)
+                if (-1 == quoteStartInd):
+                    quoteStartInd = contentLength
+        
+        return contentOffset
+        
+    @staticmethod
+    def _getLineNum(content, contentOffset):
+        return content.count('\n', 0, contentOffset);
 
-    def _valid_xml_char_ordinal(self, c):
+    @staticmethod
+    def _valid_xml_char_ordinal(c):
         codepoint = ord(c)
         # conditions ordered by presumed frequency
         return (
@@ -309,3 +315,52 @@ class RhapsodyFileParser:
             0xE000 <= codepoint <= 0xFFFD or
             0x10000 <= codepoint <= 0x10FFFF
             )
+    
+    @staticmethod
+    def get_modified_time(date_time=time.localtime()):
+        return '%d.%d%d::%d.%d.%d' % (date_time.tm_mon, \
+                                      date_time.tm_mday, \
+                                      date_time.tm_year, \
+                                      date_time.tm_hour, \
+                                      date_time.tm_min, \
+                                      date_time.tm_sec)
+    
+    @staticmethod
+    def add_requirement_dependency(node, guid, req_guid, req_name, req_subsystem):
+        dependencies = node.find('Dependencies')
+        if dependencies is None:
+            dependencies = etree.SubElement(node, 'Dependencies')
+            dependencies.set('type', 'IRPYContainer')
+        
+        size = dependencies.find('size')
+        if size is None:
+            size = etree.SubElement(dependencies, 'size')
+            size.text = '0'
+        
+        dependencyExists = False
+        for value in dependencies.findall('value'):
+            value_guid = value.find('_id')
+            if value_guid is not None:
+                if (guid == value_guid.text):
+                    dependencyExists = True
+                    break
+        
+        if not dependencyExists:
+            # increment size
+            size.text = str(int(size.text) + 1)
+            # add new value node
+            value = etree.SubElement(dependencies, 'value')
+            value.set('type', 'IDependency')
+            
+            etree.SubElement(value, '_id').text = guid
+            etree.SubElement(value, '_myState').text = '2048'
+            etree.SubElement(value, '_name').text = req_name
+            etree.SubElement(value, '_modifiedTimeWeak').text = RhapsodyFileParser.get_modified_time()
+            dependsOn = etree.SubElement(value, '_dependsOn')
+            dependsOn.set('type', 'INObjectHandle')
+            etree.SubElement(dependsOn, '_m2Class').text = '"IRequirement"'
+            etree.SubElement(dependsOn, '_filename').text = '""'
+            etree.SubElement(dependsOn, '_subsystem').text = req_subsystem
+            etree.SubElement(dependsOn, '_class').text = '""'
+            etree.SubElement(dependsOn, '_name').text = req_name
+            etree.SubElement(dependsOn, '_id').text = req_guid
