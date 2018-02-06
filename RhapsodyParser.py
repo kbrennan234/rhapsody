@@ -1,7 +1,6 @@
 import os
 import re
 from lxml import etree
-import six
 
 class RhapsodyProjectParser:
     """RhapsodyProjectParser
@@ -103,7 +102,7 @@ class RhapsodyFileParser:
     
     __slots__ = ['_content', '_contentOffset', '_contentLength']
     
-    def __init__(self, file=None):
+    def __init__(self):
         """ Constructor """
         
         self._content = ""
@@ -150,7 +149,59 @@ class RhapsodyFileParser:
         root = self._parseBlock(root)
 
         return root
+    
+    def toString(self, filename, root):
+        f = open(filename, 'w')
         
+        file_type = root.get('rhapsody_type', '')
+        rhapsody_version = root.get('rhapsody_version', '')
+        file_lang = root.get('rhapsody_lang', '')
+        file_id = root.get('id', '')
+        
+        f.write('%s version %s %s %s\n' % (file_type, rhapsody_version, file_lang, file_id))
+        
+        self._toChildString(f, root, 0)
+        f.write('\n')
+        
+        f.close()
+     
+    def _toChildString(self, f, node, level):
+        if (0 == len(node)):
+            f.write(node.text + ";")
+        else:
+            f.write('{ %s \n' % (node.get('type', '')))
+            
+            isValueNode = False
+            
+            for child in node:
+                if (True == isValueNode):
+                    if (0 == len(child)):
+                        self._toChildString(f, child, level + 1)
+                    else:
+                        f.write('\n' + '\t'*(level + 1))
+                        self._toChildString(f, child, level + 1)
+                elif ('size' == child.tag):
+                    f.write('\t'*(level + 1) + '- size = %s;\n' % (child.text))
+                    if (0 != int(child.text)):
+                        f.write('\t'*(level + 1) + '- value = ')
+                        isValueNode = True
+                elif ('elementList' == child.tag):
+                    f.write('\t'*(level + 1) + '- elementList = %d;\n' % (len(child)))
+                    for granChild in child:
+                        f.write('\t'*(level + 1))
+                        self._toChildString(f, granChild, (level + 1))
+                        f.write('\n')
+                    f.write('\t'*(level + 1) + '\n')
+                else:
+                    f.write('\t'*(level + 1) + '- %s = ' % (child.tag))
+                    self._toChildString(f, child, level + 1)
+                    f.write('\n')
+
+            if (True == isValueNode):
+                f.write('\n')
+                    
+            f.write('\t'*level + '}')
+    
     def _parseBlock(self, node):
         match = self.BLOCK_START_RE.match(self._content, self._contentOffset)
         if match is None:
@@ -175,25 +226,29 @@ class RhapsodyFileParser:
                         count = int(match.group(1))
                         self._contentOffset = match.end()
                         
+                        child = etree.SubElement(node, 'size')
+                        child.text = match.group(1)
+                        
                         if 0 != count:
                             match =  self.VALUE_RE.match(self._content, self._contentOffset)
                             if match is None:
                                 raise ValueError('Invalid value attribute at line %d' % (self._getLineNum()))
                             self._contentOffset = match.end()
                             
-                            for i in xrange(0, count):
+                            for _ in range(0, count):
                                 child = etree.SubElement(node, 'value')
                                 child = self._parseChildContent(child)
                                 
                     elif 'elementList' == match.group(1):
-                        elemListNode = etree.SubElement(node, 'elements')
+                        elemListNode = etree.SubElement(node, 'elementList')
                         match = self.SIZE_RE.match(self._content, self._contentOffset)
                         if match is None:
                             raise ValueError('Invalid elementList attribute at line %d' % (self._getLineNum()))
                         count = int(match.group(1))
                         self._contentOffset = match.end()
+                        
                         if 0 < count:
-                            for i in xrange(0, count):
+                            for _ in range(0, count):
                                 child = etree.SubElement(elemListNode, 'element')
                                 child = self._parseChildContent(child)
                                 
@@ -212,7 +267,7 @@ class RhapsodyFileParser:
         else:
             contentStart = self._contentOffset
             self._findLineEnd()
-            node.text = self._content[contentStart:self._contentOffset-1].strip()
+            node.text = self._content[contentStart:self._contentOffset-1]
         return node
     
     def _findLineEnd(self):

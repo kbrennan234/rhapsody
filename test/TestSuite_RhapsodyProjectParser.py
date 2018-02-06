@@ -15,9 +15,16 @@ class TestSuite_RhapsodyProjectParser(unittest.TestCase):
     def test_parse_rpy(self):
         test_file = "./assets/Project.rpy"
         
+        root = None
+        
         # run the test
-        root = self._parser.parse(test_file)
-    
+        try:
+            root = self._parser.parse(test_file)
+        except:
+            pass
+        
+        self.failIf(root is None, 'failed to parse Rhapsody project file')
+        
 if __name__ == "__main__":
     suite = unittest.TestLoader().loadTestsFromTestCase(TestSuite_RhapsodyProjectParser)
     unittest.TextTestRunner(verbosity=2).run(suite)
