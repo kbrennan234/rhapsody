@@ -1,5 +1,5 @@
 import sys
-sys.path.append('../..')
+sys.path.append('../../RhapsodyParser')
 
 import unittest
 from rhapsody.RhapsodyParser import RhapsodyProjectParser
