@@ -1,27 +1,30 @@
-import sys
-sys.path.append('../../RhapsodyParser')
-
 import unittest
-from rhapsody.RhapsodyParser import RhapsodyProjectParser
+import sys
+
+sys.path.append('../RhapsodyParser')
+from RhapsodyParser import RhapsodyProjectParser
 
 class TestSuite_RhapsodyProjectParser(unittest.TestCase):
     
     def setUp(self):
-        self._parser = RhapsodyProjectParser()
+        pass
         
     def tearDown(self):
-        self._parser = None
+        pass
         
-    def test_parse_rpy(self):
+    def test01_parse_rpy(self):
         test_file = "./assets/Project.rpy"
         
         root = None
         
+        root = RhapsodyProjectParser.parse(test_file)
+            
+        
         # run the test
         try:
-            root = self._parser.parse(test_file)
-        except:
             pass
+        except:
+            print(sys.exc_info()[0])
         
         self.failIf(root is None, 'failed to parse Rhapsody project file')
         

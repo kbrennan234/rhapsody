@@ -1,6 +1,7 @@
 import os
 import re
 import time
+from six import string_types
 
 from lxml import etree
 
@@ -8,40 +9,34 @@ class RhapsodyProjectParser:
     """RhapsodyProjectParser
     Utility class for translating rhapsody style project into a dictionary of xml files.
     """
-    __slots__ = ['_project']
-
-    def __init__(self, file=None):
-        """ Constructor """
-        
-        self._project = None
-        if file:
-            self.parse(file)
-            
-    def parse(self, file, parseDependencies=True):
+    
+    @staticmethod
+    def parse(filename, parseDependencies=True):
         """ Translates a rhapsody style project into a dictionary of xml trees per project file"""
         
-        if not isinstance(file, str):
+        if not isinstance(filename, string_types):
             raise ValueError('Expected filename of type string')
             
-        basepath, filename = os.path.split(file)
-        basename, ext = os.path.splitext(filename)
-        basepath = os.path.join(basepath, basename + '_rpy')
+        basepath, basename = os.path.split(filename)
+        name, ext = os.path.splitext(basename)
+        basepath = os.path.join(basepath, name + '_rpy')
                 
         if ext.lower() != ".rpy":
-            raise ValueError('Invalid project file (Expected rpy type file):\n\t%s' % (file))
+            raise ValueError('Invalid project file (Expected rpy type file):\n\t%s' % (filename))
         elif True != os.path.isdir(basepath):
             raise ValueError('Missing project directory:\n\t%s' % (basepath))
     
-        self._project = {}
-        root = RhapsodyFileParser.parseFile(file)
-        self._project[file] = root
+        projectFiles = {}
+        root = RhapsodyFileParser.parse(filename)
+        projectFiles[filename] = root
         
         if parseDependencies:
-            self._parseDependencies(root, basepath)
+            RhapsodyProjectParser._parseDependencies(projectFiles, root, basepath)
             
-        return self._project
+        return projectFiles
     
-    def _parseDependencies(self, node, basepath):
+    @staticmethod
+    def _parseDependencies(projectFiles, node, basepath):
         """ Searches for any files linked to by the given xml tree and adds any found to the dictionary"""
         
         # find linked subsystem files
@@ -53,11 +48,11 @@ class RhapsodyProjectParser:
             
             if (True != os.path.isfile(filename)):
                 continue
-            elif filename not in self._project:
+            elif filename not in projectFiles:
                 link_path,_ = os.path.split(filename)
-                linked_node = RhapsodyFileParser.parseFile(filename)
-                self._project[filename] = linked_node
-                self._parseDependencies(linked_node, link_path)
+                linked_node = RhapsodyFileParser.parse(filename)
+                projectFiles[filename] = linked_node
+                RhapsodyProjectParser._parseDependencies(projectFiles, linked_node, link_path)
         
         # find linked class files
         for filenameNode in node.xpath("//*[@type='IClass']/fileName"):
@@ -68,11 +63,11 @@ class RhapsodyProjectParser:
 
             if (True != os.path.isfile(filename)):
                 continue
-            elif filename not in self._project:
+            elif filename not in projectFiles:
                 link_path,_ = os.path.split(filename)
-                linked_node = RhapsodyFileParser.parseFile(filename)
-                self._project[filename] = linked_node
-                self._parseDependencies(linked_node, link_path)
+                linked_node = RhapsodyFileParser.parse(filename)
+                projectFiles[filename] = linked_node
+                RhapsodyProjectParser._parseDependencies(projectFiles, linked_node, link_path)
          
         # find linked component files
         for filenameNode in node.xpath("//*[@type='IComponent']/fileName"):
@@ -83,11 +78,11 @@ class RhapsodyProjectParser:
 
             if (True != os.path.isfile(filename)):
                 continue
-            elif filename not in self._project:
+            elif filename not in projectFiles:
                 link_path,_ = os.path.split(filename)
-                linked_node = RhapsodyFileParser.parseFile(filename)
-                self._project[filename] = linked_node
-                self._parseDependencies(linked_node, link_path)
+                linked_node = RhapsodyFileParser.parse(filename)
+                projectFiles[filename] = linked_node
+                RhapsodyProjectParser._parseDependencies(projectFiles, linked_node, link_path)
 
 class RhapsodyFileParser:
     """RhapsodyFileParser
@@ -104,16 +99,24 @@ class RhapsodyFileParser:
     
     @staticmethod
     def parse(source):
-        """ Translate rhapsody file into xml. Takes in file descriptor or a string in rhapsody style formatting"""
+        """ Translate rhapsody file into xml. Takes in file descriptor or a string filename"""
         
         content = None
-        if isinstance(source, file):
+        
+        if isinstance(source, string_types):
+            with open(source, 'r') as f:
+                content = f.read()
+        elif hasattr(source, 'read'):
             content = source.read()
-        elif isinstance(content, str):
-            content = source
         else:
             raise ValueError('Invalid source (Expected file object or filename)')
         
+        return RhapsodyFileParser.fromString(content)
+    
+    @staticmethod
+    def fromString(content):
+        """ Translate rhapsody formatted string into xml."""
+         
         content = ''.join(c for c in content if RhapsodyFileParser._valid_xml_char_ordinal(c))
         contentLength = len(content)
         
